@@ -126,6 +126,192 @@ type postedContentsDataType= {
     comment:615,
     share:3,
     postedTime:new Date()
+   },
+   {
+    owner:'Robert Hammond',
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making 😘",
+    image: [romario1,romario2],
+    reactions:{
+      like:2,
+      unliked:182,
+      hot:27,
+      cry:45,
+      laugh:0
+    },
+    comment:215,
+    share:83,
+    postedTime:new Date()
+   },
+   {
+    owner:'Robert Hammond',
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image: [shoe1,shoe2,shoe3,shoe4,shoe5,shoe6],
+    reactions:{
+      like:12,
+      unliked:18,
+      hot:7,
+      cry:5,
+      laugh:20
+    } ,
+    comment:615,
+    share:3,
+    postedTime:new Date()
+
+   },
+   {
+    owner:'Robert Hammond',
+    titleDescription:"When I am not working",
+    image: [family],
+    reactions:{
+      like:7612,
+      unliked:18,
+      hot:387,
+      cry:45,
+      laugh:20
+    } ,
+    comment:615,
+    share:3,
+    postedTime:new Date()
+
+   },
+   {
+    owner:'Robert Hammond',
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image: [guilherme],
+    reactions:{
+      like:762,
+      unliked:8,
+      hot:37,
+      cry:45,
+      laugh:20
+    } ,
+    comment:615,
+    share:3,
+    postedTime:new Date()
+
+   },
+   {
+    owner:'Robert Hammond',
+    titleDescription:"meditating in the morning breathing mountain airs 😇",
+    image: [yannic],
+    reactions:{
+      like:762,
+      unliked:8,
+      hot:37,
+      cry:45,
+      laugh:20
+    } ,
+    comment:615,
+    share:3,
+    postedTime:new Date()
+   },
+   {
+    owner:'Robert Hammond',
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image: [shifaaz],
+    reactions:{
+      like:72,
+      unliked:895,
+      hot:7,
+      cry:45,
+      laugh:250
+    } ,
+    comment:615,
+    share:3,
+    postedTime:new Date()
+   },
+   {
+    owner:'Robert Hammond',
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making 😘",
+    image: [romario1,romario2],
+    reactions:{
+      like:2,
+      unliked:182,
+      hot:27,
+      cry:45,
+      laugh:0
+    },
+    comment:215,
+    share:83,
+    postedTime:new Date()
+   },
+   {
+    owner:'Robert Hammond',
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image: [shoe1,shoe2,shoe3,shoe4,shoe5,shoe6],
+    reactions:{
+      like:12,
+      unliked:18,
+      hot:7,
+      cry:5,
+      laugh:20
+    } ,
+    comment:615,
+    share:3,
+    postedTime:new Date()
+
+   },
+   {
+    owner:'Robert Hammond',
+    titleDescription:"When I am not working",
+    image: [family],
+    reactions:{
+      like:7612,
+      unliked:18,
+      hot:387,
+      cry:45,
+      laugh:20
+    } ,
+    comment:615,
+    share:3,
+    postedTime:new Date()
+
+   },
+   {
+    owner:'Robert Hammond',
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image: [guilherme],
+    reactions:{
+      like:762,
+      unliked:8,
+      hot:37,
+      cry:45,
+      laugh:20
+    } ,
+    comment:615,
+    share:3,
+    postedTime:new Date()
+
+   },
+   {
+    owner:'Robert Hammond',
+    titleDescription:"meditating in the morning breathing mountain airs 😇",
+    image: [yannic],
+    reactions:{
+      like:762,
+      unliked:8,
+      hot:37,
+      cry:45,
+      laugh:20
+    } ,
+    comment:615,
+    share:3,
+    postedTime:new Date()
+   },
+   {
+    owner:'Robert Hammond',
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image: [shifaaz],
+    reactions:{
+      like:72,
+      unliked:895,
+      hot:7,
+      cry:45,
+      laugh:250
+    } ,
+    comment:615,
+    share:3,
+    postedTime:new Date()
    }
  ]
 const PostedContents = ()=> {
@@ -169,8 +355,7 @@ const PostedContents = ()=> {
           </div>
         ))}
     </div>  
-    
-    
+ 
   )
 }
 

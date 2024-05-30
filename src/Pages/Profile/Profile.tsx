@@ -1,9 +1,9 @@
-import React from 'react'
+import ProfilePage from '../../components/ProfilePage'
 const Profile = () => {
   return (
-    <div>
-     Profile
-    </div>
+    <>
+     <ProfilePage />
+    </>
   )
 }
 

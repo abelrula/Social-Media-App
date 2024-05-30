@@ -54,7 +54,6 @@ export const groups:groupType[]=[
         
     }
 ]
-
 export const freinds:freindsType[]=[
     {
         name:"simon Jorge",
@@ -81,7 +80,6 @@ export const freinds:freindsType[]=[
         profile: "https://images.unsplash.com/photo-1495603889488-42d1d66e5523?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGJsYWNrJTIwbWFsZXN8ZW58MHx8MHx8fDA%3D"
       },
 ]
-
 export const onlineContacts:onlineContactsType[]=[
   {
       name:"simon Jorge",
@@ -143,7 +141,6 @@ export const onlineContacts:onlineContactsType[]=[
       profile: "https://images.unsplash.com/photo-1495603889488-42d1d66e5523?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGJsYWNrJTIwbWFsZXN8ZW58MHx8MHx8fDA%3D"
     },
 ]
-
 export const events:eventsType[]=[ 
   {
     event:"Garden BBQ",
@@ -171,7 +168,6 @@ export const events:eventsType[]=[
   },
   
  ]
-
 export const menuLinks:menuLinksType[]= [
   {
     title: "Home",
