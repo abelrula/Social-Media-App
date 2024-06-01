@@ -1,21 +1,17 @@
   import {AiOutlineMessage } from "react-icons/ai"
 import { FaUserPlus } from 'react-icons/fa'
-import Post from "./Post"
-import PostedContents from "./PostedContents"
-import romario2 from"../assets/romario2.jpg"
+
 import guilherme from"../assets/guilherme-stecanella-_dH-oQF9w-Y-unsplash.jpg"
 // import holly from"../assets/holly-mandarich-7MrXw_o7Eo4-unsplash.jpg"
-import yannic from"../assets/yannic-laderach-Dqx4XWuXu7w-unsplash.jpg"
 import shifaaz from"../assets/shifaaz-shamoon-O0xQcGATOw4-unsplash.jpg"
-import family from"../assets/family.jpg"
+import { Link, Outlet } from "react-router-dom"
 
 type catogriesType=string
 
 const ProfilePage = () => {
  
-   const imagesPostedByTheOwner:string[]=[romario2,guilherme,yannic,family,romario2,guilherme,yannic,family]
-  const catogries:catogriesType[]=["posts","About","photos","Videos","Friends"]
-  const editTypes:string[]=["AddTodos","Edit details","Add Hobies"]
+
+  const catogries:catogriesType[]=["posts","photos","videos","friends"]
   return (
     <div className='container'>
          <section className="profileContainer__top">
@@ -35,33 +31,11 @@ const ProfilePage = () => {
             </div>
             <ul className="flex gap-2.5 mt-12">
                   {catogries.map((item,i)=>(
-                   <li className="px-1.5 py-1.5 rounded-xl text-white font-mono text-xs bg-sky-900 no-underline" key={i}>{item}</li>
+                   <Link to={item} className="px-1.5 py-1.5 rounded-xl text-white font-mono text-xs bg-sky-900 no-underline" key={i}>{item}</Link>
                   ))}
             </ul>
          </section>
-          <section className="flex gap-3 w-full mt-12 overflow-y-scroll border-t-[1px] border-slate-500">
-            <div className=" w-[35%] ">
-              <h2 className="text-start font-mono">Basic Info</h2>
-              <ul className="flex  flex-col mt-4 gap-1 w-[80%]">
-                 {
-                  editTypes.map((item,i)=>(
-                    <li className="text-center w-full text-gray-700 rounded-2xl font-mono border-2" key={i}>{item}</li>
-                  ))
-                 }
-              </ul>
-              <div className="flex flex-wrap gap-1 mt-4">
-                {
-                  imagesPostedByTheOwner.map((image,i)=>(
-                    <img className="w-36 h-32 rounded-lg object-cover object-center" src={image} key={i} alt="posts" />
-                  ))
-                }
-              </div>
-            </div>
-            <div className=" w-[65%] overflow-y-scroll overflow-x-hidden">
-             <Post />
-             <PostedContents />
-            </div> 
-          </section>
+         <Outlet />
     </div>
   )
 }

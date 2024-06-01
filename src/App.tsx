@@ -8,6 +8,9 @@ import Profile from './Pages/Profile/Profile'
 import Message from './Pages/Message/Message'
 import Events from './Pages/Events/Events'
 import Stories from './Pages/Stories/Stories'
+import MyPosts from './Pages/Profile/ProfileSubPages/MyPosts'
+import MyVideos from './Pages/Profile/ProfileSubPages/MyVideos'
+ import MyPhotos from './Pages/Profile/ProfileSubPages/MyPhotos'
   
 
 function App() {
@@ -20,7 +23,12 @@ function App() {
                   <Route  path="friends" element={<Friends />}  />
                   <Route  path="feed" element={<Feed />}  />
                   <Route  path="memories" element={<Memories />}  />
-                  <Route  path="profile" element={<Profile />}  />
+                  <Route  path="profile" element={<Profile />} >
+                      <Route  path="posts" index element={<MyPosts />}  />
+                      <Route  path="videos" element={<MyVideos />}  />
+                      <Route  path="photos" element={<MyPhotos />}  />
+                      <Route  path="friends" element={<Friends />}  />
+                  </Route>
                   <Route  path="message" element={<Message />}  />
                   <Route  path="events" element={<Events />}  />
                   <Route  path="stories" element={<Stories />}  />
