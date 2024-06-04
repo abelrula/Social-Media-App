@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom'
 
 const Header: () => JSX.Element = () => {
   return (
-    <div className="fixed bg-white w-webkit top-0 flex items-center justify-between w-45 h-13 p-2">
+    <div className=" z-50 fixed bg-white w-webkit top-0 flex items-center justify-between w-45 h-13 p-2">
         <div className='w-96 bg-slate-100 flex items-center rounded-xl p-1.5 h-6 cursor-pointer'>
             <BiSearch className='text-gray-600' />
             <input className='outline-none rounded-none text-base font-mono bg-transparent' type='text' placeholder=' Type in Search'/>

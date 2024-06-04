@@ -9,7 +9,7 @@ import { Link, Outlet } from "react-router-dom"
 type catogriesType=string
 
 const ProfilePage = () => {
- 
+ console.log("abela")
 
   const catogries:catogriesType[]=["posts","photos","videos","friends"]
   return (
@@ -18,7 +18,7 @@ const ProfilePage = () => {
             <img className="w-full h-[190px] object-cover"  src={shifaaz}/>
             <div className="flex items-start relative justify-between">
                    <span  className="flex gap-2.5 relative ">
-                        <img className="w-24 h-24 rounded-full object-cover absolute top-[-25px]left-3.5 object-center"   src={guilherme}/>
+                        <img className="w-24 h-24 rounded-full object-cover absolute -top-10 left-3.5 object-center z-0 "   src={guilherme}/>
                       <span className="relative top--3.5 left-[120px]">
                          <p className="font-sans font-bold text-xl">Abel Zewdu</p>
                          <p className="font-mono text-zinc-500 text-xs">367 friends</p>
@@ -31,7 +31,7 @@ const ProfilePage = () => {
             </div>
             <ul className="flex gap-2.5 mt-12">
                   {catogries.map((item,i)=>(
-                   <Link to={item} className="px-1.5 py-1.5 rounded-xl text-white font-mono text-xs bg-sky-900 no-underline" key={i}>{item}</Link>
+                   <Link to={item === "posts" ? "." : item} className="px-1.5 py-1.5 rounded-xl text-white font-mono text-xs bg-sky-900 no-underline" key={i}>{item}</Link>
                   ))}
             </ul>
          </section>
