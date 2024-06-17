@@ -16,7 +16,7 @@ import family from"../assets/family.jpg"
 import { BsEmojiTear } from 'react-icons/bs'
 import { FaRegCommentDots } from 'react-icons/fa'
 import ProfileImage from './ProfileImage'
- 
+  
 
 type postedContentsDataType= {
   owner: string;
@@ -314,6 +314,8 @@ type postedContentsDataType= {
     postedTime:new Date()
    }
  ]
+ console.log("Abel");
+ 
 const PostedContents = ()=> {
   
    return (

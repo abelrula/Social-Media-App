@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
   import Feed from './Pages/Feed/Feed'
 import Memories from './Pages/Memories/Memories'
 import Friends from './Pages/Friends/Friends'
-import Layout from './Layouts/Layout'
+ import Layout from './Layouts/Layout'
 import Home from './Pages/Home/Home'
 import Profile from './Pages/Profile/Profile'
 import Message from './Pages/Message/Message'
@@ -11,6 +11,7 @@ import Stories from './Pages/Stories/Stories'
 import MyPosts from './Pages/Profile/ProfileSubPages/MyPosts'
 import MyVideos from './Pages/Profile/ProfileSubPages/MyVideos'
  import MyPhotos from './Pages/Profile/ProfileSubPages/MyPhotos'
+import MyFriends from './Pages/Profile/ProfileSubPages/MyFriends'
   
 
 function App() {
@@ -24,10 +25,10 @@ function App() {
                   <Route  path="feed" element={<Feed />}  />
                   <Route  path="memories" element={<Memories />}  />
                   <Route  path="profile" element={<Profile />} >
-                      <Route  path="posts" index element={<MyPosts />}  />
+                      <Route    index element={<MyPosts />}  />
                       <Route  path="videos" element={<MyVideos />}  />
                       <Route  path="photos" element={<MyPhotos />}  />
-                      <Route  path="friends" element={<Friends />}  />
+                      <Route  path="friends" element={<MyFriends />}  />
                   </Route>
                   <Route  path="message" element={<Message />}  />
                   <Route  path="events" element={<Events />}  />
