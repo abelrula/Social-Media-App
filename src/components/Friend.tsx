@@ -9,13 +9,14 @@ import { PiDotsThree } from "react-icons/pi";const Friend = () => {
       <p className="text-start font-mono text-xs text-slate-700">marci michael</p>
       <p className="text-start font-mono text-xs text-slate-500">12 mutaul friends</p>
     </span>
-    <PiDotsThree onClick={()=>{setOpen(true);setTimeout(() => { setOpen(false) }, 100);
+    <PiDotsThree onClick={()=>{setOpen(true);setTimeout(() => { setOpen(false) }, 5000);
  } } />
       {open && 
        <div className="flex flex-col gap-1 items-center w-24 absolute left-40 -top-9">
-          <span className=" bg-sky-900 hover:bg-sky-800 hover:cursor-pointer px-2 w-full py-1 text-white rounded-xl text-start font-mono text-xs">un follow</span>
-          <span className=" bg-sky-900 hover:bg-sky-800 hover:cursor-pointer px-2 w-full py-1 text-white rounded-xl text-start font-mono text-xs">un follow</span>
-          <span className=" bg-sky-900 hover:bg-sky-800 hover:cursor-pointer px-2 w-full py-1 text-white rounded-xl text-start font-mono text-xs">see profile</span>
+          <span className=" bg-gray-900 hover:bg-gray-800 hover:cursor-pointer px-2 w-full py-1 text-white rounded-xl text-start font-mono text-xs">Un Follow</span>
+          <span className=" bg-gray-900 hover:bg-gray-800 hover:cursor-pointer px-2 w-full py-1 text-white rounded-xl text-start font-mono text-xs">Un Follow</span>
+          <span className=" bg-gray-900 hover:bg-gray-800 hover:cursor-pointer px-2 w-full py-1 text-white rounded-xl text-start font-mono text-xs">
+          See Profile</span>
         </div>
         }
 </div>

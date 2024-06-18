@@ -13,12 +13,12 @@ const ProfilePage = () => {
 
   const catogries:catogriesType[]=["posts","photos","videos","friends"]
   return (
-    <div className='container'>
+    <div className='container '>
          <section className="profileContainer__top">
             <img className="w-full h-[190px] object-cover"  src={shifaaz}/>
             <div className="flex items-start relative justify-between">
                    <span  className="flex gap-2.5 relative ">
-                        <img className="w-24 h-24 rounded-full object-cover absolute -top-10 left-3.5 object-center z-0 "   src={guilherme}/>
+                        <img className="w-24 h-24 rounded-full object-cover absolute -top-10 left-3.5 object-center z-10 "   src={guilherme}/>
                       <span className="relative top--3.5 left-[120px]">
                          <p className="font-sans font-bold text-xl">Abel Zewdu</p>
                          <p className="font-mono text-zinc-500 text-xs">367 friends</p>

@@ -1,11 +1,11 @@
  import { events, freinds, groups, onlineContacts } from '../data/data'
 import { MdEventSeat } from 'react-icons/md'
 import travel1 from"../assets/travel1.jpg"
-const SideBarAll = () => {
+const HomeSideInfo = () => {
   return (
     <>
-        <div className="flex flex-col gap-2.5">
-              <div className="bg-zinc-100 p-2.5 w-56 h-auto rounded-lg overflow-hidden">
+        <div className="flex flex-col gap-2.5  ">
+              <div className="  p-2.5 w-56 h-auto rounded-lg overflow-hidden bg-[#c3deff]">
                 <h4 className="text-center text-zinc-400 font-mono text-sm">your upcoming events </h4>
                 <ul className="flex flex-col gap-1.5">
                     {
@@ -17,7 +17,7 @@ const SideBarAll = () => {
                     }
                 </ul>
               </div> 
-              <div className="bg-zinc-100 p-2.5 w-56 h-auto rounded-lg overflow-hidden">
+              <div className=" p-2.5 w-56 h-auto rounded-lg overflow-hidden bg-[#c3deff] ">
                 <h4 className="text-center text-zinc-400 font-mono text-sm">Birthdays</h4>
                 <ul className="flex flex-col gap-1.5">
                 {
@@ -31,8 +31,8 @@ const SideBarAll = () => {
                 </ul>
               </div>
            </div>
-           <div className="mt--2.5 flex flex-col gap-1.5">
-           <div className="bg-zinc-100 p-2.5 w-56 h-auto rounded-lg overflow-hidden">
+           <div className="mt--2.5 flex flex-col gap-1.5  ">
+           <div className=" p-2.5 w-56 h-auto rounded-lg overflow-hidden bg-[#c3deff] ">
             <h4 className="text-center text-zinc-400 font-mono text-sm">community chats</h4>
             <ul className="flex flex-col ">
                  {
@@ -44,7 +44,7 @@ const SideBarAll = () => {
                  }
             </ul>
            </div> 
-           <div className="bg-zinc-100 p-2.5 w-56 h-auto rounded-lg overflow-hidden">
+           <div className=" p-2.5 w-56 h-auto rounded-lg overflow-hidden bg-[#c3deff] ">
             <h4 className="text-center text-zinc-400 font-mono text-sm">Group Chats</h4>
             <ul className="flex flex-col">
                  {
@@ -56,7 +56,7 @@ const SideBarAll = () => {
                  }
             </ul>
            </div>
-           <div className="bg-zinc-100 p-2.5 w-56 h-auto rounded-lg overflow-hidden">
+           <div className=" p-2.5 w-56 h-auto rounded-lg overflow-hidden bg-[#c3deff] ">
             <h4 className="text-center text-zinc-400 font-mono text-sm">Online Contacts</h4>
             <ul className="flex flex-col">
                  {
@@ -73,4 +73,4 @@ const SideBarAll = () => {
   )
 }
 
-export default SideBarAll
+export default HomeSideInfo

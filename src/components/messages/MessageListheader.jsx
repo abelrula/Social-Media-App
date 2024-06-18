@@ -1,5 +1,5 @@
 import React from "react";
- import image1 from "../../../assets/messaging.jpg";
+ import image1 from "../../assets/messaging.jpg";
 const MessageListheader = () => {
   return (
     <div className="flex w-full  flex-col gap-24 bg-[#032225] items-center justify-center text-center">

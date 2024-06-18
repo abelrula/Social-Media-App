@@ -1,5 +1,5 @@
 import PostedContents from "../../components/PostedContents"
-import SideBarAll from "../../components/SideBarAll"
+import HomeSideInfo from "../../components/HomeSideInfo"
 import Post from "../../components/Post"
 
  
@@ -10,7 +10,7 @@ import Post from "../../components/Post"
              <Post />
              <PostedContents />
              </div>
-             <SideBarAll />
+             <HomeSideInfo />
       </div>
    )
  }

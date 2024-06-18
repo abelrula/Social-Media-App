@@ -3,8 +3,7 @@ import romario2 from"../../../assets/romario2.jpg"
 import yannic from"../../../assets/yannic-laderach-Dqx4XWuXu7w-unsplash.jpg"
 import family from"../../../assets/family.jpg"
 import PostedContents from "../../../components/PostedContents"
-import Post from "../../../components/Post"
-const MyPosts = () => {
+ const MyPosts = () => {
   const imagesPostedByTheOwner:string[]=[romario2,guilherme,yannic,family]
   const editTypes:string[]=["AddTodos","Edit details","Add Hobies"]
   return (
@@ -26,8 +25,7 @@ const MyPosts = () => {
                 }
               </div>
             </div>
-            <div className=" w-[65%] overflow-y-scroll overflow-x-hidden flex gap-6 flex-col mt-2.5">
-             <Post />
+            <div className=" w-[65%]  flex gap-6 flex-col mt-2.5  overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-thin ">
              <PostedContents />
             </div> 
           </section>
