@@ -5,14 +5,15 @@ import Friends from './Pages/Friends/Friends'
  import Layout from './Layouts/Layout'
 import Home from './Pages/Home/Home'
 import Profile from './Pages/Profile/Profile'
-import Message from './Pages/Message/Message'
-import Events from './Pages/Events/Events'
+ import Events from './Pages/Events/Events'
 import Stories from './Pages/Stories/Stories'
 import MyPosts from './Pages/Profile/ProfileSubPages/MyPosts'
 import MyVideos from './Pages/Profile/ProfileSubPages/MyVideos'
  import MyPhotos from './Pages/Profile/ProfileSubPages/MyPhotos'
 import MyFriends from './Pages/Profile/ProfileSubPages/MyFriends'
-  
+import MessagesConvoversation from "./components/messages/MessagesConvoversation/MessagesConvoversation";
+import MessageListheader from "./components/messages/MessageListheader";  
+import MessageLayout from "./components/messages/MessageLayout";
 
 function App() {
  
@@ -30,7 +31,10 @@ function App() {
                       <Route  path="photos" element={<MyPhotos />}  />
                       <Route  path="friends" element={<MyFriends />}  />
                   </Route>
-                  <Route  path="message" element={<Message />}  />
+                <Route path="message" element={<MessageLayout />}>
+                    <Route index element={<MessageListheader />} />
+                    <Route path=":id" element={<MessagesConvoversation />} />
+                </Route>
                   <Route  path="events" element={<Events />}  />
                   <Route  path="stories" element={<Stories />}  />
                </Route>

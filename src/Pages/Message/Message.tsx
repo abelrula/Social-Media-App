@@ -1,10 +1,9 @@
-  const Message = () => {
+import MessageLayout from "../../components/messages/MessageLayout"  
+const Message = () => {
   return (
     <>
-       <div>
-        Message
-      </div>
-    </>
+         <MessageLayout/>
+     </>
   );
 };
 

@@ -21,7 +21,17 @@ export default {
   },
   plugins: [
     // ...
-    require('tailwind-scrollbar')({ preferredStrategy: 'pseudoelements' }),  // default: 'standard'
+    require( 'tailwind-scrollbar' )( { preferredStrategy: 'pseudoelements' } ),  // default: 'standard'
+    //  plugin(function ({ addComponents, theme }) {
+    //   addComponents({
+    //     '.card': {
+    //       backgroundColor: theme('colors.white'),
+    //       borderRadius: theme('borderRadius.lg'),
+    //       padding: theme('spacing.6'),
+    //       boxShadow: theme('boxShadow.xl'),
+    //     }
+    //   })
+    // })
 ],
 }
 

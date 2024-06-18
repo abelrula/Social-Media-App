@@ -1,28 +1,36 @@
 import { IoIosSettings } from "react-icons/io";
 import { IoHelpCircle } from "react-icons/io5";
   import {BsEggFried } from "react-icons/bs";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { groups,menuLinks } from "../data/data";
+import { useState } from "react";
+import { Link } from "react-router-dom";
   
- const Sidebar = () => {
+const Sidebar = () => {
+   
+  // const [ toggleSideBar, setToggleSideBar ] = useState(true)
+  const {pathname} = useLocation()
+  console.log(pathname);
+  
    const selectedObj:React.CSSProperties = {
     color: "black",
     background: "rgb(195 195 195)",
   };
 
   return (
-    <div className="bg-white sticky flex flex-col pl-1 pr-0.5 h-screen top-0 left-2">
-      <div className="flex gap-2 items-center mt--5">
+    <div className={`bg-white sticky flex flex-col pl-1 none pr-0.5 h-screen top-0 left-2 ${pathname === "/message" || pathname === "/message/id"  ? "hidden" : "block" }`}>
+      <Link to="/" className="flex gap-2 items-center mt--5">
         <BsEggFried className="text-4 text-blue-900 font-thin" />
         <h1 className="text-2xl text-blue-900 font-thin font-mono ml-5 mb-1">SocialNation</h1>
-      </div>
+      </Link>
       <div className="flex flex-col py-2.5 h-screen mt-1.5">
         <label className="cursor-pointer">Favorites</label>
         <div className="flex flex-col py-2.5 gap-2">
           {menuLinks.map((link, i) => (
             <NavLink
               style={({ isActive }) => (isActive ? selectedObj : null)}
-              to={link.to}
+              to={ link.to }
+              // onClick={()=>link.to === "messages" ? setToggleSideBar(false) : true  }
               className="flex items-center gap-1 w-full relative h-6 no-underline"
               key={i}
             >
