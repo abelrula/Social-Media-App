@@ -38,3 +38,6 @@ declare type menuLinksType={
   to: string;
   icon: JSX.Element;
 }
+declare  type profileNameType={
+  profileName :string
+  }

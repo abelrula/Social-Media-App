@@ -3,22 +3,19 @@ import { IoHelpCircle } from "react-icons/io5";
   import {BsEggFried } from "react-icons/bs";
 import { NavLink, useLocation } from "react-router-dom";
 import { groups,menuLinks } from "../data/data";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+ import { Link } from "react-router-dom";
   
 const Sidebar = () => {
    
-  // const [ toggleSideBar, setToggleSideBar ] = useState(true)
-  const {pathname} = useLocation()
-  console.log(pathname);
-  
-   const selectedObj:React.CSSProperties = {
+   const {pathname} = useLocation()
+  const selectedObj: React.CSSProperties = {
     color: "black",
     background: "rgb(195 195 195)",
   };
+ console.log(pathname.includes("message"));
 
   return (
-    <div className={`bg-white sticky flex flex-col pl-1 none pr-0.5 h-screen top-0 left-2 ${pathname === "/message" || pathname === "/message/id"  ? "hidden" : "block" }`}>
+    <div className={`bg-white sticky flex flex-col pl-1 none pr-0.5 h-screen top-0 left-2 ${pathname.includes("message") ? "hidden" : "block" }`}>
       <Link to="/" className="flex gap-2 items-center mt--5">
         <BsEggFried className="text-4 text-blue-900 font-thin" />
         <h1 className="text-2xl text-blue-900 font-thin font-mono ml-5 mb-1">SocialNation</h1>

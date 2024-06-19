@@ -8,7 +8,7 @@ const MessageList = () => {
   
   const selectedObj = {
     color: "black",
-    background: "#b3960070",
+    background: "#194b006b",
   };
   useEffect(() => {
     async function fetchMessages() {

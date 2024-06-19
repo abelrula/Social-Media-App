@@ -11,7 +11,7 @@ import MyPosts from './Pages/Profile/ProfileSubPages/MyPosts'
 import MyVideos from './Pages/Profile/ProfileSubPages/MyVideos'
  import MyPhotos from './Pages/Profile/ProfileSubPages/MyPhotos'
 import MyFriends from './Pages/Profile/ProfileSubPages/MyFriends'
-import MessagesConvoversation from "./components/messages/MessagesConvoversation/MessagesConvoversation";
+import MessagesConvoversation from "./components/messages/MessagesConvoversation";
 import MessageListheader from "./components/messages/MessageListheader";  
 import MessageLayout from "./components/messages/MessageLayout";
 
@@ -21,7 +21,7 @@ function App() {
             <BrowserRouter>
                 <Routes>  
                <Route  path="/" element={<Layout />} >
-                  <Route index element={<Home />}   />
+                <Route index element={<Home />}   />
                   <Route  path="friends" element={<Friends />}  />
                   <Route  path="feed" element={<Feed />}  />
                   <Route  path="memories" element={<Memories />}  />
