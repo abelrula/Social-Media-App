@@ -14,7 +14,34 @@ import romario2 from"../assets/romario2.jpg"
 import guilherme from "../assets/guilherme-stecanella-_dH-oQF9w-Y-unsplash.jpg"
 import yannic from"../assets/yannic-laderach-Dqx4XWuXu7w-unsplash.jpg"
 import shifaaz from"../assets/shifaaz-shamoon-O0xQcGATOw4-unsplash.jpg"
-import family from"../assets/family.jpg"
+import family from "../assets/family.jpg"
+ import img1 from "../assets/ayo-ogunseinde-6W4F62sN_yI-unsplash.jpg"
+ import img2 from "../assets/jakob-owens-lkMJcGDZLVs-unsplash.jpg"
+ import img3 from "../assets/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+ import img4 from "../assets/toa-heftiba-O3ymvT7Wf9U-unsplash.jpg"
+ import img5 from "../assets/christopher-campbell-rDEOVtE7vOs-unsplash.jpg"
+ import img6 from "../assets/ian-dooley-d1UPkiFd04A-unsplash.jpg"
+import img7 from "../assets/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg"
+import img8 from "../assets/barnabas-lartey-odoi-tetteh-1l1N_nhSLJE-unsplash.jpg"
+import img9 from "../assets/barnabas-lartey-odoi-tetteh-tW92VzfPEW4-unsplash.jpg"
+import img10 from "../assets/brooke-cagle-H6We-lFziBg-unsplash.jpg"
+import img11 from "../assets/brooke-cagle-_wYQnEAMAQk-unsplash.jpg"
+import img12 from "../assets/brooke-cagle-ezgW6z6oIvA-unsplash.jpg"
+import img13 from "../assets/brooke-cagle-nNj_e121IbI-unsplash.jpg"
+import img14 from "../assets/caique-nascimento-KJE--xk4AWE-unsplash.jpg"
+import img15 from "../assets/chester-wade-msnyz9L6gs4-unsplash.jpg"
+import img16 from "../assets/donny-jiang-BejzuVb1txA-unsplash.jpg"
+import img17 from "../assets/eugenia-maximova-RVyZ_Z86GK0-unsplash.jpg"
+import img18 from "../assets/joshua-rawson-harris-_brbffwqtRM-unsplash.jpg"
+import img19 from "../assets/kinga-howard-5qNTJcCckmc-unsplash.jpg"
+import img20 from "../assets/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg"
+import img21 from "../assets/mohammad-faruque-SpIKPT8zeAs-unsplash.jpg"
+import img22 from "../assets/petr-ovralov-qQ01rvKkE0w-unsplash.jpg"
+import img23 from "../assets/sonnie-hiles-gG70fyu3qsg-unsplash.jpg"
+import img24 from "../assets/tyler-nix-KLLcTHE20bI-unsplash.jpg"
+import img25 from "../assets/v2osk-oWt--QQVNr4-unsplash.jpg"
+
+ 
 export const postedContentsData: postedContentsDataType[] = [
   {
     owner:'Robert Hammond',
@@ -474,4 +501,124 @@ export const menuLinks:menuLinksType[]= [
     icon: <BiMessage className="icon" fill="#050505" />,
   }
 ];
+export   const friends:friendsType[] = [
+        {
+        name: "simon panda",
+        profile:img1,
+        mutualFriendes:15
+     },
+        {
+        name: "chris bumsted",
+        profile: img2,
+        mutualFriendes:5
+     },
+     {
+        name: "shwazingear boreto",
+        profile: img3,
+        mutualFriendes:15
+     },
+     {
+        name: "chris hemsworh",
+        profile: img4,
+        mutualFriendes:15
+     },
+     {
+        name: "Briana Murillo",
+        profile: img5,
+        mutualFriendes:15
+     },
+     {
+        name: "Allyson Hensley",
+        profile: img6,
+        mutualFriendes:15
+     },{
+        name: "Skylar Cooper",
+        profile: img7,
+        mutualFriendes:15
+  },
+     {
+        name: "Alyssa Frazier",
+        profile: img8,
+        mutualFriendes:15
+  },
+       {
+        name: "Julie Carroll",
+        profile: img9,
+        mutualFriendes:15
+     },
+       {
+        name: "Helen Buchanan",
+        profile: img10,
+        mutualFriendes:15
+  },
+         {
+        name: "Enrique Goodman",
+        profile: img11,
+        mutualFriendes:15
+  }
+        ,   {
+        name: "Samira David",
+        profile: img12,
+        mutualFriendes:15
+  },
+             {
+        name: "Lainey Jimenez",
+        profile: img13,
+        mutualFriendes:15
+  },
+               {
+        name: "Emir Moran",
+        profile: img14,
+        mutualFriendes:15
+  },
+                 {
+        name: "Izabella Olson",
+        profile: img15,
+        mutualFriendes:15
+     },
+       {
+        name: "Sevyn Vu",
+        profile: img16,
+        mutualFriendes:15
+     } , {
+        name: "Alonso Trejo",
+        profile: img17,
+        mutualFriendes:15
+     }
+      , {
+        name: "Azrael Ford",
+        profile: img18,
+        mutualFriendes:15
+     } , {
+        name: "Meilani Webster",
+        profile: img19,
+        mutualFriendes:15
+     },
+       {
+        name: "Isaiah Webster",
+        profile: img20,
+        mutualFriendes:15
+     }, {
+        name: "Evie Greer",
+        profile: img21,
+        mutualFriendes:15
+     }, {
+        name: "Kingsley Swanson",
+        profile: img22,
+        mutualFriendes:15
+     }, {
+        name: "Oscar Roberts",
+        profile: img23,
+        mutualFriendes:15
+     }, {
+        name: "Reid Benjamin",
+        profile: img24,
+        mutualFriendes:15
+     }, {
+        name: "Jaylee Grant",
+        profile: img25,
+        mutualFriendes:15
+     }
+      
+     ]
  

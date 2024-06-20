@@ -19,9 +19,9 @@ const MessageList = () => {
     }
     fetchMessages();
   }, [] );
-  return (
+   return (
     <div className="bg-white min-h-screen flex flex-col gap-4  py-2.5 px-1 min-w-52 border-r-lime-950 border">
-      <NavLink to="." path="relative" className="text-[30px] text-green-950 font-mono">
+      <NavLink to="." path="relative" className=" bg-[#032225] p-1.5 rounded-lg  text-[30px] text-white font-mono">
         Chats
       </NavLink>
         <span className="bg-slate-100 rounded-xl p-1.5 w-[420px] flex items-center border-[#d9d9d9] border">

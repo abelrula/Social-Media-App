@@ -1,6 +1,4 @@
- type profileNameType={
-  profileName :string
-  }
+
  const ProfileImage = ({profileName}:profileNameType)=> {
     
   const nameParts:string[] = profileName?.split(" ");

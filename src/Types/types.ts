@@ -40,4 +40,9 @@ declare type menuLinksType={
 }
 declare  type profileNameType={
   profileName :string
-  }
+}
+  declare type friendsType ={
+       name: string;
+       profile:string;
+     mutualFriendes: number;
+     } 
