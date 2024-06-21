@@ -42,7 +42,14 @@ declare  type profileNameType={
   profileName :string
 }
   declare type friendsType ={
-       name: string;
+       name: string
        profile:string;
      mutualFriendes: number;
-     } 
+} 
+declare type postedPhoto = {
+  image: string,
+  reactions: {
+    hate: number,
+    love: number
+  }
+}

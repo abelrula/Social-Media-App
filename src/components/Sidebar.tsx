@@ -15,10 +15,10 @@ const Sidebar = () => {
  console.log(pathname.includes("message"));
 
   return (
-    <div className={`bg-white sticky flex flex-col pl-1 none pr-0.5 h-screen top-0 left-2 ${pathname.includes("message") ? "hidden" : "block" }`}>
-      <Link to="/" className="flex gap-2 items-center mt--5">
+    <div className={`bg-white sticky flex flex-col p-3 none pr-0.5 h-screen top-0 left-2  ${pathname.includes("message") ? "hidden" : "block" }`}>
+      <Link to="/" className="flex items-center mt-5">
         <BsEggFried className="text-4 text-blue-900 font-thin" />
-        <h1 className="text-2xl text-blue-900 font-thin font-mono ml-5 mb-1">SocialNation</h1>
+        <h1 className="text-xl text-blue-900 font-thin font-mono ml-1 mb-1">SocialNation</h1>
       </Link>
       <div className="flex flex-col py-2.5 h-screen mt-1.5">
         <label className="cursor-pointer">Favorites</label>

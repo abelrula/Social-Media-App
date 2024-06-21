@@ -30,7 +30,7 @@ const Post = () => {
         <IoIosAttach className='icon' />
         <BsEmojiSmile  className='icon' />        
       </span> 
-     <button className="rounded-lg px-2.5 cursor-pointer text-white font-mono border-zinc-400 font-bold hover:bg-zinc-500 bg-cyan-950">post</button>
+     <button className="rounded-lg px-2.5 cursor-pointer text-white font-mono border-zinc-400   hover:bg-zinc-500 bg-cyan-950">post</button>
     </div>
     </div>
    )

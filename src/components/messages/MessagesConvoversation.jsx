@@ -72,7 +72,7 @@ import { BsEmojiSmile } from "react-icons/bs";
             <textarea className="w-[430px] rounded-2xl outline-none text-sm" type="text" placeholder="hy"></textarea>
             <BsEmojiSmile fontSize={24} className="infoIcon" />
           </div>
-          <button className=" py-2.5 px-8 text-white text-base font-thin h-fit w-fit rounded-lg">send</button>
+          <button className="py-2.5 px-8 text-white text-base font-thin h-fit w-fit rounded-lg">send</button>
         </div>
       </div>
     </div>
