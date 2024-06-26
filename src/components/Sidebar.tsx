@@ -40,8 +40,8 @@ const Sidebar = () => {
                <label>Groups</label>
         {groups.map((link, i) => (
             <NavLink
-              // style={({ isActive }) => (isActive ? selectedObj : null)}
-              to={link.to}
+              style={({ isActive }) => (isActive ? selectedObj : null)}
+              to={`groups/${link.name}`}
               className="flex items-center gap-1 w-full relative h-6 no-underline"
               key={i}
             >

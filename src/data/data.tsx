@@ -338,7 +338,133 @@ image:["https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&
   },
    
  
- ]
+]
+ export const groupPostedContents: postedContentsDataType[] = [
+  {
+    owner:'Robert Hammond',
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making 😘",
+    image: ["https://images.unsplash.com/photo-1598399615261-adafbbb044fc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    reactions:{
+      like:2,
+      unliked:182,
+      hot:27,
+      cry:45,
+      laugh:0
+    },
+    comment:215,
+    share:83,
+    postedTime:new Date()
+   },
+   {
+    owner:'Robert Hammond',
+    titleDescription:"When I am not working",
+    image: ["https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    reactions:{
+      like:7612,
+      unliked:18,
+      hot:387,
+      cry:45,
+      laugh:20
+    } ,
+    comment:615,
+    share:3,
+    postedTime:new Date()
+
+   },
+   {
+    owner:'Robert Hammond',
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image: ["https://images.unsplash.com/photo-1526840592087-ce151244701e?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    reactions:{
+      like:762,
+      unliked:8,
+      hot:37,
+      cry:45,
+      laugh:20
+    } ,
+    comment:615,
+    share:3,
+    postedTime:new Date()
+
+   },
+   {
+    owner:'Robert Hammond',
+    titleDescription:"meditating in the morning breathing mountain airs 😇",
+     image: [ "https://images.unsplash.com/photo-1603212146927-105abab855f6?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    reactions:{
+      like:762,
+      unliked:8,
+      hot:37,
+      cry:45,
+      laugh:20
+    } ,
+    comment:615,
+    share:3,
+    postedTime:new Date()
+   },
+   {
+    owner:'Robert Hammond',
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image: ["https://images.unsplash.com/photo-1528054433354-7ab84caaccc0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    reactions:{
+      like:72,
+      unliked:895,
+      hot:7,
+      cry:45,
+      laugh:250
+    } ,
+    comment:615,
+    share:3,
+    postedTime:new Date()
+  },
+     {
+    owner:'Robert Hammond',
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making 😘",
+    image: ["https://images.unsplash.com/photo-1600250395178-40fe752e5189?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    reactions:{
+      like:2,
+      unliked:182,
+      hot:27,
+      cry:45,
+      laugh:0
+    },
+    comment:215,
+    share:83,
+    postedTime:new Date()
+   },
+   {
+    owner:'Robert Hammond',
+    titleDescription:"When I am not working",
+    image: ["https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    reactions:{
+      like:7612,
+      unliked:18,
+      hot:387,
+      cry:45,
+      laugh:20
+    } ,
+    comment:615,
+    share:3,
+    postedTime:new Date()
+
+   },
+   {
+    owner:'Robert Hammond',
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image: ["https://images.unsplash.com/photo-1626248801379-51a0748a5f96?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    reactions:{
+      like:762,
+      unliked:8,
+      hot:37,
+      cry:45,
+      laugh:20
+    } ,
+    comment:615,
+    share:3,
+    postedTime:new Date()
+
+  }]
 export const groups:groupType[]=[
     {
         name:"Programming World",
@@ -352,7 +478,7 @@ export const groups:groupType[]=[
         img:"https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?q=80&w=773&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
     },   {
-        name:"Foot ball",
+        name:"Football",
         unseenTopics:76,
         img:"https://images.unsplash.com/photo-1614632537423-1e6c2e7e0aab?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
@@ -481,25 +607,14 @@ export const events:eventsType[]=[
  ]
 export const menuLinks:menuLinksType[]= [
   {
-    title: "Home",
+    title: "Feed",
     to: "/",
     icon: <BiHomeAlt2 className="icon" fill="#050505" />,
-  },
-  {
-    title: "Feed",
-    to: "feed",
-    icon: <FaRegCalendarAlt className="icon" fill="#050505" />,
   },
   {
     title: "Friends",
     to: "friends",
     icon: <HiUserGroup className="icon" fill="#050505" />,
-  },
- 
-  {
-    title: "Memories",
-    to: "memories",
-    icon: <BsActivity className="icon" fill="#050505" />,
   },
   {
     title: "Message",

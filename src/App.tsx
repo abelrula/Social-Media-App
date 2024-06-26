@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Memories from './Pages/Memories/Memories'
 import Friends from './Pages/Friends/Friends'
  import Layout from './Layouts/Layout'
-import Home from './Pages/Home/Home'
 import Profile from './Pages/Profile/Profile'
  import Events from './Pages/Events/Events'
 import Stories from './Pages/Stories/Stories'
@@ -14,6 +13,8 @@ import MyFriends from './Pages/Profile/ProfileSubPages/MyFriends'
 import MessagesConvoversation from "./components/messages/MessagesConvoversation";
 import MessageListheader from "./components/messages/MessageListheader";  
 import MessageLayout from "./components/messages/MessageLayout";
+import GroupsLayout from './Layouts/GroupsLayout'
+import Group from './components/Group'
 
 function App() {
  
@@ -21,9 +22,8 @@ function App() {
             <BrowserRouter>
                 <Routes>  
                <Route  path="/" element={<Layout />} >
-                <Route index element={<Home />}   />
+                  <Route index element={<Feed />}  />
                   <Route  path="friends" element={<Friends />}  />
-                  <Route  path="feed" element={<Feed />}  />
                   <Route  path="memories" element={<Memories />}  />
                   <Route  path="profile" element={<Profile />} >
                       <Route    index element={<MyPosts />}  />
@@ -34,6 +34,9 @@ function App() {
                 <Route path="message" element={<MessageLayout />}>
                     <Route index element={<MessageListheader />} />
                     <Route path=":id" element={<MessagesConvoversation />} />
+              </Route>
+                <Route path="groups" element={<GroupsLayout />}>
+                    <Route path=":id" element={<Group />} />
                 </Route>
                   <Route  path="events" element={<Events />}  />
                   <Route  path="stories" element={<Stories />}  />
