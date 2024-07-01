@@ -1,11 +1,7 @@
-import React from "react";
-  const Stories = () => {
+import Story from "../../components/Story" 
+const Stories = () => {
   return (
-    <>
-       <div>
-        Stories
-      </div>
-    </>
+    <Story />
   );
 };
 

@@ -1,17 +1,19 @@
  import { BiSearch } from 'react-icons/bi'
  import { CiChat1 } from 'react-icons/ci'
 import { IoIosNotificationsOutline } from 'react-icons/io'
- import ProfileImage from './ProfileImage';
+//  import ProfileImage from './ProfileImage';
 import { NavLink, useLocation } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 import { BsEggFried } from 'react-icons/bs';
+import { profileImg } from '../data/data';
 
 const Header: () => JSX.Element = () => {
 
+ 
   const {pathname}=useLocation()
   return (
     <div className="fixed bg-white w-webkit top-0 flex items-center justify-between  h-13 p-3 border-b-zinc-200 border z-50">
-     {pathname.includes("/message") &&  <Link to="/" className="flex items-center mt--5">
+     {pathname.includes("/message") || pathname.includes("/stories") &&  <Link to="/" className="flex items-center mt--5">
         <BsEggFried className="text-4 text-blue-900 font-thin" />
         <h1 className="text-xl text-blue-900 font-thin font-mono ml-2 mb-1">SocialNation</h1>
       </Link>}
@@ -22,7 +24,10 @@ const Header: () => JSX.Element = () => {
      <div className="flex items-center gap-1"> 
         <CiChat1  className='text-base cursor-pointer hover:scale-50' />
         <IoIosNotificationsOutline className='text-base cursor-pointer  hover:scale-50' />
-        <NavLink className="flex text-sm font-mono items-center ml-4 no-underline gap-1" to="profile">Abel Zewdu <ProfileImage profileName="abel zewdu"/> </NavLink> 
+        <NavLink className="flex text-sm font-mono items-center ml-4 no-underline gap-1" to="profile">Abel Zewdu
+          {/* <ProfileImage profileName="abel zewdu" /> */}
+                           <img className="w-8 h-8 rounded-full object-cover object-center " src={profileImg} /> 
+        </NavLink> 
      </div>  
     </div>
   )
