@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
  import { NavLink } from "react-router-dom";
-import { BsSearch } from "react-icons/bs";
-import { BiSearch } from "react-icons/bi";
+ import { BiSearch } from "react-icons/bi";
 const MessageList = () => {
   const [ messages, setMessages ] = useState( [] );
   const [ filter, setFilter ] = useState("" );
@@ -21,7 +20,7 @@ const MessageList = () => {
   }, [] );
    return (
     <div className="bg-white min-h-screen flex flex-col gap-4  py-2.5 px-1 min-w-52 border-r-lime-950 border">
-      <NavLink to="." path="relative" className=" bg-[#032225] p-1.5 rounded-lg  text-[30px] text-white font-mono">
+      <NavLink to="." className=" bg-[#032225] p-1.5 rounded-lg  text-[30px] text-white font-mono">
         Chats
       </NavLink>
         <span className="bg-slate-100 rounded-xl p-1.5 w-[420px] flex items-center border-[#d9d9d9] border">

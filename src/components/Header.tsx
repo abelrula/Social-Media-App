@@ -13,10 +13,10 @@ const Header: () => JSX.Element = () => {
   const {pathname}=useLocation()
   return (
     <div className="fixed bg-white w-webkit top-0 flex items-center justify-between  h-13 p-3 border-b-zinc-200 border z-50">
-     {pathname.includes("/message") || pathname.includes("/stories") &&  <Link to="/" className="flex items-center mt--5">
+   <Link to="/" className="flex items-center mt--5">
         <BsEggFried className="text-4 text-blue-900 font-thin" />
         <h1 className="text-xl text-blue-900 font-thin font-mono ml-2 mb-1">SocialNation</h1>
-      </Link>}
+      </Link>
       <div className='w-96 bg-slate-100 flex items-center rounded-lg  p-2 h-6 cursor-pointer border border-zinc-200'>
             <BiSearch className='text-gray-600' />
             <input className='outline-none rounded-none text-sm font-mono bg-transparent' type='text' placeholder='Search'/>

@@ -53,3 +53,12 @@ declare type postedPhoto = {
     love: number
   }
 }
+declare type MessageConvoType= {
+  id: number,
+  name: string,
+  profile: string,
+  message:{
+    sender:string|number,
+    reciever: string | number
+  }[]
+  }

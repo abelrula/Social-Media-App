@@ -1,4 +1,3 @@
-import React from "react";
  import image1 from "../../assets/messaging.jpg";
 const MessageListheader = () => {
   return (

@@ -1,7 +1,6 @@
   import {AiOutlineMessage } from "react-icons/ai"
 import { FaUserPlus } from 'react-icons/fa'
- import shifaaz from"../assets/shifaaz-shamoon-O0xQcGATOw4-unsplash.jpg"
-import { Link, Outlet } from "react-router-dom"
+ import { Link, Outlet } from "react-router-dom"
 import { profileImg } from "../data/data"
 
 type catogriesType=string
