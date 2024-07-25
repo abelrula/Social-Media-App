@@ -1,11 +1,15 @@
- import { events, freinds, groups, onlineContacts } from '../data/data'
-import { MdEventSeat } from 'react-icons/md'
+ import { events, friends, groups, onlineContacts } from '../data/data'
+import { MdEventSeat, MdGroups } from 'react-icons/md'
 import travel1 from"../assets/travel1.jpg"
+import { FaBirthdayCake } from 'react-icons/fa'
+import { GoDot } from 'react-icons/go'
 const HomeSideInfo = () => {
+  
+   
   return (
     <>
         <div className="flex flex-col gap-2.5  ">
-              <div className="  p-2.5 w-56 h-auto rounded-lg overflow-hidden bg-[#c3deff]">
+              <div className="  p-2.5 w-56 h-auto rounded-lg overflow-hidden bg-white">
                 <h4 className="text-center text-zinc-400 font-mono text-sm">your upcoming events </h4>
                 <ul className="flex flex-col gap-1.5">
                     {
@@ -17,22 +21,25 @@ const HomeSideInfo = () => {
                     }
                 </ul>
               </div> 
-              <div className=" p-2.5 w-56 h-auto rounded-lg overflow-hidden bg-[#c3deff] ">
-                <h4 className="text-center text-zinc-400 font-mono text-sm">Birthdays</h4>
-                <ul className="flex flex-col gap-1.5">
+              <div className="relative p-2.5 w-60 h-auto rounded-lg overflow-hidden bg-white ">
+                <h4 className="text-center flex items-center justify-between text-zinc-400 font-mono text-sm">Birthdays <FaBirthdayCake /></h4>
+                <ul className="flex flex-col gap-1.5 p-1">
                 {
-                  freinds.map((freind,i)=>(
-                    <li className="flex items-center gap-2.5 no-underline h-8" key={i}>
+              friends.slice(0,4).map((freind,i)=>(
+                    <li className="group flex items-center gap-2.5 no-underline h-8 " key={i}>
                         <img className='w-6 h-6 rounded-full object-cover object-center' src={freind.profile} />
-                        <p className="text-xs font-mono flex flex-col text-zinc-600">{freind.name} 
-                        <span className='text-zinc-400 font-mono'>turning 28 years old</span></p></li>
+                        <p  className="w-full text-xs  font-mono flex justify-between  items-center text-zinc-600">{freind.name} 
+                      </p>
+                         <span className=" bg-sky-700 flex gap-2 items-start border text-white hover:bg-gray-800 w-17 h-5 hover:cursor-pointer p-1  rounded-xl text-start font-mono  text-[9px] "> Celebrate
+                         <FaBirthdayCake color='red' />
+                  </span>
+                        <span className='bg-black w-full mt-3  text-white text-xs  absolute bottom-0 hidden group-hover:block  font-mono'>turning 28 years old</span>
+                     </li>
                   ))
                  }
                 </ul>
-              </div>
-           </div>
-           <div className="mt--2.5 flex flex-col gap-1.5  ">
-           <div className=" p-2.5 w-56 h-auto rounded-lg overflow-hidden bg-[#c3deff] ">
+        </div>
+         <div className=" p-2.5 w-56 h-auto rounded-lg overflow-hidden bg-white ">
             <h4 className="text-center text-zinc-400 font-mono text-sm">community chats</h4>
             <ul className="flex flex-col ">
                  {
@@ -44,8 +51,22 @@ const HomeSideInfo = () => {
                  }
             </ul>
            </div> 
-           <div className=" p-2.5 w-56 h-auto rounded-lg overflow-hidden bg-[#c3deff] ">
-            <h4 className="text-center text-zinc-400 font-mono text-sm">Group Chats</h4>
+           </div>
+           <div className="mt--2.5 flex flex-col gap-1.5  ">
+           <div className=" p-2.5 w-56 h-auto rounded-lg overflow-hidden bg-white ">
+            <h4 className="text-center text-zinc-400 font-mono text-sm">community chats</h4>
+            <ul className="flex flex-col ">
+                 {
+                  events.map((event,i)=>(
+                    <li className="flex items-center gap-2.5 no-underline h-8" key={i}>
+                        <img className='w-6 h-6 rounded-full object-cover object-center' src={travel1} />
+                        <p className="text-xs font-mono flex flex-col text-zinc-600">{event.event}</p></li>
+                  ))
+                 }
+            </ul>
+           </div> 
+           {/* <div className=" p-2.5 w-56 h-auto rounded-lg overflow-hidden bg-white ">
+            <h4 className="text-center flex items-center justify-between text-zinc-400 font-mono text-sm">Group Chats </h4>
             <ul className="flex flex-col">
                  {
                   groups.map((event,i)=>(
@@ -55,15 +76,17 @@ const HomeSideInfo = () => {
                   ))
                  }
             </ul>
-           </div>
-           <div className=" p-2.5 w-56 h-auto rounded-lg overflow-hidden bg-[#c3deff] ">
+           </div> */}
+           <div className=" p-2.5 w-56 h-auto rounded-lg overflow-hidden bg-white ">
             <h4 className="text-center text-zinc-400 font-mono text-sm">Online Contacts</h4>
             <ul className="flex flex-col">
                  {
                   onlineContacts.map((freind,i)=>(
                     <li className="flex items-center gap-2.5 no-underline h-8" key={i}>
                         <img className='w-6 h-6 rounded-full object-cover object-center' src={freind.profile} />
-                        <p className="text-xs font-mono flex flex-col text-zinc-600">{freind.name}</p></li>
+                      <p className="w-full text-xs font-mono flex items-center justify-between text-zinc-600">{ freind.name } <GoDot  color='green'/> </p>
+                       
+                    </li>
                   ))
                  }
             </ul>

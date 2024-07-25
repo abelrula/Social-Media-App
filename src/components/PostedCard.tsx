@@ -9,15 +9,14 @@ const PostedCard = ({items}) => {
   return (
      <div className="bg-white flex justify-center flex-col gap-4 items-center border rounded-[5px] p-1.5 border-[#d9d9d9]" key={items.id}>
           <div className="flex justify-start self-baseline ml-2.5 gap-2.5">
-             <ProfileImage profileName={items.owner} />
-             <div>
+            {items.image?<img className='w-6 h-6 rounded-full object-cover object-center' src={items.image[0]} />  : <ProfileImage profileName={items.name} />}
+            <div> 
                <p className='text-sm font-thin text-black font-sans leading-tight'>
-                {items.owner}
+                {items.name}
                </p>
                <p className='text-xs font-thin text-slate-500 font-sans leading-tight'>1 hour ago</p>
              </div>
           </div>
-           
             <div className="w-11/12 flex flex-col gap-6">
                  <p className="w-5/6 font-sans text-xs ml-2.5 text-yellow-900 font-thin"  >{items.titleDescription}</p>
                  <div className="flex m-auto w-full rounded-full gap-0.5">

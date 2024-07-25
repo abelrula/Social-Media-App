@@ -22,9 +22,10 @@ const ProfilePage = () => {
                          <p className="font-mono text-zinc-500 text-xs">367 friends</p>
                        </span>
                    </span>
-                   <span className="flex gap-2.5 self-end items-center">
-                       <button className="rounded-xl bg-sky-600 text-white flex items-center gap-2.5 h-fit border-sky-600 border-2 font-mono text-xs py-1 px-3">Follow<FaUserPlus   /></button>
-                       <button className="rounded-xl bg-white text-black flex items-center gap-2.5 h-fit border-slate-600  border-2 text-xs py-1 px-3 ">Message<AiOutlineMessage fill="#1167e7" stroke='#1167e7' className="text-sky-600" /></button>
+          <span className="flex gap-2.5 self-end items-center">
+              <p className="flex flex-col  items-center gap-2rounded-xl  text-black  gap-1 h-fit  font-mono text-xs py-1 px-3"> <h6 className="font-bold text-sm">posts</h6>102</p>
+            <p className="flex flex-col  items-center gap-2rounded-xl  text-black  gap-1 h-fit  font-mono text-xs py-1 px-3"> <h6 className="font-bold text-sm">follwers</h6>132</p>
+              <p className="flex flex-col  items-center gap-2rounded-xl  text-black  gap-1 h-fit  font-mono text-xs py-1 px-3"><h6 className="font-bold text-sm">following</h6> 3000</p>
                    </span>
             </div>
             <ul className="flex gap-2.5 mt-12">
