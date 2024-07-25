@@ -1,12 +1,10 @@
 import {BiMessage } from "react-icons/bi";
 import { BiHomeAlt2 } from "react-icons/bi";
 import { HiUserGroup } from "react-icons/hi";
-import { FaRegCalendarAlt } from "react-icons/fa";
-import { BsActivity } from "react-icons/bs";
+ import { BsActivity } from "react-icons/bs";
 
-export const profileImg = "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
- 
-export const postedContentsData: postedContentsDataType[] = [
+  export const profileImg = "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  export const postedContentsData: postedContentsDataType[] = [
   {
     owner:'Robert Hammond',
     titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making 😘",
@@ -23,7 +21,7 @@ export const postedContentsData: postedContentsDataType[] = [
     postedTime:new Date()
    },
    {
-    owner:'Robert Hammond',
+    owner:' Hammond Dede',
     titleDescription:"When I am not working",
     image: ["https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     reactions:{
@@ -39,7 +37,7 @@ export const postedContentsData: postedContentsDataType[] = [
 
    },
    {
-    owner:'Robert Hammond',
+    owner:'Samri hewan',
     titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
     image: ["https://images.unsplash.com/photo-1655185497013-db98aca061d3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","https://images.unsplash.com/photo-1655185497004-f3018eab9cb8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     reactions:{
@@ -55,7 +53,7 @@ export const postedContentsData: postedContentsDataType[] = [
 
    },
    {
-    owner:'Robert Hammond',
+    owner:'Robert Ferwe',
     titleDescription:"meditating in the morning breathing mountain airs 😇",
      image: [ "https://images.unsplash.com/photo-1607749111659-e1c8e05f5f24?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1607748732922-4dabb64163d0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "https://images.unsplash.com/photo-1607748851687-ba9a10438621?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -133,8 +131,8 @@ export const postedContentsData: postedContentsDataType[] = [
     postedTime:new Date()
 
   },
-{
-   owner:'Robert Hammond',
+  {
+    owner: 'Robert Hammond',
      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
      reactions:{
       like:762,
@@ -146,9 +144,11 @@ export const postedContentsData: postedContentsDataType[] = [
     comment:615,
     share:3,
     postedTime:new Date(),
-image:["https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+  image: [ "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" ]
+}
 ,
-{ owner:'Robert Hammond',
+  {
+    owner: 'Robert Hammond',
      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
      reactions:{
       like:762,
@@ -161,9 +161,11 @@ image:["https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&
     share:3,
     postedTime:new Date()
 ,
-  image:["https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+    image: [ "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" ]
+  }
 ,
-{ owner:'Robert Hammond',
+  {
+    owner: 'Robert Hammond',
      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
      reactions:{
       like:762,
@@ -178,7 +180,8 @@ image:["https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&
 ,
   image:["https://images.unsplash.com/photo-1530785602389-07594beb8b73?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
 ,
-{ owner:'Robert Hammond',
+  {
+    owner: 'Robert Hammond',
      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
      reactions:{
       like:762,
@@ -192,7 +195,8 @@ image:["https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&
     postedTime:new Date(),
   image:["https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
 ,
-{ owner:'Robert Hammond',
+  {
+    owner: 'Robert Hammond',
      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
      reactions:{
       like:762,
@@ -218,8 +222,7 @@ image:["https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&
     comment:615,
     share:3,
     postedTime:new Date(),
-  image:["https://images.unsplash.com/photo-1508243771214-6e95d137426b?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
-,
+  image:["https://images.unsplash.com/photo-1508243771214-6e95d137426b?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]},
 { owner:'Robert Hammond',
      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
      reactions:{
@@ -232,8 +235,7 @@ image:["https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&
     comment:615,
     share:3,
     postedTime:new Date(),
-  image:["https://images.unsplash.com/photo-1515019647021-21af2ecca43c?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
-,
+  image:["https://images.unsplash.com/photo-1515019647021-21af2ecca43c?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]},
 { owner:'Robert Hammond',
      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
      reactions:{
@@ -246,8 +248,7 @@ image:["https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&
     comment:615,
     share:3,
     postedTime:new Date(),
-  image:["https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
-,
+  image:["https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]},
 { owner:'Robert Hammond',
      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
      reactions:{
@@ -260,8 +261,7 @@ image:["https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&
     comment:615,
     share:3,
     postedTime:new Date(),
-  image:["https://images.unsplash.com/photo-1529081596074-564b6cb30009?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
-,
+  image:["https://images.unsplash.com/photo-1529081596074-564b6cb30009?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]},
 { owner:'Robert Hammond',
      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
      reactions:{
@@ -288,8 +288,7 @@ image:["https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&
     comment:615,
     share:3,
     postedTime:new Date(),
-  image:["https://images.unsplash.com/photo-1536644472548-98c33a604a98?q=80&w=462&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
-,
+  image:["https://images.unsplash.com/photo-1536644472548-98c33a604a98?q=80&w=462&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]},
 { owner:'Robert Hammond',
      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
      reactions:{
@@ -337,8 +336,6 @@ image:["https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&
     share:3,
     postedTime:new Date()
   },
-   
- 
 ]
  export const groupPostedContents: postedContentsDataType[] = [
   {
@@ -492,32 +489,41 @@ export const groups:groupType[]=[
     },
     
 ]
-export const freinds:freindsType[]=[
-    {
-        name:"simon Jorge",
-        profile: "https://images.unsplash.com/photo-1562788869-4ed32648eb72?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHByb2Zlc3Npb25hbHxlbnwwfHwwfHx8MA%3D%3D",
-      },
-      {
-        name: "Tmarcus Brown",
-        profile: "https://images.unsplash.com/photo-1495603889488-42d1d66e5523?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGJsYWNrJTIwbWFsZXN8ZW58MHx8MHx8fDA%3D",
-      },
-      {
-        name: "Fabio Lucas",
-        profile: "https://images.unsplash.com/photo-1631306006348-f9ed42b1e19a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fHdvcmslMjBwcm9mZXNpb25hbHN8ZW58MHx8MHx8fDA%3D",
-      },
-      {
-        name: "Christina Ryoji",
-        profile: "https://images.unsplash.com/photo-1573496527892-904f897eb744?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHByb2Zlc3Npb25hbHxlbnwwfHwwfHx8MA%3D%3D",
-      },
-      {
-        name: "Ashely jhonson",
-        profile: "https://images.unsplash.com/photo-1590650153855-d9e808231d41?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHByb2Zlc3Npb25hbHxlbnwwfHwwfHx8MA%3D%3D"
-      },
-      {
-        name: "Tmarcus Brown",
-        profile: "https://images.unsplash.com/photo-1495603889488-42d1d66e5523?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGJsYWNrJTIwbWFsZXN8ZW58MHx8MHx8fDA%3D"
-      },
-]
+// export const freinds:freindsType[]=[
+//     {
+//         name:"simon Jorge",
+//         profile: "https://images.unsplash.com/photo-1562788869-4ed32648eb72?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHByb2Zlc3Npb25hbHxlbnwwfHwwfHx8MA%3D%3D",
+//       },
+//       {
+//         name: "Tmarcus Brown",
+//         profile: "https://images.unsplash.com/photo-1495603889488-42d1d66e5523?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGJsYWNrJTIwbWFsZXN8ZW58MHx8MHx8fDA%3D",
+//       },
+//       {
+//         name: "Fabio Lucas",
+//         profile: "https://images.unsplash.com/photo-1631306006348-f9ed42b1e19a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fHdvcmslMjBwcm9mZXNpb25hbHN8ZW58MHx8MHx8fDA%3D",
+//       },
+//       {
+//         name: "Christina Ryoji",
+//         profile: "https://images.unsplash.com/photo-1573496527892-904f897eb744?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHByb2Zlc3Npb25hbHxlbnwwfHwwfHx8MA%3D%3D",
+//       },
+//       {
+//         name: "Ashely jhonson",
+//         profile: "https://images.unsplash.com/photo-1590650153855-d9e808231d41?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHByb2Zlc3Npb25hbHxlbnwwfHwwfHx8MA%3D%3D"
+//       },
+//       {
+//         name: "Tmarcus Brown",
+//         profile: "https://images.unsplash.com/photo-1495603889488-42d1d66e5523?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGJsYWNrJTIwbWFsZXN8ZW58MHx8MHx8fDA%3D"
+//   },
+//       {
+//         name:"simon Jorge",
+//         profile: "https://images.unsplash.com/photo-1562788869-4ed32648eb72?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHByb2Zlc3Npb25hbHxlbnwwfHwwfHx8MA%3D%3D",
+//       },
+//       {
+//         name: "Tmarcus Brown",
+//         profile: "https://images.unsplash.com/photo-1495603889488-42d1d66e5523?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGJsYWNrJTIwbWFsZXN8ZW58MHx8MHx8fDA%3D",
+//       },
+      
+// ]
 export const onlineContacts:onlineContactsType[]=[
   {
       name:"simon Jorge",
@@ -749,10 +755,6 @@ export   const friends:friendsType[] = [
         profile: "https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         mutualFriendes:15
   }
-  
- 
-  
-                            
 ]
      
 export const postedPhoto:postedPhoto[]=[
@@ -840,8 +842,694 @@ export const postedPhoto:postedPhoto[]=[
       love:20,
     }
   } ]
+ export const Stories:storiesType[]=[
+  {
+    owner:"Mohammed Ali",
+    ProfileImage:"https://images.unsplash.com/photo-1480866179948-2caa74d9082a?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:0,
+      love:20,
+    }
+  },
+  {
+    owner:"Mohammed Ali",
+    ProfileImage:"https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:"https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:0,
+      love:20,
+    }
+  },
+  {
+    owner:"Mohammed Ali",
+    ProfileImage:"https://images.unsplash.com/photo-1530785602389-07594beb8b73?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:"https://images.unsplash.com/photo-1530785602389-07594beb8b73?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:0,
+      love:20,
+    }
+  },
+  {
+    owner:"Mohammed Ali",
+    ProfileImage:"https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:"https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:0,
+      love:20,
+    }
+  },
+  {
+    owner:"Mohammed Ali",
+    ProfileImage:"https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?q=80&w=594&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:"https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?q=80&w=594&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:0,
+      love:20,
+    }
+  },
+  {
+    owner:"Mohammed Ali",
+    ProfileImage:"https://images.unsplash.com/photo-1508243771214-6e95d137426b?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:"https://images.unsplash.com/photo-1508243771214-6e95d137426b?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:0,
+      love:20,
+    }
+  },
+  {
+    owner:"Mohammed Ali",
+    ProfileImage:"https://images.unsplash.com/photo-1515019647021-21af2ecca43c?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:"https://images.unsplash.com/photo-1515019647021-21af2ecca43c?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:0,
+      love:20,
+    }
+  },
+  {
+    owner:"Mohammed Ali",
+    ProfileImage:"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:10,
+      love:20,
+    }
+  },
+  {
+    owner:"Mohammed Ali",
+    ProfileImage:"https://images.unsplash.com/photo-1529081596074-564b6cb30009?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:"https://images.unsplash.com/photo-1529081596074-564b6cb30009?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:10,
+      love:20,
+    }
+  },
+  {
+    owner:"Mohammed Ali",
+    ProfileImage:"https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:"https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:10,
+      love:20,
+    }
+  },
+  {
+    owner:"Mohammed Ali",
+    ProfileImage:"https://images.unsplash.com/photo-1536644472548-98c33a604a98?q=80&w=462&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:"https://images.unsplash.com/photo-1536644472548-98c33a604a98?q=80&w=462&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:0,
+      love:20,
+    }
+   },
   
+  {
+    owner:"Mohammed Ali",
+    ProfileImage:"https://images.unsplash.com/photo-1663187087209-e51101156a31?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:"https://images.unsplash.com/photo-1663187087209-e51101156a31?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:0,
+      love:20,
+    }
+  } ] 
 export const imagesPostedByTheOwner: string[] = [ "https://images.unsplash.com/photo-1480866179948-2caa74d9082a?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1656558136312-71b8f36bea25?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
    "https://images.unsplash.com/photo-1656558136312-71b8f36bea25?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
  ]
- 
+// export const postedContenetsByFriends:postedContenetsByFriendsType[]=[
+// {
+//       id: 1,
+//       name: "simon Jorge",
+//       profile: "https://images.unsplash.com/photo-1562788869-4ed32648eb72?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHByb2Zlc3Npb25hbHxlbnwwfHwwfHx8MA%3D%3D",
+//      postedContents: [
+//       {
+//         titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making 😘",
+//         image: ["https://images.unsplash.com/photo-1580496307829-244888fa5696?q=80&w=465&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+//         reactions:{
+//           like:2,
+//           unliked:182,
+//           hot:27,
+//           cry:45,
+//           laugh:0
+//         },
+//         comment:215,
+//         share:83,
+//         postedTime:new Date()
+//       },
+//       {
+//         titleDescription:"When I am not working",
+//         image: ["https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+//         reactions:{
+//           like:7612,
+//           unliked:18,
+//           hot:387,
+//           cry:45,
+//           laugh:20
+//         } ,
+//         comment:615,
+//         share:3,
+//         postedTime:new Date()
+//    },
+//    {
+//         titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//         image: ["https://images.unsplash.com/photo-1655185497013-db98aca061d3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","https://images.unsplash.com/photo-1655185497004-f3018eab9cb8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+//         reactions:{
+//           like:762,
+//           unliked:8,
+//           hot:37,
+//           cry:45,
+//           laugh:20
+//         } ,
+//         comment:615,
+//         share:3,
+//         postedTime:new Date()
+//    },
+//    {
+//     titleDescription:"meditating in the morning breathing mountain airs 😇",
+//      image: [ "https://images.unsplash.com/photo-1607749111659-e1c8e05f5f24?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1607748732922-4dabb64163d0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//       "https://images.unsplash.com/photo-1607748851687-ba9a10438621?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+//     ],
+//     reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date()
+//    },
+//    {
+//     titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//     image: ["https://images.unsplash.com/photo-1569937728357-4971c45997c0?q=80&w=367&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+//     reactions:{
+//       like:72,
+//       unliked:895,
+//       hot:7,
+//       cry:45,
+//       laugh:250
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date()
+//   },
+//      {
+//     titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making 😘",
+//     image: ["https://images.unsplash.com/photo-1580496307829-244888fa5696?q=80&w=465&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+//     reactions:{
+//       like:2,
+//       unliked:182,
+//       hot:27,
+//       cry:45,
+//       laugh:0
+//     },
+//     comment:215,
+//     share:83,
+//     postedTime:new Date()
+//    },
+//    {
+   
+//     titleDescription:"When I am not working",
+//     image: ["https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+//     reactions:{
+//       like:7612,
+//       unliked:18,
+//       hot:387,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date()
+//    },
+//    {
+//     titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//     image: ["https://images.unsplash.com/photo-1655185497013-db98aca061d3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","https://images.unsplash.com/photo-1655185497004-f3018eab9cb8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+//     reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date()},
+//   ]  
+//     },
+//     {
+//       id: 2,
+//       name: "Tmarcus Brown",
+//       profile: "https://images.unsplash.com/photo-1495603889488-42d1d66e5523?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGJsYWNrJTIwbWFsZXN8ZW58MHx8MHx8fDA%3D",
+//     postedContents:[,
+// {
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date(),
+//   image:["https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]},
+// { 
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date()
+// ,
+//   image:["https://images.unsplash.com/photo-1530785602389-07594beb8b73?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+// ,
+// {
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date(),
+//         image: [ "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" ]
+//       },
+//     { 
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date(),
+//   image:["https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?q=80&w=594&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+// ,
+//     ]  
+//     },
+//     {
+//       id: 3,
+//       name: "Fabio Lucas",
+//       profile: "https://images.unsplash.com/photo-1631306006348-f9ed42b1e19a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fHdvcmslMjBwcm9mZXNpb25hbHN8ZW58MHx8MHx8fDA%3D",
+//     postedContents:[
+// { 
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date()
+// ,
+//   image:["https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+// ,
+// { 
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date()
+// ,
+//   image:["https://images.unsplash.com/photo-1530785602389-07594beb8b73?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+// ,
+// { 
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date(),
+//   image:["https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+// ,
+// { 
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date(),
+//   image:["https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?q=80&w=594&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+// ,
+//     ]  
+//     },
+//     {
+//       id: 4,
+//       name: "Christina Ryoji",
+//       profile: "https://images.unsplash.com/photo-1573496527892-904f897eb744?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHByb2Zlc3Npb25hbHxlbnwwfHwwfHx8MA%3D%3D",
+//     postedContents:[
+// { 
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date()
+// ,
+//   image:["https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+// ,
+// { 
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date()
+// ,
+//   image:["https://images.unsplash.com/photo-1530785602389-07594beb8b73?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+// ,
+// { 
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date(),
+//   image:["https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+// ,
+// { 
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date(),
+//   image:["https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?q=80&w=594&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+// ,
+//     ]  
+//     },
+//     {
+//       id: 5,
+//       name: "Ashely jhonson",
+//       profile: "https://images.unsplash.com/photo-1590650153855-d9e808231d41?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHByb2Zlc3Npb25hbHxlbnwwfHwwfHx8MA%3D%3D",
+//     postedContents:[
+// {
+   
+//     titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making 😘",
+//     image: ["https://images.unsplash.com/photo-1580496307829-244888fa5696?q=80&w=465&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+//     reactions:{
+//       like:2,
+//       unliked:182,
+//       hot:27,
+//       cry:45,
+//       laugh:0
+//     },
+//     comment:215,
+//     share:83,
+//     postedTime:new Date()
+//    },
+//    {
+   
+//     titleDescription:"When I am not working",
+//     image: ["https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+//     reactions:{
+//       like:7612,
+//       unliked:18,
+//       hot:387,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date()
+
+//    },
+//    {
+   
+//     titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//     image: ["https://images.unsplash.com/photo-1655185497013-db98aca061d3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","https://images.unsplash.com/photo-1655185497004-f3018eab9cb8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+//     reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date()
+
+//    },
+//    {
+    
+//     titleDescription:"meditating in the morning breathing mountain airs 😇",
+//      image: [ "https://images.unsplash.com/photo-1607749111659-e1c8e05f5f24?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1607748732922-4dabb64163d0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//       "https://images.unsplash.com/photo-1607748851687-ba9a10438621?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+//     ],
+//     reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date()
+//    },
+//    {
+    
+//     titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//     image: ["https://images.unsplash.com/photo-1569937728357-4971c45997c0?q=80&w=367&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+//     reactions:{
+//       like:72,
+//       unliked:895,
+//       hot:7,
+//       cry:45,
+//       laugh:250
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date()
+//   },
+//      {
+    
+//     titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making 😘",
+//     image: ["https://images.unsplash.com/photo-1580496307829-244888fa5696?q=80&w=465&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+//     reactions:{
+//       like:2,
+//       unliked:182,
+//       hot:27,
+//       cry:45,
+//       laugh:0
+//     },
+//     comment:215,
+//     share:83,
+//     postedTime:new Date()
+//    },
+//    {
+    
+//     titleDescription:"When I am not working",
+//     image: ["https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+//     reactions:{
+//       like:7612,
+//       unliked:18,
+//       hot:387,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date()
+
+//    },
+//    {
+    
+//     titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//     image: ["https://images.unsplash.com/photo-1655185497013-db98aca061d3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","https://images.unsplash.com/photo-1655185497004-f3018eab9cb8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+//     reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date()
+
+//   },
+// {
+   
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date(),
+// image:["https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+// ,
+// { 
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date()
+// ,
+//   image:["https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+// ,
+// { 
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date()
+// ,
+//   image:["https://images.unsplash.com/photo-1530785602389-07594beb8b73?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+// ,
+// { 
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date(),
+//   image:["https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+// ,
+// { 
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date(),
+//   image:["https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?q=80&w=594&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+// ,
+// { 
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date(),
+//   image:["https://images.unsplash.com/photo-1508243771214-6e95d137426b?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+// ,
+// { 
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date(),
+//   image:["https://images.unsplash.com/photo-1515019647021-21af2ecca43c?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+// ,
+// { 
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date(),
+//   image:["https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+// ,
+// { 
+//      titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+//      reactions:{
+//       like:762,
+//       unliked:8,
+//       hot:37,
+//       cry:45,
+//       laugh:20
+//     } ,
+//     comment:615,
+//     share:3,
+//     postedTime:new Date(),
+//   image:["https://images.unsplash.com/photo-1529081596074-564b6cb30009?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]}
+
+//     ]  
+//    },
+//   ]

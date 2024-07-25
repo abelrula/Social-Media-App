@@ -53,6 +53,15 @@ declare type postedPhoto = {
     love: number
   }
 }
+declare type storiesType = {
+  owner: string;
+    ProfileImage: string;
+    image: string;
+    reactions: {
+        hate: number;
+        love: number;
+    };
+}
 declare type MessageConvoType= {
   id: number,
   name: string,
@@ -61,4 +70,23 @@ declare type MessageConvoType= {
     sender:string|number,
     reciever: string | number
   }[]
+}
+declare type postedContenetsByFriendsType = {
+      id: number;
+    name: string;
+    profile: string;
+    postedContents: {
+         titleDescription: string;
+        image: string[] | string;
+        reactions: {
+            like: number;
+            unliked: number;
+            hot: number;
+            cry: number;
+            laugh: number;
+        };
+        comment: number;
+        share: number;
+        postedTime: Date;
+    }[];
   }
