@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom"
-import { onlineContacts } from "../data/data"
+import { onlineContacts, Stories } from "../data/data"
 import ProfileImage from "./ProfileImage";
 import { BsEggFried } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Story = () => {
   
@@ -14,10 +15,10 @@ const Story = () => {
             const img = "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   
     return (
-      <div className="flex w-full gap-2 border-b-zinc-200 border-x ">
-          <div className="w-72 h-fit text-center m-t-8  ">
-          <div className=" flex flex-col gap-6"> 
-             <h4 className=" text-xs text-black  font-thin font-mono  text-start  ">Your Stories</h4>
+      <div className="flex gap-2 border-b-zinc-200 border-x">
+          <div className="w-96 h-screen text-center m-t-8 overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-thin ">
+          <div className="flex flex-col gap-6"> 
+             <h4 className="  ml-2 text-xs text-black  font-thin font-mono  text-start  ">Your Stories</h4>
                    <NavLink
                     style={({ isActive }) => (isActive ? selectedObj : null)}
                     to="stories/abel zewdu"
@@ -30,7 +31,7 @@ const Story = () => {
                          </label>
                         </div>
                   </NavLink>
-             <h3 className="text-xs text-black  font-thin font-mono  text-start  ">Followed Stories</h3>
+             <h3 className=" ml-2 text-xs text-black  font-thin font-mono  text-start  ">Followed Stories</h3>
                   { onlineContacts.map((stories, i) => (
                        <NavLink
                             style={({ isActive }) => (isActive ? selectedObj : null)}
@@ -48,8 +49,18 @@ const Story = () => {
                   ))}
               </div>
             </div>
-            <div className="w-webkit bg-green-400">
-
+            <div className=" relative h-auto bg-slate-600 overflow-x-scroll   flex gap-3">
+                <IoIosArrowBack className="absolute left-0 z-50 text-4xl bg-white  top-1/2 " />   
+          {
+              Stories.slice(0,5).map((stories, i) => (
+                  <div className="relative w-[400px] h-2/3 m-auto" key={i}>
+                          <img className=' w-full h-full rounded-xl object-cover object-center' src={stories.image} />
+                           <img className='absolute top-0  w-8 h-8 rounded-full object-cover object-center' src={ stories.ProfileImage } />
+                           <p className='absolute bottom-0 text-tiny text-white' >{ stories.owner }</p>
+                   </div>
+                ))
+       }          
+          <IoIosArrowForward className="absolute right-0 z-50 text-4xl bg-white  top-1/2 " />
             </div>
       </div>
   )

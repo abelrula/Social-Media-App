@@ -15,7 +15,7 @@ const Sidebar = () => {
  console.log(pathname.includes("message"));
 
   return (
-    <div className={`bg-white sticky flex flex-col p-3 none pr-0.5 h-screen top-0 left-2  ${pathname.includes("stories") || pathname.includes("message") ? "hidden" : "block" }`}>
+    <div className={`bg-white sticky flex flex-col p-3  pr-0.5 h-screen top-0 left-2  ${pathname.includes("stories") || pathname.includes("message") ? "hidden" : "block" }`}>
       <Link to="/" className="flex items-center mt-5">
         <BsEggFried className="text-4 text-blue-900 font-thin" />
         <h1 className="text-xl text-blue-900 font-thin font-mono ml-1 mb-1">SocialNation</h1>
