@@ -337,7 +337,7 @@ import { HiUserGroup } from "react-icons/hi";
     postedTime:new Date()
   },
 ]
- export const groupPostedContents: postedContentsDataType[] = [
+  export const groupPostedContents: postedContentsDataType[] = [
   {
     owner:'Robert Hammond',
     titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making 😘",
@@ -853,7 +853,7 @@ export const postedPhoto:postedPhoto[]=[
     }
   },
   {
-    owner:"Mohammed Ali",
+    owner:"semi Ali",
     ProfileImage:"https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     image:"https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     reactions:{
@@ -862,7 +862,7 @@ export const postedPhoto:postedPhoto[]=[
     }
   },
   {
-    owner:"Mohammed Ali",
+    owner:"Arronda Ali",
     ProfileImage:"https://images.unsplash.com/photo-1530785602389-07594beb8b73?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     image:"https://images.unsplash.com/photo-1530785602389-07594beb8b73?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     reactions:{
@@ -871,7 +871,7 @@ export const postedPhoto:postedPhoto[]=[
     }
   },
   {
-    owner:"Mohammed Ali",
+    owner:"Tomas Dewa",
     ProfileImage:"https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     image:"https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     reactions:{
@@ -880,7 +880,7 @@ export const postedPhoto:postedPhoto[]=[
     }
   },
   {
-    owner:"Mohammed Ali",
+    owner:"Tsehay Ayele",
     ProfileImage:"https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?q=80&w=594&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     image:"https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?q=80&w=594&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     reactions:{
@@ -889,7 +889,7 @@ export const postedPhoto:postedPhoto[]=[
     }
   },
   {
-    owner:"Mohammed Ali",
+    owner:"Kalab Weres",
     ProfileImage:"https://images.unsplash.com/photo-1508243771214-6e95d137426b?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     image:"https://images.unsplash.com/photo-1508243771214-6e95d137426b?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     reactions:{
@@ -898,7 +898,7 @@ export const postedPhoto:postedPhoto[]=[
     }
   },
   {
-    owner:"Mohammed Ali",
+    owner:"Yosef Zewdu",
     ProfileImage:"https://images.unsplash.com/photo-1515019647021-21af2ecca43c?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     image:"https://images.unsplash.com/photo-1515019647021-21af2ecca43c?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     reactions:{
@@ -907,7 +907,7 @@ export const postedPhoto:postedPhoto[]=[
     }
   },
   {
-    owner:"Mohammed Ali",
+    owner:"Abela Rula",
     ProfileImage:"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     image:"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     reactions:{
@@ -916,7 +916,7 @@ export const postedPhoto:postedPhoto[]=[
     }
   },
   {
-    owner:"Mohammed Ali",
+    owner:"Simon Dowa",
     ProfileImage:"https://images.unsplash.com/photo-1529081596074-564b6cb30009?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     image:"https://images.unsplash.com/photo-1529081596074-564b6cb30009?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     reactions:{
@@ -925,7 +925,7 @@ export const postedPhoto:postedPhoto[]=[
     }
   },
   {
-    owner:"Mohammed Ali",
+    owner:"Amarula Drink",
     ProfileImage:"https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     image:"https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     reactions:{
@@ -934,7 +934,7 @@ export const postedPhoto:postedPhoto[]=[
     }
   },
   {
-    owner:"Mohammed Ali",
+    owner:"Shampine Yoyoy",
     ProfileImage:"https://images.unsplash.com/photo-1536644472548-98c33a604a98?q=80&w=462&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     image:"https://images.unsplash.com/photo-1536644472548-98c33a604a98?q=80&w=462&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     reactions:{

@@ -4,7 +4,6 @@ import Memories from './Pages/Memories/Memories'
 import Friends from './Pages/Friends/Friends'
  import Layout from './Layouts/Layout'
 import Profile from './Pages/Profile/Profile'
- import Events from './Pages/Events/Events'
 import Stories from './Pages/Stories/Stories'
 import MyPosts from './Pages/Profile/ProfileSubPages/MyPosts'
 import MyVideos from './Pages/Profile/ProfileSubPages/MyVideos'
@@ -15,6 +14,7 @@ import MessageListheader from "./components/messages/MessageListheader";
 import MessageLayout from "./components/messages/MessageLayout";
 import GroupsLayout from './Layouts/GroupsLayout'
 import Group from './components/Group'
+import Events from './Pages/Events/Events'
 
 function App() {
  

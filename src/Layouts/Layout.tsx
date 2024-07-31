@@ -5,9 +5,9 @@ const Layout = () => {
   return (
     <div className='flex scrollbar-thumb-transparent scrollbar-w-[2px] scrollbar-track-transparent'>
       <Sidebar  />
-       <div className="bg-[#f7f7f7] w-full flex flex-col">
+       <div className="bg-[#f7f7f7] flex flex-col w-full">
         <Header />
-      <div className=' mt-12 ml-1 p-4 h-full' >
+      <div className='mt-12 ml-1 p-4 h-screen w-full' >
         <Outlet />
       </div>
     </div>
