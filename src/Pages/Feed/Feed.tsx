@@ -6,8 +6,8 @@ import Stroies from "../../components/Stroies";
 const Feed = () => {
     
   return (
-        <div className="flex gap-8">
-             <div className="w-[550px] flex flex-col gap-5 overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-thin">
+        <div className="flex mt-3 gap-8">
+             <div className="w-[550px] mt-5 flex flex-col gap-5 overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-thin">
                  <Stroies /> 
                  <Post />
                   <PostedContents />

@@ -30,7 +30,7 @@ const Story = () => {
   
     return (
       <div className="flex gap-2 border-b-zinc-200 border-x">
-          <div className="w-auto bg-white h-screen text-center m-t-8 overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-thin ">
+          <div className="w-auto min-w-40 bg-white h-screen text-center m-t-8 overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-thin ">
           <div className="w-[220px]  h-screen text-center m-t-8 overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-thin flex flex-col gap-6"> 
              <h4 className=" ml-2 text-lg text-black  font-thin font-mono  text-start  ">Your Stories</h4>
                    <NavLink

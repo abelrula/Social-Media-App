@@ -8,7 +8,7 @@ const HomeSideInfo = () => {
    
   return (
     <>
-        <div className="flex flex-col gap-2.5  ">
+        <div className="flex flex-col gap-2.5  overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-thin">
               <div className="  p-2.5 w-56 h-auto rounded-lg overflow-hidden bg-white">
                 <h4 className="text-center text-zinc-400 font-mono text-sm">your upcoming events </h4>
                 <ul className="flex flex-col gap-1.5">

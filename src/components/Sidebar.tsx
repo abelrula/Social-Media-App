@@ -15,12 +15,9 @@ const Sidebar = () => {
  console.log(pathname.includes("message"));
 
   return (
-    <div className={`bg-white sticky flex flex-col p-3  pr-0.5 h-screen top-0 left-2  ${pathname.includes("stories") || pathname.includes("message") ? "hidden" : "block" }`}>
-      <Link to="/" className="flex items-center mt-5">
-        <BsEggFried className="text-4 text-blue-900 font-thin" />
-        <h1 className="text-xl text-blue-900 font-thin font-mono ml-1 mb-1">SocialNation</h1>
-      </Link>
-      <div className="flex flex-col py-2.5 h-screen mt-1.5">
+    <div className={`bg-white w-72  sticky flex flex-col p-2  pr-0.5   top-0 left-2  ${pathname.includes("stories") || pathname.includes("message") ? "hidden" : "block" }`}>
+      
+      <div className="flex mt-11 min-w-44 flex-col py-2.5">
         <label className="cursor-pointer">Favorites</label>
         <div className="flex flex-col py-2.5 gap-2">
           {menuLinks.map((link, i) => (
