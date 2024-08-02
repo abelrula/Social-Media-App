@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import { Stories } from "../data/data";
-function ImageSlider() {
+function ImageSlider({currentIndex, setCurrentIndex}) {
    const [stories,setStories]=useState(Stories) 
-  const [currentIndex, setCurrentIndex] = useState(0);
-console.log(stories);
-
+ 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? stories.length - 1 : currentIndex - 1;
