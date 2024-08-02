@@ -5,14 +5,16 @@ import { BsEmojiTear } from 'react-icons/bs'
 import { FaRegCommentDots } from 'react-icons/fa'
 import ProfileImage from './ProfileImage'
 
-const PostedCard = ({items}) => {
+const PostedCard = ({items,index,setCurrentIndex}) => {
+  
+  
   return (
-     <div className="bg-white flex justify-center flex-col gap-4 items-center border rounded-[5px] p-1.5 border-[#d9d9d9]" key={items.id}>
+     <div className="bg-white flex justify-center flex-col gap-4 items-center border rounded-[5px] p-1.5 border-[#d9d9d9]" onClick={()=>setCurrentIndex(index)} key={index}>
           <div className="flex justify-start self-baseline ml-2.5 gap-2.5">
-            {items.image?<img className='w-6 h-6 rounded-full object-cover object-center' src={items.image[0]} />  : <ProfileImage profileName={items.name} />}
+            {items.image?<img className='w-6 h-6 rounded-full object-cover object-center' src={items.image[0]} />  : <ProfileImage profileName={items.owner} />}
             <div> 
                <p className='text-sm font-thin text-black font-sans leading-tight'>
-                {items.name}
+                {items.owner}
                </p>
                <p className='text-xs font-thin text-slate-500 font-sans leading-tight'>1 hour ago</p>
              </div>
@@ -40,7 +42,8 @@ const PostedCard = ({items}) => {
                  <label className='flex items-center  text-xs gap-1 text-slate-400 font-mono '><FcShare className='icon' />share <span className='font-mono text-xs  '>{items.share}</span></label>
              </span>
             </div>
-          </div>
+    </div>
+
   )
 }
 
