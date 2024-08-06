@@ -1,19 +1,26 @@
 
 declare type postedContentsDataType= {
-  owner: string;
-  titleDescription: string;
-  image: string[] 
-  reactions: {
-      like: number;
-      unliked: number;
-      hot: number;
-      cry: number;
-      laugh: number;
-  };
-  comment: number;
-  share: number;
-  postedTime?: Date;
+    owner: string;
+    titleDescription: string;
+    image: string[];
+    reactions: {
+        like: number;
+        unliked: number;
+        hot: number;
+        cry: number;
+        laugh: number;
+    };
+    comments: {
+        owner: string;
+        profileImg: string;
+        comment: string;
+    }[];
+    share: number;
+    postedTime: Date;
+    commentes?: undefined;
 }
+
+
 declare type groupType = {
    to?:string;
    name: string;
