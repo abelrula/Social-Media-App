@@ -1,4 +1,4 @@
-import { Stories } from "../data/data"
+import { Stories } from "../lib/data"
  import React from "react"
 const Stroies = () => {
   return (

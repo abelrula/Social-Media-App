@@ -1,6 +1,6 @@
 import { AiOutlineDislike } from "react-icons/ai"
-import {  postedPhoto } from "../../../data/data"
 import { FcLike} from "react-icons/fc"
+import { postedPhoto } from "../../../lib/data"
 
  
 const MyPhotos = () => {

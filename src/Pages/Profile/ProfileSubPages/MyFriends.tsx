@@ -1,6 +1,6 @@
 import Friend from "../../../components/Friend";
-import { friends } from "../../../data/data";
-
+import { friends } from "../../../lib/data";
+ 
 const MyFriends = () => {
   
  return (

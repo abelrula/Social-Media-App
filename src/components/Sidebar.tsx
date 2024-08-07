@@ -2,7 +2,7 @@ import { IoIosSettings } from "react-icons/io";
 import { IoHelpCircle } from "react-icons/io5";
   import {BsEggFried } from "react-icons/bs";
 import { NavLink, useLocation } from "react-router-dom";
-import { groups,menuLinks } from "../data/data";
+import { groups,menuLinks } from "../lib/data";
  import { Link } from "react-router-dom";
   
 const Sidebar = () => {

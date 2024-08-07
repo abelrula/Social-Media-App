@@ -1,7 +1,8 @@
-  import {AiOutlineMessage } from "react-icons/ai"
+  import {AiOutlineMessage, AiOutlinePlus } from "react-icons/ai"
 import { FaUserPlus } from 'react-icons/fa'
  import { Link, Outlet } from "react-router-dom"
-import { profileImg } from "../data/data"
+import { profileImg } from "../lib/data"
+import { MdOutlineModeEditOutline } from "react-icons/md"
 
 type catogriesType=string
 
@@ -12,21 +13,25 @@ const ProfilePage = () => {
   const catogries:catogriesType[]=["posts","photos","videos","friends"]
   return (
     <div className='container '>
-         <section className="profileContainer__top">
-            <img className="w-full h-[190px] object-cover"  src={coverImg}/>
-            <div className="flex items-start relative justify-between">
+         <section className="relative">
+            <img className=" w-full h-[210px] object-cover" src={ coverImg } />
+            <span className="bg-white py-2 absolute top-0 right-0 flex gap-2.5 items-center">
+                     <p className="flex   items-center gap-2rounded-xl  text-black  gap-1 h-fit  font-mono text-xs py-1 px-3"> <h6 className="font-bold text-sm">follwers</h6>132</p>
+                     <p className="flex   items-center gap-2rounded-xl  text-black  gap-1 h-fit  font-mono text-xs py-1 px-3"><h6 className="font-bold text-sm">following</h6> 3000</p>
+               </span>
+             <div className="flex items-start relative justify-between">
                    <span  className="flex gap-2.5 relative ">
                         <img className="w-24 h-24 rounded-full object-cover absolute -top-10 left-3.5 object-center z-10 "   src={profileImg}/>
                       <span className="relative top--3.5 left-[120px]">
                          <p className="font-sans font-bold text-xl">Abel Zewdu</p>
                          <p className="font-mono text-zinc-500 text-xs">367 friends</p>
                        </span>
-                   </span>
-          <span className="flex gap-2.5 self-end items-center">
-              <p className="flex flex-col  items-center gap-2rounded-xl  text-black  gap-1 h-fit  font-mono text-xs py-1 px-3"> <h6 className="font-bold text-sm">posts</h6>102</p>
-            <p className="flex flex-col  items-center gap-2rounded-xl  text-black  gap-1 h-fit  font-mono text-xs py-1 px-3"> <h6 className="font-bold text-sm">follwers</h6>132</p>
-              <p className="flex flex-col  items-center gap-2rounded-xl  text-black  gap-1 h-fit  font-mono text-xs py-1 px-3"><h6 className="font-bold text-sm">following</h6> 3000</p>
-                   </span>
+          </span>
+           
+            <span className="flex gap-2.5 self-end items-center">
+              <button className="text-white text-sm px-2 py-1 bg-sky-700 flex gap-2 items-center rounded-md  hover:bg-sky-900  cursor-pointer"><AiOutlinePlus  color="white"/>Add to story</button>
+              <button className="text-black text-sm px-2 py-1 bg-stone-300 flex gap-2 items-center rounded-md  hover:bg-stone-200 cursor-pointer "><MdOutlineModeEditOutline color="black" />Edit profile</button>
+              </span>
             </div>
             <ul className="flex gap-2.5 mt-12">
                   {catogries.map((item,i)=>(

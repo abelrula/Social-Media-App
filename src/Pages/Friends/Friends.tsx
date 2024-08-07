@@ -1,7 +1,7 @@
 import { BiSearch } from "react-icons/bi";
 import Friend from "../../components/Friend";
-import { friends } from "../../data/data";
-import FriendRequests from "../../components/FriendRequests";
+ import FriendRequests from "../../components/FriendRequests";
+import { friends } from "../../lib/data";
  
   const Friends = () => {
    

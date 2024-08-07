@@ -6,8 +6,7 @@ import { FaRegCommentDots } from 'react-icons/fa'
 import ProfileImage from './ProfileImage'
 import { useState } from 'react'
 import { BiLike } from 'react-icons/bi'
-import { profileImg } from '../data/data'
-import { TbNumber3Small } from 'react-icons/tb'
+ import { TbNumber3Small } from 'react-icons/tb'
 
 type reactionsType={
     fire: number;

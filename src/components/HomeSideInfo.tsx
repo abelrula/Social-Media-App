@@ -1,4 +1,4 @@
- import { events, friends, groups, onlineContacts } from '../data/data'
+ import { events, friends,  onlineContacts } from '../lib/data'
 import { MdEventSeat, MdGroups } from 'react-icons/md'
 import travel1 from"../assets/travel1.jpg"
 import { FaBirthdayCake } from 'react-icons/fa'
@@ -31,7 +31,7 @@ const HomeSideInfo = () => {
                         <img className='w-6 h-6 rounded-full object-cover object-center' src={freind.profile} />
                         <p  className="w-full text-xs  font-mono flex justify-between  items-center text-zinc-600">{freind.name} 
                       </p>
-                         <span className=" bg-sky-700 flex gap-2 items-start border text-white hover:bg-gray-800 w-17 h-5 hover:cursor-pointer p-1  rounded-xl text-start font-mono  text-[9px] "> Celebrate
+                         <span className=" bg-sky-700 flex gap-2 items-start border text-white hover:bg-gray-800 w-17 h-5 hover:cursor-pointer p-1  rounded-xl text-start font-mono  text-[9px]" > Celebrate
                          <FaBirthdayCake color='red' />
                   </span>
                         <span className='bg-black w-full mt-3  text-white text-xs  absolute bottom-0 hidden group-hover:block  font-mono'>turning 28 years old</span>

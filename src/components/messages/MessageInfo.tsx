@@ -1,6 +1,6 @@
 import { IoIosArrowForward } from "react-icons/io"
-import { imagesPostedByTheOwner } from "../../data/data"
-
+import { imagesPostedByTheOwner } from "../../lib/data"
+ 
  
 const MessageInfo = () => {
   return (

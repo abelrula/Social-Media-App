@@ -1,15 +1,8 @@
 
 import { useState } from 'react'
-import { postedContentsData } from '../data/data'
 import PostedCard from './PostedCard'
- import { AiFillLike, AiOutlineDislike, AiOutlineLike, AiTwotoneFire } from 'react-icons/ai'
-import { FcLike, FcShare} from 'react-icons/fc'
-import { BsEmojiTear } from 'react-icons/bs'
-import { FaRegCommentDots } from 'react-icons/fa'
-import ProfileImage from './ProfileImage'
-import { IoIosClose } from 'react-icons/io'
-import { profileImg } from '../data/data';
 import { PostedContentModal } from './Modals'
+import { postedContentsData } from '../lib/data'
    
 
 const PostedContents = () => {

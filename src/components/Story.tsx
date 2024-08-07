@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
-import { Stories } from "../data/data"
-import { useState } from "react";
+ import { useState } from "react";
 import ImageSlider from "./ImageSlider";
+import { Stories } from "../lib/data";
 
 const Story = () => {
   const [stories,setStories]=useState(Stories)  
@@ -32,7 +32,7 @@ const Story = () => {
                         </div>
                   </NavLink>
              <h3 className=" ml-2 text-xs text-black  font-thin font-mono  text-start  ">Followed Stories</h3>
-                  { stories.map((stories, i) => (
+                  { Stories.map((stories, i) => (
                        <div
                             style={currentIndex === i ? selectedObj : null}
                             className="w-3/4 flex flex-col items-center gap-0 no-underline"

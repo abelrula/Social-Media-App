@@ -3,8 +3,8 @@ import { IoIosNotificationsOutline } from 'react-icons/io'
 import { NavLink } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 import { BsEggFried } from 'react-icons/bs';
-import { profileImg } from '../data/data';
- 
+import { profileImg } from '../lib/data';
+  
  
  
 const Header = () => {

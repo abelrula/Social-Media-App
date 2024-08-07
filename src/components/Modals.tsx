@@ -5,7 +5,7 @@ import { BsEmojiTear } from 'react-icons/bs'
 import { FaRegCommentDots } from 'react-icons/fa'
 import ProfileImage from './ProfileImage'
 import { IoIosClose } from 'react-icons/io'
-import { profileImg } from '../data/data';
+import { profileImg } from '../lib/data'
   
 export const PostedContentModal = ({currentModal,setCurrentIndex,currentIndex,openLikeModal,setOpenLikeModal}) => {
   return (

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
-import { Stories } from "../data/data";
-function ImageSlider({currentIndex, setCurrentIndex}) {
+import { Stories } from "../lib/data";
+ function ImageSlider({currentIndex, setCurrentIndex}) {
    const [stories,setStories]=useState(Stories) 
  
   const prevSlide = () => {
