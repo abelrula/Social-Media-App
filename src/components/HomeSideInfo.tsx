@@ -1,12 +1,16 @@
- import { events, friends,  onlineContacts } from '../lib/data'
-import { MdEventSeat, MdGroups } from 'react-icons/md'
+ import {  events, friends,  onlineContacts } from '../lib/data'
+import { MdEventSeat } from 'react-icons/md'
 import travel1 from"../assets/travel1.jpg"
 import { FaBirthdayCake } from 'react-icons/fa'
-import { GoDot, GoDotFill } from 'react-icons/go'
+import { GoDotFill } from 'react-icons/go'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import Birthday from './Birthday'
 const HomeSideInfo = () => {
   
-   
+  const [ OpenModal, setOpenModal ] = useState(false)
+  
+  
   return (
     <>
         <div className="flex flex-col gap-2.5  overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-thin">
@@ -31,7 +35,7 @@ const HomeSideInfo = () => {
                         <img className='w-6 h-6 rounded-full object-cover object-center' src={freind.profile} />
                         <p  className="w-full text-xs  font-mono flex justify-between  items-center text-zinc-600">{freind.name} 
                       </p>
-                         <span className=" bg-sky-700 flex gap-2 items-start border text-white hover:bg-gray-800 w-17 h-5 hover:cursor-pointer p-1  rounded-xl text-start font-mono  text-[9px]" > Celebrate
+                         <span className=" bg-sky-700 flex gap-2 items-start border text-white hover:bg-gray-800 w-17 h-5 hover:cursor-pointer p-1  rounded-xl text-start font-mono  text-[9px]" onClick={()=>setOpenModal(true)} > Celebrate
                          <FaBirthdayCake color='red' />
                   </span>
                         <span className='bg-black w-full mt-3  text-white text-xs  absolute bottom-0 hidden group-hover:block  font-mono'>turning 28 years old</span>
@@ -53,18 +57,6 @@ const HomeSideInfo = () => {
             </ul>
            </div> 
            </div>
-           {/* <div className=" p-2.5 w-56 h-auto rounded-lg overflow-hidden bg-white ">
-            <h4 className="text-center flex items-center justify-between text-zinc-400 font-mono text-sm">Group Chats </h4>
-            <ul className="flex flex-col">
-                 {
-                  groups.map((event,i)=>(
-                    <li className="flex items-center gap-2.5 no-underline h-8" key={i}>
-                        <img className='w-6 h-6 rounded-full object-cover object-center' src={event.img} />
-                        <p className="text-xs font-mono flex flex-col text-zinc-600">{event.name} </p></li>
-                  ))
-                 }
-            </ul>
-           </div> */}
            <div className=" p-2.5 w-56 h-fit rounded-lg overflow-x-hidden overflow-y-scroll bg-white scroll-smooth scrollbar-thin max-h-1/2">
             <h4 className="text-center text-zinc-400 font-mono text-sm">Online Contacts</h4>
             <ul className="flex flex-col">
@@ -78,7 +70,11 @@ const HomeSideInfo = () => {
                   )) 
                  }
             </ul>
-           </div>
+      </div>
+      { OpenModal &&
+        <div className='bg-[#000000ad] fixed top-0 right-0 left-0  bottom-0 w-full opacity-95 h-full  flex justify-center items-center'>
+          <Birthday setOpenModal={setOpenModal} />
+      </div>}
     </>
   )
 }
