@@ -1,15 +1,15 @@
 import React from 'react'
- import { AiFillLike, AiOutlineDislike, AiOutlineLike, AiTwotoneFire } from 'react-icons/ai'
-import { FcLike, FcShare} from 'react-icons/fc'
-import { BsEmojiTear } from 'react-icons/bs'
-import { FaRegCommentDots } from 'react-icons/fa'
 import ProfileImage from './ProfileImage'
 import { IoIosClose } from 'react-icons/io'
-import { profileImg } from '../lib/data'
 import Comments from './Comments'
 import TextBox from './TextBox'
-  
-export const PostedContentModal = ({currentModal,setCurrentIndex,currentIndex,openLikeModal,setOpenLikeModal}) => {
+ 
+type propsTypes = {
+  currentModal: postedContentsDataType,
+  setCurrentIndex: React.Dispatch<React.SetStateAction<number>>,
+
+}   
+export const PostedContentModal = ({currentModal,setCurrentIndex}:propsTypes) => {
  
   return (
     <div className=" bg-[#000000ad] fixed top-0 bottom-0 flex items-center justify-center left-0 right-0  z-50">
@@ -36,7 +36,7 @@ export const PostedContentModal = ({currentModal,setCurrentIndex,currentIndex,op
             </div>
               </div>
                  <p className="w-5/6 font-sans text-xs ml-2.5 text-yellow-900 font-thin"  >{currentModal.titleDescription}</p>
-               <TextBox placeholder="add comments" />      
+               <TextBox placeholder="add comments" buttonName="send" />      
               <Comments comments={ currentModal.comments } />
              
                 </div>

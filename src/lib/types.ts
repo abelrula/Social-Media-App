@@ -96,4 +96,11 @@ declare type postedContenetsByFriendsType = {
         share: number;
         postedTime: Date;
     }[];
-  }
+}
+  declare type reactionsType={
+    fire: number;
+    dislike: number;
+    love: number;
+    cry: number;
+    like: number;
+}
