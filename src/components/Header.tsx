@@ -15,7 +15,7 @@ const Header = () => {
         <BsEggFried className="text-4 text-blue-900 font-thin" />
         <h1 className="text-xl text-blue-900 font-thin font-mono ml-2 mb-1">SocialNation</h1>
       </Link>
-      <Search />
+      <Search placeholder="Search" />
      <div className="flex items-center gap-1"> 
         <IoIosNotificationsOutline className='text-base cursor-pointer  hover:scale-50' />
         <NavLink className="flex text-sm font-mono items-center ml-4 no-underline gap-1" to="profile">Abel Zewdu

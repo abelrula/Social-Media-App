@@ -16,6 +16,9 @@ export default {
       },
       width:{
         "webkit":"-webkit-fill-available"
+      },
+      objectPosition: {
+        "top":"[10% 35%]"
       }
     },
   },

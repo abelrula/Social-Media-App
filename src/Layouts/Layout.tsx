@@ -7,7 +7,7 @@ const Layout = () => {
       <Sidebar  />
        <div className=" flex flex-col w-full">
         <Header />
-      <div className='mt-12 ml-1 p-1 h-screen w-full' >
+      <div className='mt-16 ml-1 p-1 h-screen w-full' >
         <Outlet />
       </div>
     </div>

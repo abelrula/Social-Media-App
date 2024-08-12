@@ -1,0 +1,20 @@
+/* Styling the scrollbar in Chrome and Safari */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 1px;
+}
+::-webkit-scrollbar {
+  width: 0.5px;               /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(134, 134, 134);        /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+   border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid orange;  /* creates padding around scroll thumb */
+}
+::-webkit-scrollbar-thumb {
+  background-color: #080807;
+}

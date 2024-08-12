@@ -1,7 +1,4 @@
-import { SlPicture } from "react-icons/sl"
-import { BsEmojiSmile } from "react-icons/bs"
  import TextBox from "./TextBox"
-import Emojies from "./Emojies"
  
 
 const Post = () => {

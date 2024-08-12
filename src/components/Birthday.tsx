@@ -5,14 +5,13 @@ import { postedContentsData, profileImg } from '../lib/data'
 import { useState } from 'react'
 import { FaBirthdayCake } from 'react-icons/fa'
 
-type commentType= {
-        owner: string;
-        profileImg: string;
-        comment: string;
-    }[];
- type propsTypes={ setOpenModal:React.Dispatch<React.SetStateAction<boolean>>}
+
+type propsTypes = {
+  setOpenModal: React.Dispatch<React.SetStateAction<boolean>>
+}
+ 
 const Birthday = ({setOpenModal}:propsTypes) => {
-    const [ birthdayComments,setBirthdayComments ] = useState<commentType>(postedContentsData[0].comments)
+    const [ birthdayComments,setBirthdayComments ] = useState<commentType[]>(postedContentsData[0].comments)
     console.log(postedContentsData[0].comments);
     
     return (
@@ -26,7 +25,7 @@ const Birthday = ({setOpenModal}:propsTypes) => {
             </span>
             <h5 className='text-start self-start text-xs'>Birthday Comments</h5>
             <Comments comments={birthdayComments} />
-            <TextBox placeholder="wish birthaday"/>
+            <TextBox placeholder="wish birthaday" buttonName='Send10'/>
              
       </div>
   )

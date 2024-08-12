@@ -20,6 +20,19 @@ declare type postedContentsDataType= {
     commentes?: undefined;
 }
 
+declare type imagesPostedByTheOwner = {
+  titleDescription: string,
+  image: string;
+    reactions: {
+        hate: number;
+        love: number;
+    };
+    comments: {
+        owner: string;
+        profileImg: string;
+        comment: string;
+    }[];
+}
 
 declare type groupType = {
    to?:string;
@@ -59,6 +72,11 @@ declare type postedPhoto = {
     hate: number,
     love: number
   }
+}
+declare type commentType= {
+        owner: string;
+        profileImg: string;
+        comment: string;
 }
 declare type storiesType = {
   owner: string;

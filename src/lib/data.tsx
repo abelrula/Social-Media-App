@@ -1884,9 +1884,487 @@ export const postedPhoto:postedPhoto[]=[
       love:20,
     }
   } ] 
-export const imagesPostedByTheOwner: string[] = [ "https://images.unsplash.com/photo-1480866179948-2caa74d9082a?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1656558136312-71b8f36bea25?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-   "https://images.unsplash.com/photo-1656558136312-71b8f36bea25?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
- ]
+export const imagesPostedByTheOwner=[
+  {
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image:"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:0,
+      love:20,
+    },
+     comments:[
+      {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"  It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+    },
+    {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive  Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help   It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help collecting the data points and the content for the board meeting. I was really pleased with how the presentation landed and hung together. It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     }
+    ]
+  },
+  {
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image:"https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:0,
+      love:20,
+    },
+     comments:[
+      {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"  It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+    },
+    {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive  Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help   It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help collecting the data points and the content for the board meeting. I was really pleased with how the presentation landed and hung together. It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     }
+    ]
+  },
+  {
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image:"https://images.unsplash.com/photo-1530785602389-07594beb8b73?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:0,
+      love:20,
+    },
+     comments:[
+      {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"  It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+    },
+    {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive  Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help   It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help collecting the data points and the content for the board meeting. I was really pleased with how the presentation landed and hung together. It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     }
+    ]
+  },
+  {
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image:"https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:0,
+      love:20,
+    },
+     comments:[
+      {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"  It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+    },
+    {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive  Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help   It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help collecting the data points and the content for the board meeting. I was really pleased with how the presentation landed and hung together. It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     }
+    ]
+  },
+  {
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image:"https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?q=80&w=594&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:0,
+      love:20,
+    },
+     comments:[
+      {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"  It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+    },
+    {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive  Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help   It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help collecting the data points and the content for the board meeting. I was really pleased with how the presentation landed and hung together. It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     }
+    ]
+  },
+  {
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image:"https://images.unsplash.com/photo-1508243771214-6e95d137426b?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:0,
+      love:20,
+    },
+     comments:[
+      {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"  It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+    },
+    {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive  Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help   It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help collecting the data points and the content for the board meeting. I was really pleased with how the presentation landed and hung together. It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     }
+    ]
+  },
+  {
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image:"https://images.unsplash.com/photo-1515019647021-21af2ecca43c?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:0,
+      love:20,
+    },
+     comments:[
+      {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"  It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+    },
+    {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive  Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help   It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help collecting the data points and the content for the board meeting. I was really pleased with how the presentation landed and hung together. It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     }
+    ]
+  },
+  {
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image:"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:10,
+      love:20,
+    },
+     comments:[
+      {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"  It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+    },
+    {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive  Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help   It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help collecting the data points and the content for the board meeting. I was really pleased with how the presentation landed and hung together. It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     }
+    ]
+  },
+  {
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image:"https://images.unsplash.com/photo-1529081596074-564b6cb30009?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:10,
+      love:20,
+    },
+     comments:[
+      {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"  It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+    },
+    {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive  Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help   It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help collecting the data points and the content for the board meeting. I was really pleased with how the presentation landed and hung together. It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     }
+    ]
+  },
+  {
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image:"https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:10,
+      love:20,
+    },
+     comments:[
+      {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"  It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+    },
+    {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive  Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help   It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help collecting the data points and the content for the board meeting. I was really pleased with how the presentation landed and hung together. It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     }
+    ]
+  },
+  {
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image:"https://images.unsplash.com/photo-1536644472548-98c33a604a98?q=80&w=462&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:0,
+      love:20,
+    },
+     comments:[
+      {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"  It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+    },
+    {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive  Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help   It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help collecting the data points and the content for the board meeting. I was really pleased with how the presentation landed and hung together. It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     }
+    ]
+  },
+  {
+    titleDescription:"When I am not working, I spend my time in fulfilling and relaxing pursuits such as cooking, gardening, reading, painting, knitting and craft-making",
+    image:"https://images.unsplash.com/photo-1663187087209-e51101156a31?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    reactions:{
+      hate:0,
+      love:20,
+    },
+     comments:[
+      {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"  It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+    },
+    {
+      owner:"abel zewdu",
+      profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive  Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help   It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:"Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     },
+     {
+       owner:"abel zewdu",
+       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       comment:" massive thank you for all of your help collecting the data points and the content for the board meeting. I was really pleased with how the presentation landed and hung together. It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
+     }
+    ]
+  } ]
 // export const postedContenetsByFriends:postedContenetsByFriendsType[]=[
 // {
 //       id: 1,

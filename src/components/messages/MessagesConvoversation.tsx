@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
  import { GrAttachment } from "react-icons/gr";
 import { BsEmojiSmile } from "react-icons/bs";
 import MessageInfo from "./MessageInfo";
+import TextBox from "../TextBox";
 
 
  const MessagesConvoversation = memo(() => {
@@ -32,7 +33,7 @@ import MessageInfo from "./MessageInfo";
   
  
   return (
-    <div className="flex w-full ">
+    <div className="flex w-full h-screen">
       <div className="bg-white flex flex-col w-full h-screen">
         <div className="flex justify-between bg-white py-2 px-5 w-full border border-b-slate-400">
           <div
@@ -54,7 +55,7 @@ import MessageInfo from "./MessageInfo";
             </div>
           </div>
         </div>
-        <div className= "bg-white h-[545px] flex flex-col p-8 gap-3.5 overflow-scroll  element-with-scroll">
+        <div className= "bg-white h-[430px] flex flex-col p-8 gap-3.5 overflow-scroll">
           {message.message.map((item, i) => (
             <Fragment key={i}>
               <div className="flex flex-col w-fit h-fit">
@@ -76,14 +77,7 @@ import MessageInfo from "./MessageInfo";
             </Fragment>
           ))}
         </div>
-        <div className="flex justify-center items-center w-full h-20 bg-white gap-x-3.5">
-          <div className="bg-white flex items-center p-3.5 h-16 gap-1.5 rounded-lg ">
-            <GrAttachment fontSize={24} className="infoIcon" />
-            <textarea className="w-[430px] rounded-2xl outline-none text-sm" placeholder="hy"></textarea>
-            <BsEmojiSmile fontSize={24} className="infoIcon" />
-          </div>
-          <button className="py-2.5 px-8 text-white text-base font-thin h-fit w-fit rounded-lg">send</button>
-        </div>
+       <TextBox placeholder="send message" buttonName="send" />
       </div>
         <MessageInfo />
 

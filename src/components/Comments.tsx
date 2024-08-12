@@ -1,10 +1,6 @@
  
-type propsType={
-    owner: string;
-    profileImg: string;
-    comment: string;
-}[]
 const Comments = ({ comments }) => {
+  
   return (
       <>
            <div className=' flex flex-col gap-2 h-1/2 overflow-hidden overflow-y-scroll scroll-smooth scrollbar-thin rounded-lg border border-x-sky-800'>
