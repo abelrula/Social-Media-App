@@ -1,6 +1,6 @@
 import  { useEffect, useState } from "react";
  import { NavLink } from "react-router-dom";
- import { BiSearch } from "react-icons/bi";
+import Search from "../Search";
 const MessageList = () => {
   const [ messages, setMessages ] = useState( [] );
   const [ filter, setFilter ] = useState("" );
@@ -23,11 +23,7 @@ const MessageList = () => {
       <NavLink to="." className=" bg-[#032225] p-1.5 rounded-lg  text-[30px] text-white font-mono">
         Chats
       </NavLink>
-        <span className="bg-slate-100 rounded-xl p-1.5 w-[420px] flex items-center border-[#d9d9d9] border">
-            <BiSearch className='text-zinc-700' /> 
-            <input onChange={(e)=>{setFilter(e.target.value)}}
-            className="bg-slate-100 h-6 w-full rounded-none outline-none text-xs font-mono text-zinc-700" type='text' placeholder='search message' />
-          </span>
+        <Search placeholder="Search contacts" />
             <hr></hr>
       <div className="flex flex-col gap-1   ">
         {messages.map((message, i) => (

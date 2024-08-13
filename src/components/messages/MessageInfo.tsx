@@ -4,14 +4,14 @@ import { imagesPostedByTheOwner } from "../../lib/data"
  
 const MessageInfo = () => {
   return (
-    <div className=" flex flex-col w-1/3 items-center gap-5">
+    <div className=" flex flex-col w-1/3 items-center gap-5 overflow-hidden">
           <h1 className="text-slate-900  font-mono text-2xl">Chat details</h1>
           <div className="w-full m-x-auto flex flex-col gap-5 px-3">
               <h4 className="text-slate-900 font-mono text-sm flex justify-between">Shared media (284) <IoIosArrowForward /></h4>
                <div className="flex flex-wrap gap-1 items-center">
                 {
                   imagesPostedByTheOwner.map((image,i)=>(
-                    <img className="w-16 h-16 rounded-lg object-cover object-center" src={image} key={i} alt="posts" />
+                    <img className="w-16 h-16 rounded-lg object-cover object-center" src={image.image} key={i} alt="posts" />
                   ))
                 }
               </div>

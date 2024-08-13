@@ -1,7 +1,5 @@
- import { useState } from 'react'
 import { AiOutlineDislike, AiOutlineLike, AiTwotoneFire } from 'react-icons/ai'
-import { BsEmojiTear } from 'react-icons/bs'
-import { FcLike } from 'react-icons/fc'
+
 
 const Reactions = () => {
   return (
@@ -34,7 +32,7 @@ export const ReactionsButtons = () => {
     
     return(
         <span className="bg-white h-12 absolute z-50 -top-4 left-2 flex items-center gap-3 rounded-xl px-1.5 py-0.5">
-    {Object.entries(reactbuttons).map(([ key, value ]:[string,number]) => (
+         {Object.entries(reactbuttons).map(([ key, value ]:[string,number]) => (
         <button name=" fire" value={ key } className='flex items-center font-thin text-sm gap-0.5 text-yellow-800 hover:scale-125'>
             {key} {value}
                 </button> 
