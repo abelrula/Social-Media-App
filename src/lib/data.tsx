@@ -6,6 +6,7 @@ import { HiUserGroup } from "react-icons/hi";
 
  export const BirthdayImageTemplate:string="https://images.unsplash.com/photo-1558636508-e0db3814bd1d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   export const profileImg = "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+ 
   export const postedContentsData = [
   {
     owner:'Robert Hammond',

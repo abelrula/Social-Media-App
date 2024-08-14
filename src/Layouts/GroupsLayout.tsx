@@ -3,10 +3,8 @@ import { Outlet } from "react-router-dom"
  
 const GroupsLayout = () => {
   return (
-    <div>
-      <Outlet />
-    </div>
-  )
+       <Outlet />
+   )
 }
 
 export default GroupsLayout

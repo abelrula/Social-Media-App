@@ -11,7 +11,7 @@ const Feed = () => {
     
   return (
         <div className="flex mt-3 gap-8">
-             <div className="w-[550px] mt-5 flex flex-col gap-5 o overflow-y-scroll ">
+             <div className="w-[550px] mt-5 flex flex-col gap-5 o overflow-scroll ">
                  <Stroies /> 
                  <Post />
                   <PostedContents postedContents={postedContents} />

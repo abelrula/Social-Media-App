@@ -14,8 +14,8 @@ const PostedContents = ({postedContents}) => {
      console.log(currentModal);
    return (
     <div className="flex flex-col gap-2.5 h-screen overflow-scroll" onClick={()=>setOpenLikeModal(false)}>
-        {postedContents.map((items:postedContentsDataType,index:number)=>(
-         <PostedCard key={index } setCurrentIndex={setCurrentIndex} index={index}   items={items }  />
+        {postedContents.map((posts:postedContentsDataType,index:number)=>(
+         <PostedCard key={index } setCurrentIndex={setCurrentIndex} index={index}   postedItems={posts }  />
         )) }
        
       {/* modal on click on posted contenet  */}

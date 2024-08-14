@@ -1,10 +1,10 @@
 import { useState } from "react"
-import {  postedContentsData } from "../lib/data"
+import {  groupPostedContents } from "../lib/data"
 import HomeSideInfo from "./HomeSideInfo"
 import PostedContents from "./PostedContents"
  
 const Group = () => {
- const [postedContents,setPostedContents]=useState(postedContentsData)
+ const [postedContents,setPostedContents]=useState(groupPostedContents)
   return (
    
      <div className="flex mt-3 gap-8">
