@@ -1,15 +1,17 @@
 import { GrPrevious } from "react-icons/gr";
 import { GrNext } from "react-icons/gr";
 
-import React, { useRef, useState } from 'react'
+import React, {useRef, useState } from 'react'
 import ProfileImage from './ProfileImage'
 import { IoIosClose, IoMdClose } from 'react-icons/io'
 import Comments from './Comments'
 import TextBox from './TextBox'
 import { profileImg } from '../lib/data'
 import  { ReactionsButtons } from './Reactions'
+import ReactQuill from 'react-quill'
 import 'react-quill/dist/quill.snow.css';
-
+import { SlPicture } from 'react-icons/sl'
+import Emojies from './Emojies'
  
 type propsTypes = {
   currentModal: postedContentsDataType,
@@ -125,6 +127,59 @@ export const PhotoModal = ({ posted, setOpenModal }: propsType) => {
 
 
 
+type PostModalPropsTypes = {
+  onclick:()=>void
+}
 
+export const PostModal = ({ onclick }: PostModalPropsTypes) => {
+  
+  const [ msg, setMsg ] = useState('');
+  const [ PreviewUrl, setPreviewUrl ] = useState(undefined)
+  
+  const fileRef = useRef<HTMLInputElement>()
+ 
+  const OpenFile = () => {
+    fileRef.current.click()
+  }
+ 
+  function readAndPreview (e) {
+    const files = e.target.files 
+    if (files) {
+           
+        const filese=Array.from(files).map((img:Blob)=>URL.createObjectURL(img))
+        console.log(filese);
+        setPreviewUrl(filese)
+    }
+      
+  }
+ 
+
+
+  return (
+      <div className=" bg-[#000000ad] fixed top-0 bottom-0 flex items-center justify-center left-0 right-0  z-50">
+        <form className=" relative bg-white h-min-[250px] h-auto w-[475px] flex gap-2.5 flex-col p-2.5">
+        <header className="flex gap-2 items-center"><img className='w-6 h-6 rounded-full object-cover object-center' src={ profileImg } /> Abel Zewdu</header>
+        <IoMdClose onClick={ onclick } className="absolute top-0 right-0" fontSize={ 30 } />
+        <div className="flex flex-col gap-2 w-11/12 ">
+            <ReactQuill  theme="snow" value={msg} onChange={setMsg} />
+          { PreviewUrl &&
+             <div className="flex gap-1 flex-wrap h-max-52 h-auto overflow-y-scroll ">
+               {PreviewUrl?.map((previewImage)=>(
+                <img className="w-24 h-24 object-cover object-center rounded-lg" src={ previewImage } />
+                 ))} 
+        </div>}
+       
+        </div>  
+            <span className="ml-2 flex items-center gap-1 z-50">
+            <SlPicture className='icon' color='red' onClick={OpenFile} />
+            <input type='file' onChange={readAndPreview} className='hidden' multiple={true} ref={fileRef}  />
+                  <Emojies setMsg={setMsg}  />       
+             </span> 
+         <button className="bg-black py-1 px-4 self-end text-white hover:bg-[#0000005e]"  type="submit">Post</button>
+        </form>
+          </div>
+  )
+
+ }
 
  
