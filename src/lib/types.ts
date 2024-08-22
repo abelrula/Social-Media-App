@@ -33,7 +33,32 @@ declare type imagesPostedByTheOwner = {
         comment: string;
     }[];
 }
-
+declare type groupData= {
+    groupName: string;
+    ProfileImg: string;
+    CoverImg: string;
+  unseenTopics: number;
+  followers: number;
+    posetdContents: {
+        owner: string;
+        titleDescription: string;
+        image: string[];
+        reactions: {
+            like: number;
+            unliked: number;
+            hot: number;
+            cry: number;
+            laugh: number;
+        };
+        comments: {
+            owner: string;
+       profileImg: string;
+      comment: string;
+        }[];
+        share: number;
+        postedTime: Date;
+    }[];
+}
 declare type groupType = {
    to?:string;
    name: string;
