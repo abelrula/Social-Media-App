@@ -3,6 +3,7 @@ import { FaUserPlus } from 'react-icons/fa'
  import { Link, Outlet } from "react-router-dom"
 import { profileImg } from "../lib/data"
 import { MdOutlineModeEditOutline } from "react-icons/md"
+import { CiCamera } from "react-icons/ci"
 
 type catogriesType=string
 
@@ -29,8 +30,8 @@ const ProfilePage = () => {
           </span>
            
             <span className="flex gap-2.5 self-end items-center">
-              <button className="text-white text-sm px-2 py-1 bg-sky-700 flex gap-2 items-center rounded-md  hover:bg-sky-900  cursor-pointer"><AiOutlinePlus  color="white"/>Add to story</button>
-              <button className="text-black text-sm px-2 py-1 bg-stone-300 flex gap-2 items-center rounded-md  hover:bg-stone-200 cursor-pointer "><MdOutlineModeEditOutline color="black" />Edit profile</button>
+              <button className="text-white text-sm px-2 py-1 bg-sky-700 flex gap-2 items-center rounded-md  hover:bg-sky-900  cursor-pointer"><AiOutlinePlus  color="white"/>Add  story</button>
+              <button className="text-black text-sm px-2 py-1 bg-stone-300 flex gap-2 items-center rounded-md  hover:bg-stone-200 cursor-pointer "><CiCamera/>Edit profile</button>
               </span>
             </div>
             <ul className="flex gap-2.5 mt-12">

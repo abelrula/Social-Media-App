@@ -37,9 +37,9 @@ const HomeSideInfo = () => {
                         <img className='w-6 h-6 rounded-full object-cover object-center' src={freind.profile} />
                         <p  className="w-full text-xs  font-mono flex justify-between  items-center text-zinc-600">{freind.name} 
                       </p>
-                         <span className=" bg-sky-700 flex gap-2 items-start border text-white hover:bg-gray-800 w-17 h-5 hover:cursor-pointer p-1  rounded-xl text-start font-mono  text-[9px]" onClick={()=>setOpenModal(true)} > Celebrate
+                         <button className=" bg-sky-700 flex gap-2 items-start border text-white hover:bg-gray-800 w-17 h-5 hover:cursor-pointer p-1  rounded-xl text-start font-mono  text-[9px]" onClick={()=>setOpenModal(true)} > Celebrate
                          <FaBirthdayCake color='red' />
-                  </span>
+                  </button>
                         <span className='bg-black w-full mt-3  text-white text-xs  absolute bottom-0 hidden group-hover:block  font-mono'>turning 28 years old</span>
                      </li>
                   ))
@@ -51,9 +51,14 @@ const HomeSideInfo = () => {
             <ul className="flex flex-col ">
                  {
                   events.map((event,i)=>(
-                    <li className="flex items-center gap-2.5 no-underline h-8" key={i}>
-                        <img className='w-6 h-6 rounded-full object-cover object-center' src={travel1} />
-                        <p className="text-xs font-mono flex flex-col text-zinc-600">{event.event}</p></li>
+                    <li className="flex items-center justify-between gap-2.5 no-underline h-8" key={i}>
+                      <span className="flex gap-1 items-center">
+                         <img className='w-6 h-6 rounded-full object-cover object-center' src={travel1} />
+                          <p className="text-xs font-mono  text-zinc-600">{ event.event }</p>
+                       </span>
+                       <button className=" bg-sky-700 self-end flex gap-2 items-start border text-white hover:bg-gray-800 w-8 h-5 hover:cursor-pointer p-1  rounded-xl text-start font-mono  text-[9px]" onClick={()=>setOpenModal(true)} > Join
+                     </button>
+                   </li>
                   ))
                  }
             </ul>
