@@ -25,7 +25,7 @@ const Birthday = ({setOpenModal}:propsTypes) => {
             </span>
             <h5 className='text-start self-start text-xs'>Birthday Comments</h5>
             <Comments comments={birthdayComments} />
-            <TextBox placeholder="wish birthaday" buttonName='Send10'/>
+            <TextBox placeholder="wish birthday" buttonName='Send10'/>
              
       </div>
   )
