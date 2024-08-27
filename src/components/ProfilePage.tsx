@@ -4,12 +4,19 @@ import { FaUserPlus } from 'react-icons/fa'
 import { profileImg } from "../lib/data"
 import { MdOutlineModeEditOutline } from "react-icons/md"
 import { CiCamera } from "react-icons/ci"
+import { useState } from "react"
+import { UploadCoverImage } from "./Modals"
 
 type catogriesType=string
 
 const ProfilePage = () => {
  console.log("abela")
  
+  const [ openModal, setOpenModal ] = useState(false)
+  const onClick = () => {
+    setOpenModal(prev=> !prev)
+  }
+  
   const coverImg="https://images.unsplash.com/photo-1631479290037-97d776982ea4?q=80&w=1408&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   const catogries:catogriesType[]=["posts","photos","videos","friends"]
   return (
@@ -28,12 +35,11 @@ const ProfilePage = () => {
                          <p className="font-mono text-zinc-500 text-xs">367 friends</p>
                        </span>
           </span>
-           
-            <span className="flex gap-2.5 self-end items-center">
-              <button className="text-white text-sm px-2 py-1 bg-sky-700 flex gap-2 items-center rounded-md  hover:bg-sky-900  cursor-pointer"><AiOutlinePlus  color="white"/>Add  story</button>
-              <button className="text-black text-sm px-2 py-1 bg-stone-300 flex gap-2 items-center rounded-md  hover:bg-stone-200 cursor-pointer "><CiCamera/>Edit profile</button>
-              </span>
-            </div>
+          <button className="mr-2 -mt-2 text-sm px-2 py-1 bg-black text-white flex gap-2 items-center rounded-md  hover:bg-slate-700 hover:text-white cursor-pointer " onClick={ () => setOpenModal(true) }><CiCamera />Edit profile</button>
+             {/* onlick UploadCoverImage Modal open*/ }
+           {openModal && <UploadCoverImage onclick={onClick} />}
+
+             </div>
             <ul className="flex gap-2.5 mt-12">
                   {catogries.map((item,i)=>(
                    <Link to={item === "posts" ? "." : item} className="px-1.5 py-1.5 rounded-xl text-white font-mono text-xs bg-sky-900 no-underline" key={i}>{item}</Link>
