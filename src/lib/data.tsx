@@ -2294,31 +2294,26 @@ export const onlineContacts:onlineContactsType[]=[
       profile: "https://images.unsplash.com/photo-1495603889488-42d1d66e5523?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGJsYWNrJTIwbWFsZXN8ZW58MHx8MHx8fDA%3D"
     },
 ]
-export const events:eventsType[]=[ 
+export const SuggestedGroups:SuggestedGroupsType[]=[ 
   {
-    event:"Garden BBQ",
-    place:"Tom's garden",
-    time:new Date().toDateString()
-  },
+     owner:"AI Intelegence",
+     image:"https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1530&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+   },
   {
-    event:"City Council Vote",
-    place:"Town Hall",
-    time:new Date().toDateString()
-  },
+    owner: "Oloympic Lovers",
+    image:"https://plus.unsplash.com/premium_photo-1718819666013-f84db393bb62?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+   },
   {
-    event:"Post Punk Festival",
-    place:"Tom's garden",
-    time:new Date().toDateString()
-  },
+    owner: "Only Couples",
+    image:"https://plus.unsplash.com/premium_photo-1680686840755-1d4672ab7fa7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+   },
   {
-    event:"Yebonce Tower 2024",
-    place:"Tom's garden",
-    time:new Date().toDateString()
-  },{
-    event:"May be Bloring Standup",
-    place:"Tom's garden",
-    time:new Date().toDateString()
-  },
+    owner: "Tom's garden",
+    image:"https://images.unsplash.com/photo-1701590223282-f137316edea0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+   },{
+    owner: "Guns",
+     image:"https://plus.unsplash.com/premium_photo-1661901234139-d833950e05e0?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+   },
   
  ]
 export const menuLinks:menuLinksType[]= [
@@ -2336,11 +2331,6 @@ export const menuLinks:menuLinksType[]= [
     title: "Message",
     to: "message",
     icon: <BiMessage className="icon" fill="#050505" />,
-  },
-  {
-    title: "Events",
-    to: "events",
-    icon: <BsActivity className="icon" fill="#050505" />,
   },
   {
     title: "Stories",

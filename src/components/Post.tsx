@@ -17,7 +17,7 @@ const Post = () => {
      </div>
         </div>
         {
-           openmodal && <PostModal onclick={onclick} />
+           openmodal && <PostModal onclick={onclick} postType="Post" />
         }
      </>
    )

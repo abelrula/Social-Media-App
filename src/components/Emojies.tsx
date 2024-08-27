@@ -19,7 +19,7 @@ function Emojies ({setMsg}:{setMsg:React.Dispatch<React.SetStateAction<string>>}
           onClick={() => setShowPicker((val) => !val)}
         />
         {showPicker && (
-        <span className={`${pathname.includes("message") && showPicker ? "absolute -top-[510px]" : null}`}>
+        <span className={`${pathname.includes("message") &&  showPicker ? "absolute -top-[510px]" :  "absolute -top-64 left-24 "}`}>
           <Picker  onEmojiClick={handleEmojiClick} />
 
         </span>

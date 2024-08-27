@@ -73,11 +73,10 @@ declare type freindsType= {
   name: string;
   profile: string;
 }
-declare type eventsType= {
-  event: string;
-  place: string;
-  time: string;
-}
+declare type SuggestedGroupsType= {
+   owner: string;
+   image: string;
+ }
 declare type menuLinksType={
   title: string;
   to: string;
