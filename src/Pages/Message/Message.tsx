@@ -1,4 +1,4 @@
-import MessageLayout from "../../components/messages/MessageLayout"  
+import MessageLayout from "../../Layouts/MessageLayout"  
 const Message = () => {
   return (
     <>

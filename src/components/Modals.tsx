@@ -229,5 +229,31 @@ export const UploadCoverImage=({onclick}:UploadCoverImagePropsTypes)=>{
   
 }
  
-
+const MessageInfoPhotoModalPropsType = {
+  
+}
+ export const MessageInfoPhotoModal = ({ openModalData, setOpenModal }) => {
+    
+  
  
+  return (
+    <>
+     <div className=" bg-[#000000ad] fixed top-0 bottom-0 flex items-center justify-center left-0 right-0  z-50">
+                <IoIosClose fontSize={23} className='text-4xl absolute text-white cursor-pointer  top-1 right-2 hover:text-5xl' onClick={()=>setOpenModal(false)} />
+          <div className="relative bg-white h-[400px] w-[350px] flex flex-col" key={openModalData.image}  >
+              <img src={ openModalData.image } className='rounded-lg w-full h-full object-center object-cover' />                      
+              <div className="absolute w-full flex flex-col bottom-0 bg-white p-2 h-auto"> 
+                 <p className="w-5/6 font-sans text-xs ml-2.5 text-black font-normal"  >{openModalData.titleDescription}</p>
+              <span className="self-end mr-2 mt-2 flex gap-2">
+                 <p className='text-xs font-thin text-black font-sans leading-tight'>
+                You
+               </p>
+               <p className='text-xs font-thin text-slate-500 font-sans leading-tight'>1 hour ago</p>
+              </span>
+                </div>
+        </div>
+              
+      </div>
+    </>
+  )
+}

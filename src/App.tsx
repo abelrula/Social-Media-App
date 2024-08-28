@@ -11,7 +11,7 @@ import MyVideos from './Pages/Profile/ProfileSubPages/MyVideos'
 import MyFriends from './Pages/Profile/ProfileSubPages/MyFriends'
 import MessagesConvoversation from "./components/messages/MessagesConvoversation";
 import MessageListheader from "./components/messages/MessageListheader";  
-import MessageLayout from "./components/messages/MessageLayout";
+import MessageLayout from "./Layouts/MessageLayout";
 import GroupsLayout from './Layouts/GroupsLayout'
 import Group from './components/Group'
 import Events from './Pages/Events/Events'
