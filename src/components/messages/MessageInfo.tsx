@@ -39,7 +39,7 @@ const MessageInfo = () => {
                     </ul>
               </div>
         </> )}
-        <ViewMore type={selectedViewMore} setSelectedViewMore={setSelectedViewMore} />
+       {selectedViewMore && <ViewMore type={selectedViewMore} setSelectedViewMore={setSelectedViewMore} />}
       </div>
       
     </>
