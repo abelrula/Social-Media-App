@@ -18,3 +18,12 @@
 ::-webkit-scrollbar-thumb {
   background-color: #080807;
 }
+/* setting quiil text editor style */
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+font-family: math !important;
+    font-weight: 100 !important;
+    font-size: 14px !important;
+    color: rgb(0, 0, 0) !important;
+    height: 95px !important;
+    width: auto !important;
+}
