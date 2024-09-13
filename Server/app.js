@@ -19,3 +19,8 @@ app.listen( PORT, () =>
     console.log(`running on port ${PORT}`);
     
 })
+app.use((err,req,res,next)=>{
+
+     console.log(`this is global error${err.stack}`)
+     res.status(500).send("server error")
+})
