@@ -4,7 +4,7 @@ const userSchema = Schema( {
         type: String,
         required:true
     },
-    firstName: {
+     firstName: {
         type: String,
         required:true
     },
@@ -12,6 +12,10 @@ const userSchema = Schema( {
         type: String,
         required:true
     },
+    userName: {
+       type: String,
+        required:true  
+     },
     password: {
          type: String,
          required:true
