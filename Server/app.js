@@ -4,7 +4,8 @@ const verifyToken=require("./utility/verifyToken")
 const authController=require("./routes/auth")
 const cookieParser = require( "cookie-parser" )
 const bodyParser = require( "body-parser" )
- 
+const handleRefreshToken = require( "./controllers/refreshToken" )
+
 require( "dotenv" ).config()
 const app = express()
 app.use( cookieParser() )
@@ -30,6 +31,8 @@ app.get( "/test", verifyToken, ( req, res ) =>
       })
 } )
 
+// testing route refreshtoken for granting to get new accessToken
+app.get("/refreshToken",handleRefreshToken)
 // listen server on port
 app.listen( PORT, () =>{
     console.log(`running on port ${PORT}`);
