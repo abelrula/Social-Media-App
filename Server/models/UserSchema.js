@@ -22,6 +22,9 @@ const userSchema = Schema( {
     },
      phone:{
          type:String,
+    },
+     refreshToken:{
+         type:String,
      },
     age: {
         type: Number,

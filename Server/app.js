@@ -3,11 +3,16 @@ const connectDB = require( "./config/dbConfig" )
 const verifyToken=require("./utility/verifyToken")
 const authController=require("./routes/auth")
 const cookieParser = require( "cookie-parser" )
-
+const bodyParser = require( "body-parser" )
+ 
 require( "dotenv" ).config()
-// parsing incoming cookies
 const app = express()
-app.use(cookieParser())
+app.use( cookieParser() )
+app.use(bodyParser.urlencoded({extended:false}))
+app.use( bodyParser.json() )
+
+// parsing incoming cookies
+
 const PORT=process.env.PORT || 3500
 
 app.use( express.json() )
@@ -16,6 +21,14 @@ app.use( express.json() )
 connectDB()
 // user Authorization 
 app.use( "/auth", authController )
+
+// testing verifyToken middleware workin 
+app.get( "/test", verifyToken, ( req, res ) =>
+{
+      res.status(200).json({message:"yep",
+        user:req.user
+      })
+} )
 
 // listen server on port
 app.listen( PORT, () =>{

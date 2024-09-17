@@ -45,31 +45,25 @@ exports.register = async ( req, res,next ) =>
     }
 } 
     // login user
-exports.login = async ( req, res ) =>
-{
-    const { email, password } = req.body
-    console.log(email, password)
+exports.login = async ( req, res ) =>{
     
-    if ( !email && !password ) res.status( 401 ).json( { message: "All Field Is Required" } )
+    const { email, password } = req.body
+
+    if ( !email || !password ) res.status( 401 ).json( { message: "All Field Is Required" } )
     
     // find if a user if its exist
     const user = await User.findOne( { email } ).exec()
     console.log(user);
- 
+  if(!user ) res.status( 400 ).json( { message: "failed to login username or password is incorrect" } )
     // decrypt password using bcrypt
     
     const hashedPassword = user.password
     
-     const matchedPassword =  await bcrypt.compare( password,hashedPassword, function(err, res) {
-                     if(err) {
-                        console.log('Comparison error: ', err);
-                    }
-                })
+     const matchedPassword =  await bcrypt.compare( password,hashedPassword)
     console.log(matchedPassword);
     
     
     if ( !matchedPassword || !user ) res.status( 400 ).json( { message: "failed to login username or password is incorrect" } )
-    
     
          
         // generating access token and will be generated | requested based on refresh token within small amount of time
@@ -84,8 +78,8 @@ exports.login = async ( req, res ) =>
         
         // generating refresh token after some amount of time saved in browser coockie so not to be leaked
         
-        const RefreshToken = jwt.sign(
-            { user: {
+        const RefreshToken = jwt.sign({
+                user: {
                 userName: user.userName,
              email: user.email
             }},
@@ -93,19 +87,27 @@ exports.login = async ( req, res ) =>
             { expiresIn: "7d" }
         )
 
+    // save user with refreshToken in database
+     user.refreshToken = RefreshToken
+    
+    const userWithRefreshToken = await user.save()
         
-        res.status( 200 ).json( {
-            message: "logged in successfully",
-            accessToken: AccessToken
-        } )
-        
+        console.log(userWithRefreshToken);
+      
+    // store  refreshToken in cookies to not be accesed by front end using javascript 
+    // used as request fro the new access token in fron end
         res.cookie( "jwt", RefreshToken, {
             maxAge: 1000 * 60 * 60 * 24 * 7,
             httpOnly: true,
             sameSite: "none",
-            secure: true
+            secure:true
+         } )
+       
+    
+        res.status( 200 ).json( {
+            message: "logged in successfully",
+            accessToken: AccessToken
         } )
-        
      
 }
 
