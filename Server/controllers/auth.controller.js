@@ -1,6 +1,6 @@
 
 const asyncHandler = require( "express-async-handler" )
-const User = require( "../models/UserSchema" )
+const User = require( "../models/user.model" )
 const jwt= require("jsonwebtoken")
 const bcrypt=require("bcrypt")
 exports.register = async ( req, res,next ) =>
@@ -112,7 +112,24 @@ exports.login = async ( req, res ) =>{
 }
 
     // logout user
-exports.logout = async ( req,res ) =>{
+exports.logout = async ( req, res ) =>{
+   
+    // not content
+    if ( !req.cookies.jwt ) res.sendStatus( 204 )
     
-     
+    const Token = req.cookies.jwt
+    const user = await User.findOne( { refreshToken: Token } ).exec()
+    
+    if ( !user ){
+        res.clearCookie( "jwt", { httpOnly: true } );
+        return res.sendStatus( 204 );
+    }
+
+   // find the user and remove the refreshToken from db
+      await User.update({refreshToken:Token},{$unset:{refreshToken:""}}).exec()
+   
+    //remove  jwt cookie if its there
+      res.clearCookie( "jwt", { httpOnly: true } );
+         return res.sendStatus( 204 );
+
 }

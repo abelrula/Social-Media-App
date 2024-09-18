@@ -9,6 +9,10 @@ const MongoDBURL=process.env.MONGO_DB_URL
          mongoose.connection.on("error", err => {
              console.log("err", err)
              })
+             const db = mongoose.connection;
+
+db.once('open', () => console.log('Successfully connected to MongoDB'));
+db.on('error', (e) => console.log(e));
          mongoose.connection.on("connected", (err, res) => {
         console.log("mongoose is connected")
         })

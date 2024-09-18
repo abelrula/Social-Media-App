@@ -1,10 +1,11 @@
 const express = require( "express")
 const connectDB = require( "./config/dbConfig" )
 const verifyToken=require("./utility/verifyToken")
-const authController=require("./routes/auth")
+const authController=require("./routes/auth.route")
 const cookieParser = require( "cookie-parser" )
 const bodyParser = require( "body-parser" )
-const handleRefreshToken = require( "./controllers/refreshToken" )
+const refreshToken_Route=require("./routes/refreshToken.route")
+const auth_Route=require("./routes/auth.route")
 
 require( "dotenv" ).config()
 const app = express()
@@ -21,7 +22,10 @@ app.use( express.json() )
     //database connection
 connectDB()
 // user Authorization 
-app.use( "/auth", authController )
+app.use( "/auth", auth_Route)
+
+// testing route refreshtoken for granting to get new accessToken
+app.get( "/refreshToken",refreshToken_Route)
 
 // testing verifyToken middleware workin 
 app.get( "/test", verifyToken, ( req, res ) =>
@@ -31,8 +35,7 @@ app.get( "/test", verifyToken, ( req, res ) =>
       })
 } )
 
-// testing route refreshtoken for granting to get new accessToken
-app.get("/refreshToken",handleRefreshToken)
+
 // listen server on port
 app.listen( PORT, () =>{
     console.log(`running on port ${PORT}`);
