@@ -25,7 +25,7 @@ async function handleRefreshToken  ( req, res )
             if ( err || encoded.user.userName !== user.userName  ) res.sendStatus( 401 );
          const accessToken= jwt.sign( 
                 {
-                    "user":encoded.user
+                    user:encoded.user
                 }
                 , process.env.ACCESS_TOKEN_SECRET,
                 {

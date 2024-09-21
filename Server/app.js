@@ -1,14 +1,18 @@
 const express = require( "express")
 const connectDB = require( "./config/dbConfig" )
 const verifyToken=require("./utility/verifyToken")
-const authController=require("./routes/auth.route")
 const cookieParser = require( "cookie-parser" )
+ const asyncHandlers=require("express-async-handler")
 const bodyParser = require( "body-parser" )
 const refreshToken_Route=require("./routes/refreshToken.route")
 const auth_Route=require("./routes/auth.route")
+const post_Route=require("./routes/post.route")
+const User = require( "./models/user.model" )
 
 require( "dotenv" ).config()
+
 const app = express()
+
 app.use( cookieParser() )
 app.use(bodyParser.urlencoded({extended:false}))
 app.use( bodyParser.json() )
@@ -22,18 +26,24 @@ app.use( express.json() )
     //database connection
 connectDB()
 // user Authorization 
-app.use( "/auth", auth_Route)
+app.use( "/api/auth", auth_Route )
+//users posting content 
+app.use( "/api/post", post_Route)
 
 // testing route refreshtoken for granting to get new accessToken
-app.get( "/refreshToken",refreshToken_Route)
+app.use( "/api/refreshToken",refreshToken_Route)
 
-// testing verifyToken middleware workin 
-app.get( "/test", verifyToken, ( req, res ) =>
-{
-      res.status(200).json({message:"yep",
-        user:req.user
+// getting all users for testing purpose
+app.use( "/api/users",asyncHandlers(async( req, res ) =>{
+
+  //fetchinfg all users
+  const users = await User.find( {} )
+ 
+  res.status( 200 ).json( {
+       message: "here are your users",
+        user:users
       })
-} )
+} ))
 
 
 // listen server on port

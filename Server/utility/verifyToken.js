@@ -4,11 +4,9 @@ const jwt= require("jsonwebtoken")
  function verifyToken ( req, res, next ){
     
      const authHeader = req.headers["authorization"]
-     console.log(authHeader);
-     
+      
     const token = authHeader?.split( " " )[1]
-    console.log(token);
-    
+     
     if ( !authHeader ) res.sendStatus( 401 )
     
      jwt.verify( token,
