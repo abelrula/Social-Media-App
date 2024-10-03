@@ -6,7 +6,7 @@ const cookieParser = require( "cookie-parser" )
 const bodyParser = require( "body-parser" )
 const refreshToken_Route=require("./routes/refreshToken.route")
 const auth_Route=require("./routes/auth.route")
-const post_Route=require("./routes/post.route")
+const feeds_Route=require("./routes/postedContent.route")
 const User = require( "./models/user.model" )
 
 require( "dotenv" ).config()
@@ -23,12 +23,15 @@ const PORT=process.env.PORT || 3500
 
 app.use( express.json() )
 
+
     //database connection
 connectDB()
+
 // user Authorization 
 app.use( "/api/auth", auth_Route )
 //users posting content 
-app.use( "/api/post", post_Route)
+app.use( "/api/feeds", feeds_Route)
+
 
 // testing route refreshtoken for granting to get new accessToken
 app.use( "/api/refreshToken",refreshToken_Route)
@@ -37,7 +40,7 @@ app.use( "/api/refreshToken",refreshToken_Route)
 app.use( "/api/users",asyncHandlers(async( req, res ) =>{
 
   //fetchinfg all users
-  const users = await User.find( {} )
+const users = await User.find( {} )
  
   res.status( 200 ).json( {
        message: "here are your users",
