@@ -7,6 +7,7 @@ const bodyParser = require( "body-parser" )
 const refreshToken_Route=require("./routes/refreshToken.route")
 const auth_Route=require("./routes/auth.route")
 const feeds_Route=require("./routes/postedContent.route")
+const stories_Route=require("./routes/stories.route")
 const User = require( "./models/user.model" )
 
 require( "dotenv" ).config()
@@ -32,6 +33,8 @@ app.use( "/api/auth", auth_Route )
 //users posting content 
 app.use( "/api/feeds", feeds_Route)
 
+//users posting story and get all story 
+app.use( "/api/stories", stories_Route )
 
 // testing route refreshtoken for granting to get new accessToken
 app.use( "/api/refreshToken",refreshToken_Route)

@@ -6,7 +6,7 @@ const router = express.Router()
 
 router.post( "/post",post )
 router.get( "/", getAllPostedContnet )
-router.get( "/:id",verifyToken,getPostedContnetById )
+router.get( "/:id",getPostedContnetById )
 // router.post( "/", postController )
 
 module.exports=router

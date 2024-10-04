@@ -5,12 +5,13 @@ const User = require( "../models/user.model" )
 exports.post = expressAsyncHandler( async ( req, res ) =>{
     
     const { ...post } = req.body
-    console.log( post );
+  const pramsId= req.params.id
+    const userId = req.user
+     console.log( post );
 
-    // const userId = req.user
-    
-    // const foundUser = await User.findById(userId).lean()
-    // if (!foundUser ) res.sendStatus( 404 )
+    if(userId !== pramsId) res.sendStatus(401)
+    const foundUser = await User.findById(userId).lean()
+    if (!foundUser ) res.sendStatus( 404 )
     const newPost =  new Post( { ...post } )
     await newPost.save()
     console.log( newPost );
@@ -21,7 +22,7 @@ exports.post = expressAsyncHandler( async ( req, res ) =>{
 
 exports.getAllPostedContnet = expressAsyncHandler(async (req,res) =>{
 
-    const AllPostedContents = await Post.find({}).populate("owner")
+    const AllPostedContents = await Post.find({}).populate("owner","-_id firstName lastName profile" )
     
     if ( !AllPostedContents ) res.sendStatus( 404 )
      
@@ -34,9 +35,11 @@ exports.getAllPostedContnet = expressAsyncHandler(async (req,res) =>{
 
 
 exports.getPostedContnetById = expressAsyncHandler( async ( req, res ) =>{
-     const postId = req.params.id
-     const postedContentsById = await Post.findById({_id:postId}).populate("owner")
-     if ( !postedContentsownerId ) res.sendStatus( 404 )
+    const postId = req.params.id
+    console.log(postId);
+     
+     const postedContentsById = await Post.findById(postId).populate("owner","firstName lastName profile")
+     if ( !postedContentsById ) res.sendStatus( 404 )
      res.status( 200 ).send( { data: postedContentsById } )  
 })
  
