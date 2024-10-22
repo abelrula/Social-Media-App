@@ -5,7 +5,7 @@ const verifyToken = require( "../utility/verifyToken" )
 
 const router = express.Router()
 
-router.post( "/post", postStory )
-router.get( "/",getAllStories )
+router.post( "/post",verifyToken, postStory )
+router.get( "/",verifyToken,getAllStories )
   
 module.exports=router

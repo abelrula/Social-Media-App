@@ -1,9 +1,10 @@
 
-const asyncHandler = require( "express-async-handler" )
-const User = require( "../models/user.model" )
+ const User = require( "../models/user.model" )
 const jwt= require("jsonwebtoken")
 const bcrypt=require("bcrypt")
-exports.register = async ( req, res,next ) =>
+const expressAsyncHandler = require( "express-async-handler" )
+
+exports.register = expressAsyncHandler(async ( req, res,next ) =>
 {
 
     // extracting in a destructure form
@@ -33,19 +34,18 @@ exports.register = async ( req, res,next ) =>
         college
     } )
     
-    try {
-        await newUser.save()
-         res.status( 200 ).send( {
+    
+       const savedUser= await newUser.save()
+        res.status( 200 ).send( {
         message: "user created successfully",
-        data: newUser
- 
+        data: newUser,
+        savedUser: savedUser
     } )
-    } catch (error) {
-        next(error)
-    }
-} 
+ 
+     
+} )
     // login user
-exports.login = async ( req, res ) =>{
+exports.login = expressAsyncHandler(async ( req, res ) =>{
     
     const { email, password } = req.body
 
@@ -60,7 +60,7 @@ exports.login = async ( req, res ) =>{
     const hashedPassword = user.password
     
      const matchedPassword =  await bcrypt.compare( password,hashedPassword)
-    console.log(matchedPassword);
+    // console.log(matchedPassword);
     
     
     if ( !matchedPassword || !user ) res.status( 400 ).json( { message: "failed to login username or password is incorrect" } )
@@ -92,7 +92,7 @@ exports.login = async ( req, res ) =>{
     
     const userWithRefreshToken = await user.save()
         
-        console.log(userWithRefreshToken);
+        // console.log(userWithRefreshToken);
       
     // store  refreshToken in cookies to not be accesed by front end using javascript 
     // used as request fro the new access token in fron end
@@ -109,10 +109,10 @@ exports.login = async ( req, res ) =>{
             accessToken: AccessToken
         } )
      
-}
+})
 
     // logout user
-exports.logout = async ( req, res ) =>{
+exports.logout = expressAsyncHandler(async ( req, res ) =>{
    
     // not content
     if ( !req.cookies.jwt ) res.sendStatus( 204 )
@@ -132,4 +132,4 @@ exports.logout = async ( req, res ) =>{
       res.clearCookie( "jwt", { httpOnly: true } );
          return res.sendStatus( 204 );
 
-}
+})
