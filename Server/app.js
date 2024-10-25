@@ -8,8 +8,8 @@ const refreshToken_Route=require("./routes/refreshToken.route")
 const auth_Route=require("./routes/auth.route")
 const feeds_Route=require("./routes/postedContent.route")
 const stories_Route=require("./routes/stories.route")
-const User = require( "./models/user.model" )
-
+const user_Route=require("./routes/user.route")
+ 
 require( "dotenv" ).config()
 
 const app = express()
@@ -40,16 +40,7 @@ app.use( "/api/stories", stories_Route )
 app.use( "/api/refreshToken",refreshToken_Route)
 
 // getting all users for testing purpose
-app.use( "/api/users",asyncHandlers(async( req, res ) =>{
-
-  //fetchinfg all users
-const users = await User.find( {} )
- 
-  res.status( 200 ).json( {
-       message: "here are your users",
-        user:users
-      })
-} ))
+app.use( "/api/user",user_Route)
 
 
 // listen server on port
