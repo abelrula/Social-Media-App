@@ -1,6 +1,5 @@
  import { friends,  onlineContacts, SuggestedGroups } from '../lib/data'
- import travel1 from"../assets/travel1.jpg"
-import { FaBirthdayCake } from 'react-icons/fa'
+ import { FaBirthdayCake } from 'react-icons/fa'
 import { GoDotFill } from 'react-icons/go'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
@@ -13,7 +12,8 @@ const HomeSideInfo = () => {
   
   return (
     <>
-        <div className="flex flex-col gap-2.5  overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-thin">
+      <div className='sm:max-md:hidden   flex sm:max-lg:flex-col'>
+      <div className="flex flex-col gap-2.5  overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-thin">
               <div className="relative p-2.5 w-60 h-auto rounded-lg overflow-hidden bg-white ">
                 <h4 className="text-center flex items-center justify-between text-zinc-400 font-mono text-sm">Birthdays <FaBirthdayCake /></h4>
                 <ul className="flex flex-col gap-1.5 p-1">
@@ -63,7 +63,7 @@ const HomeSideInfo = () => {
                   )) 
                  }
             </ul>
-      </div>
+      </div></div> 
       { OpenModal &&
         <div className='bg-[#00000085] fixed top-0 right-0 left-0  bottom-0 w-full opacity-95 h-full  flex justify-center items-center'>
           <Birthday setOpenModal={setOpenModal} />

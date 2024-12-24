@@ -1,9 +1,6 @@
-import { GrPrevious } from "react-icons/gr";
-import { GrNext } from "react-icons/gr";
-
 import React, {useRef, useState } from 'react'
 import ProfileImage from './ProfileImage'
-import { IoIosClose, IoMdClose } from 'react-icons/io'
+import { IoIosArrowRoundBack, IoIosClose, IoMdClose } from 'react-icons/io'
 import Comments from './Comments'
 import TextBox from './TextBox'
 import { profileImg } from '../lib/data'
@@ -12,6 +9,11 @@ import ReactQuill from 'react-quill'
 import 'react-quill/dist/quill.snow.css';
 import { SlPicture } from 'react-icons/sl'
 import Emojies from './Emojies'
+ import Posted_owner_profile_with_Title from "./Posted_owner_profile_with_Title"
+ import { FaRegComment } from 'react-icons/fa'
+import { BiLike } from 'react-icons/bi'
+ import PostedFile from './PostedFile'
+import { PiDotsThreeVertical } from 'react-icons/pi'
  
 type propsTypes = {
   currentModal: postedContentsDataType,
@@ -20,69 +22,40 @@ type propsTypes = {
 }   
 export const PostedContentModal = ({currentModal,setCurrentIndex}:propsTypes) => {
  
-  const [ scrollPosition, setScrollPosition ] = useState(0)
-  const [ imageNums, setImageNums ] = useState(0)
-
-  currentModal.image.length - 1
-  console.log(imageNums);
-  
-    const imageRef = useRef<HTMLImageElement>()
-   
-  const handleNextImage = (imgWidth:number) => {
+ 
     
-    setScrollPosition(scrollPosition + imgWidth)
-    imageRef.current.scrollLeft = imgWidth + scrollPosition
    
-      // imageNums < currentModal.image.length
-   
-  }
 
   return (
-    <div className=" bg-[#000000ad] fixed top-0 bottom-0 flex items-center justify-center left-0 right-0  z-50">
-            <div className="bg-white relative w-[820px] h-[450px] flex gap-4 border rounded-[5px] p-1.5 border-[#d9d9d9] z-50" >
-               <div className="w-11/12 relative flex h-auto flex-col gap-6 overflow-hidden ">
-          { currentModal.image.length > 1 && imageNums > 0 &&
-            <GrPrevious onClick={ () => { handleNextImage(-400); setImageNums(prev => prev - 1) } } fontSize={ 25 }
-            className="bg-black  rounded-full p-2 absolute top-[50%] left-0 text-white" /> }
-                 <div ref={imageRef} className="flex w-full  gap-0.5 overflow-x-scroll scroll-smooth">
-                      {
-                        currentModal.image.map((img,i)=>(
-                          <img className='min-h-[500px] min-w-[400px] object-cover rounded-md object-center self-center items-end  h-auto'
-                            key={ i } src={ img } />
-                        ))
-                      }
-                 </div>
-          { currentModal.image.length > 1 && imageNums < currentModal.image.length - 1 &&
-            <GrNext onClick={ () => { handleNextImage(400); setImageNums(prev => prev + 1) } } fontSize={ 25 }
-              className="bg-black  rounded-full p-2 absolute top-[50%] right-0 text-white" /> }
-                <div className="flex absolute bottom-0 gap-2 left-1/2">
-                  { currentModal.image.map((_item, i)=>(
-                    <span key={i} className={`w-2 h-2 rounded-full ${imageNums === i ?"bg-slate-900":"bg-white"}`}></span>
-                  ))}
-                </div>
-               </div>
-               <div className="w-full flex flex-col gap-4">
-          <IoIosClose fontSize={ 23 } className='text-lg absolute top-0 right-0 hover:text-3xl'
-            onClick={ () => setCurrentIndex(undefined) } />
-                   <div className="flex justify-start self-baseline ml-2.5 gap-2.5">
-            { currentModal.image ?
-              <img className='w-6 h-6 rounded-full object-cover object-center '
-                  src={ currentModal.image[ 0 ] } /> : <ProfileImage profileName={ currentModal.owner } /> }
-            <div> 
-               <p className='text-sm font-thin text-black font-sans leading-tight'>
-                {currentModal.owner}
-               </p>
-               <p className='text-xs font-thin text-slate-500 font-sans leading-tight'>1 hour ago</p>
-            </div>
-              </div>
-                 <p className="w-5/6 font-sans text-xs ml-2.5 text-yellow-900 font-thin"  >{currentModal.titleDescription}</p>
-                  <TextBox placeholder="add comments" buttonName="send" />
-                   <ReactionsButtons />
-                   <Comments comments={ currentModal.comments } />
-                </div>
+    <div className=" bg-[#000000ad] fixed top-0 bottom-0 flex items-center justify-center left-0 right-0  z-50 ">
+            <div className="bg-white w-[750px] relative  md:h-[450px] sm-max-md:min-h-screen flex overflow-hidden gap-4 border rounded-[5px] p-1.5 border-[#d9d9d9] z-50 sm:max-md:flex-col" >
+        
+        {/* modal closing */ }
+           <IoIosClose fontSize={ 23 } className='text-lg absolute top-0 right-0 hover:text-3xl'
+          onClick={ () => setCurrentIndex(undefined) } />
+        
+        {/* posted file can be image or video */}
+          <PostedFile width="w-11/12"  currentModal={ currentModal } />
+        
+        
+          <div className="flex flex-col w-[515px] overflow-hidden justify-start self-baseline ml-2.5 gap-2.5">
+            
+           {/* post owner profile and post titleDescription  */}
+            <Posted_owner_profile_with_Title currentModal={ currentModal } />
+            
+            {/* text writing for giving  comment */ }
+            <TextBox placeholder="add comments" buttonName="comment" />
+            
+            {/* reaction buttons */ }
+            <ReactionsButtons />
+
+            {/* comments by other users  */}
+            <Comments comments={ currentModal?.comments } />
+
+          </div>
+          </div>
     </div>
-         </div>
-  )
+   )
 }
 
 type propsType = {
@@ -91,8 +64,82 @@ type propsType = {
 }
 
 
+   
+// Open modal  on smaller devices with differnet design
+  
+export const SmallerDeviceModal = ({currentModal,setCurrentIndex}) => {
+   const [openCommnets,setOpenComments]=useState(false)
+  console.log(currentModal)
+  return (
+   
+    <div className=" bg-black fixed top-0 bottom-0 flex items-center justify-center left-0 right-0  z-50">
+            <div className="w-full  flex flex-col h-full py-12 justify-between gap-4 p-1.5 " >
+        
+        {/* modal closing */ }
+        
+            {/* posted file can be image or video */ }
+    {  !openCommnets &&   
+          <>
+        <div className="flex justify-between text-xl">
+          <span className='flex gap-2 text-white font-thin text-lg'>
+          <IoIosArrowRoundBack fontSize={ 23 } className='text-white text-2xl  hover:text-3xl'
+            onClick={ () => setCurrentIndex(undefined) } />
+            <img src={currentModal.image[0]} className='w-7 h-7 rounded-full object-cover' alt="profile" />
+            {currentModal.owner}
+          </span>
+          <PiDotsThreeVertical className='text-white text-2xl  hover:text-3xl'  />
+           </div>
+        
+          <PostedFile height={ `max-h-[600px] ` } width={ `min-w-full` } currentModal={ currentModal } />
+        
+          {/* title description & reactions buttons   */ }
+          <p className='text-sm text-white self-center'>{ currentModal.titleDescription }</p>
+          <div className='flex gap-2 items-center justify-around  text-2xl   cursor-pointer'>
+              <span className='text-white flex items-center gap-2'>225<BiLike className='text-white' /></span>
+            <FaRegComment className='text-white' onClick={ () =>setOpenComments(true)} />
+         </div>
+        </>
+        }
+            
+        
+        
+
+        
+        {
+          openCommnets &&  <div className="bg-white  flex flex-col h-screen w-full overflow-hidden justify-start self-baseline ml-2.5 gap-2.5">
+           
+              <IoIosArrowRoundBack fontSize={ 23 } className='text-black text-3xl  hover:text-3xl mt-2'
+            onClick={ () => setCurrentIndex(undefined) } />
+            <Posted_owner_profile_with_Title currentModal={ currentModal } />
+             <img src={currentModal.image[0]}  className='h-36 w-full object-cover'/>
+          
+          
+            {/* text writing for giving  comment */ }
+           
+            <TextBox placeholder="add comments" buttonName="comment" />
+            
+             {/* reaction buttons */ } 
+            <ReactionsButtons />
+
+            {/* comments by other users  */}
+            <Comments comments={ currentModal.comments }  width="w-full" />
+
+          </div>
+        }
+       
+          </div>
+      </div>
+      )
+
+}
+
+
+
+
+
   // Open modal  on profilepage/photos onclick
 
+  
 export const PhotoModal = ({ posted, setOpenModal }: propsType) => {
     
   
@@ -105,7 +152,8 @@ export const PhotoModal = ({ posted, setOpenModal }: propsType) => {
               <img src={ posted.image } className='rounded-lg w-1/2 h-full object-center object-cover' />                      
             <div className="w-full flex flex-col gap-4">
                <IoIosClose fontSize={23} className='text-lg absolute top-0 right-0 hover:text-3xl' onClick={()=>setOpenModal(false)} />
-                   <div className="flex justify-start self-baseline ml-2.5 gap-2.5">
+ 
+                  <div className="flex justify-start self-baseline ml-2.5 gap-2.5">
             { posted.image ?
               <img className='w-6 h-6 rounded-full object-cover object-center ' src={profileImg} /> : <ProfileImage profileName="{ posted.owner }" /> }
             <div> 
@@ -114,8 +162,9 @@ export const PhotoModal = ({ posted, setOpenModal }: propsType) => {
                </p>
                <p className='text-xs font-thin text-slate-500 font-sans leading-tight'>1 hour ago</p>
             </div>
-              </div>
+                  </div>
                  <p className="w-5/6 font-sans text-xs ml-2.5 text-black font-normal"  >{posted.titleDescription}</p>
+ 
             <TextBox placeholder="add comments" buttonName="send" /> 
            
             {/* interacted reactions  by users */ }
@@ -130,8 +179,7 @@ export const PhotoModal = ({ posted, setOpenModal }: propsType) => {
     </>
   )
 }
-
-
+   
 
 type PostModalPropsTypes = {
   onclick: () => void,
@@ -229,9 +277,9 @@ export const UploadCoverImage=({onclick}:UploadCoverImagePropsTypes)=>{
   
 }
  
-const MessageInfoPhotoModalPropsType = {
+// const MessageInfoPhotoModalPropsType = {
   
-}
+// }
  export const MessageInfoPhotoModal = ({ openModalData, setOpenModal }) => {
     
   

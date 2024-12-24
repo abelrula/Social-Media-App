@@ -27,9 +27,9 @@ import { Stories } from "../lib/data";
   console.log(next);
 
   return (
-    <div className="!bg-[#000000]  flex gap-4 items-center justify-around   h-screen w-full m-auto py-16 px-4 relative group bg  ">
+    <div className="!bg-[rgb(0,0,0)]  flex gap-4 items-center justify-around  h-screen sm:max-md:h-auto  w-full md:m-auto md:py-16 md:px-4 relative group bg  ">
       <div style={ { backgroundImage: `url(${next.image})`, width: "200px", height: "200px" } }
-        className="relative rounded-2xl brightness-50 ounded-2xl bg-center bg-cover duration-500">
+        className="relative rounded-2xl brightness-50 ounded-2xl bg-center bg-cover duration-500 sm:max-md:hidden">
       <div className="absolute w-full p-3 top-[30%]  flex gap-4">
         <img className='w-14 h-14 rounded-full object-cover object-center' src={next.ProfileImage } />
       <span className="flex flex-col  flex-start">
@@ -39,9 +39,9 @@ import { Stories } from "../lib/data";
       </div>
       </div>
         <div style={{ backgroundImage: `url(${stories[currentIndex].image})` ,width:"350px",height:"550px" }}
-        className="relative    rounded-2xl bg-center bg-cover duration-500">
+        className="relative  rounded-2xl bg-center bg-cover duration-500 ">
       <div className="absolute bg-[#434c5326] w-full top-0  flex gap-4 p-3">
-        <img className='w-8 h-8 rounded-full object-cover object-center' src={ stories[currentIndex].ProfileImage } />
+        <img className='w-8 h-8 flex  flex-col rounded-full object-cover object-center' src={ stories[currentIndex].ProfileImage } />
       <span className="flex flex-col  flex-start">
         <p className='text-sm font-bold font-mono text-white' >{ stories[currentIndex].owner}</p>
       <time className="text-xs text-[white]">20 hours ago</time>
@@ -57,8 +57,8 @@ import { Stories } from "../lib/data";
       </div>
       
         <div style={{ backgroundImage: `url(${prev.image})` ,width:"200px",height:"200px"  }}
-        className="relative brightness-50 rounded-2xl bg-center bg-cover duration-500">
-      <div className="absolute  w-full p-3 top-[30%]  flex gap-4">
+        className="relative  brightness-50 rounded-2xl bg-center bg-cover duration-500 sm:max-md:hidden">
+      <div className="absolute   sm:max-md:h-20 w-full p-3 top-[30%]  flex gap-4">
         <img className='w-14 h-14 rounded-full object-cover object-center' src={ prev.ProfileImage } />
       <span className="flex flex-col  flex-start">
         <p className='text-sm font-bold font-mono text-white' >{ prev.owner}</p>
@@ -67,7 +67,7 @@ import { Stories } from "../lib/data";
       </div>
       </div>
        <div style={{ backgroundImage: `url(${nextBefore.image})` ,width:"200px",height:"200px" }}
-        className="relative rounded-2xl brightness-50 ounded-2xl bg-center bg-cover duration-500">
+        className="relative sm:max-md:hidden rounded-2xl brightness-50 ounded-2xl bg-center bg-cover duration-500">
       <div className="absolute w-full p-3 top-[30%]  flex gap-4">
         <img className='w-8 h-8 rounded-full object-cover object-center' src={nextBefore.ProfileImage } />
       <span className="flex flex-col  flex-start">
