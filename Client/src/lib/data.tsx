@@ -1,7 +1,7 @@
 import {BiMessage } from "react-icons/bi";
 import { BiHomeAlt2 } from "react-icons/bi";
 import { HiUserGroup } from "react-icons/hi";
- import { BsActivity } from "react-icons/bs";
+ import { MdWebStories } from "react-icons/md";
 
 
  export const BirthdayImageTemplate:string="https://images.unsplash.com/photo-1558636508-e0db3814bd1d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -2258,7 +2258,7 @@ export const onlineContacts:onlineContactsType[]=[
       name: "Tmarcus Brown",
       profile: "https://images.unsplash.com/photo-1495603889488-42d1d66e5523?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGJsYWNrJTIwbWFsZXN8ZW58MHx8MHx8fDA%3D"
     },
-    ,
+    
     {
       name: "Tmarcus Brown",
       profile: "https://images.unsplash.com/photo-1495603889488-42d1d66e5523?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGJsYWNrJTIwbWFsZXN8ZW58MHx8MHx8fDA%3D",
@@ -2267,12 +2267,12 @@ export const onlineContacts:onlineContactsType[]=[
       name: "Fabio Lucas",
       profile: "https://images.unsplash.com/photo-1631306006348-f9ed42b1e19a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fHdvcmslMjBwcm9mZXNpb25hbHN8ZW58MHx8MHx8fDA%3D",
     },
-    ,
+    
     {
       name: "Tmarcus Brown",
       profile: "https://images.unsplash.com/photo-1495603889488-42d1d66e5523?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGJsYWNrJTIwbWFsZXN8ZW58MHx8MHx8fDA%3D"
     },
-    ,
+    
     {
       name: "Tmarcus Brown",
       profile: "https://images.unsplash.com/photo-1495603889488-42d1d66e5523?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGJsYWNrJTIwbWFsZXN8ZW58MHx8MHx8fDA%3D",
@@ -2335,7 +2335,7 @@ export const menuLinks:menuLinksType[]= [
   {
     title: "Stories",
     to: "stories",
-    icon: <BiMessage className="icon" fill="#050505" />,
+    icon: <MdWebStories className="icon" fill="#050505" />,
   }
 ];
 export   const friends:friendsType[] = [
