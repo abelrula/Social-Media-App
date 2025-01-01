@@ -58,12 +58,6 @@ export const PostedContentModal = ({currentModal,setCurrentIndex}:propsTypes) =>
    )
 }
 
-type propsType = {
-  posted: imagesPostedByTheOwner,
-  setOpenModal: React.Dispatch<React.SetStateAction<boolean>>
-}
-
-
    
 // Open modal  on smaller devices with differnet design
   
@@ -137,49 +131,7 @@ export const SmallerDeviceModal = ({currentModal,setCurrentIndex}) => {
 
 
 
-  // Open modal  on profilepage/photos onclick
-
-  
-export const PhotoModal = ({ posted, setOpenModal }: propsType) => {
-    
-  
  
-  return (
-    <>
-     <div className=" bg-[#000000ad] fixed top-0 bottom-0 flex items-center justify-center left-0 right-0  z-50">
-          <div className="relative bg-white h-[450px] w-[700px] flex" key={posted.image}  >
-                <IoMdClose onClick={()=>setOpenModal(false)} className="absolute top-0 right-0" fontSize={30} />
-              <img src={ posted.image } className='rounded-lg w-1/2 h-full object-center object-cover' />                      
-            <div className="w-full flex flex-col gap-4">
-               <IoIosClose fontSize={23} className='text-lg absolute top-0 right-0 hover:text-3xl' onClick={()=>setOpenModal(false)} />
- 
-                  <div className="flex justify-start self-baseline ml-2.5 gap-2.5">
-            { posted.image ?
-              <img className='w-6 h-6 rounded-full object-cover object-center ' src={profileImg} /> : <ProfileImage profileName="{ posted.owner }" /> }
-            <div> 
-               <p className='text-sm font-thin text-black font-sans leading-tight'>
-                You
-               </p>
-               <p className='text-xs font-thin text-slate-500 font-sans leading-tight'>1 hour ago</p>
-            </div>
-                  </div>
-                 <p className="w-5/6 font-sans text-xs ml-2.5 text-black font-normal"  >{posted.titleDescription}</p>
- 
-            <TextBox placeholder="add comments" buttonName="send" /> 
-           
-            {/* interacted reactions  by users */ }
-                      <ReactionsButtons />
-             {/* Commentes  by users */ }
-               <Comments comments={ posted.comments } />
-             
-            </div>        
-        </div>
-              
-      </div>
-    </>
-  )
-}
-   
 
 type PostModalPropsTypes = {
   onclick: () => void,

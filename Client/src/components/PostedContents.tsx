@@ -27,8 +27,14 @@ const PostedContents = ({postedContents}) => {
       {/* modal on click on posted contenet  */}
        {
          currentIndex  && screenSize.width < 760 ?
-         <SmallerDeviceModal currentModal={ currentModal } setCurrentIndex={ setCurrentIndex } /> :
-          currentIndex  && screenSize.width > 760 ? <PostedContentModal currentModal={ currentModal } setCurrentIndex={ setCurrentIndex } /> :"null"
+           <SmallerDeviceModal
+             currentModal={ currentModal }
+             setCurrentIndex={ setCurrentIndex } /> :
+           currentIndex && screenSize.width > 760 ?
+             <PostedContentModal
+               currentModal={ currentModal }
+               setCurrentIndex={ setCurrentIndex } /> :
+             "null"
            
        }
     </div>   

@@ -1,8 +1,5 @@
-  import {AiOutlineMessage, AiOutlinePlus } from "react-icons/ai"
-import { FaUserPlus } from 'react-icons/fa'
  import { Link, Outlet } from "react-router-dom"
 import { profileImg } from "../lib/data"
-import { MdOutlineModeEditOutline } from "react-icons/md"
 import { CiCamera } from "react-icons/ci"
 import { useState } from "react"
 import { UploadCoverImage } from "./Modals"
@@ -20,8 +17,8 @@ const ProfilePage = () => {
   const coverImg="https://images.unsplash.com/photo-1631479290037-97d776982ea4?q=80&w=1408&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   const catogries:catogriesType[]=["posts","photos","videos","friends"]
   return (
-    <div className='container '>
-         <section className="relative">
+    <>
+     <section className="relative">
             <img className=" w-full h-[210px] object-cover" src={ coverImg } />
             <span className="bg-white py-2 absolute top-0 right-0 flex gap-2.5 items-center">
                      <p className="flex   items-center gap-2rounded-xl  text-black  gap-1 h-fit  font-mono text-xs py-1 px-3"> <h6 className="font-bold text-sm">follwers</h6>132</p>
@@ -47,8 +44,8 @@ const ProfilePage = () => {
             </ul>
          </section>
          <Outlet />
-    </div>
-  )
+    </>
+   )
 }
 
 export default ProfilePage

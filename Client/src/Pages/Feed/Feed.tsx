@@ -10,7 +10,7 @@ const Feed = () => {
      const [ postedContents ] = useState<postedContentsDataType[]>(postedContentsData)
     
   return (
-        <div className="flex mt-3 gap-8 sm:max-md:justify-center">
+        <div className="flex mt-3 gap-8 sm:max-md:justify-center ">
              <div className="w-[550px] sm:max-md:w-full mt-5 flex flex-col gap-5 o overflow-scroll  ">
                  <Stroies /> 
                  <Post />

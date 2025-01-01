@@ -1,29 +1,41 @@
-import { AiOutlineDislike, AiOutlineLike, AiTwotoneFire } from "react-icons/ai"
-import { FcLike} from "react-icons/fc"
 import { imagesPostedByTheOwner } from "../../../lib/data"
 import { useState } from "react"
-import { PhotoModal } from "../../../components/Modals"
+import { PostedContentModal, SmallerDeviceModal } from "../../../components/Modals"
 import Reactions from "../../../components/Reactions"
+ import useScreenSize from "../../../hooks/useScreenSize"  
  
  
 const MyPhotos = () => {
-  const [openModal,setOpenModal]=useState(false)
-  const [posted,setPosted]=useState<imagesPostedByTheOwner>(null)
+    const [ screenSize ] = useScreenSize()
+  const [ currentIndex, setCurrentIndex ] = useState<number>(null)
+  const [currentModal,setCurrentModal]=useState<postedContentsDataType>(null)
   
   return (
-    <div className="container mt-3">
-                 <div className="flex flex-wrap w-full rounded-full gap-2 m-auto ">
+    <div className="container mt-3 lg:p-9 m-auto">
+                 <div className="grid grid-cols-4 justify-start w-full gap-2   sm:max-md:grid-cols-3  ">
                       {
                         imagesPostedByTheOwner.map((posted,i)=>(
-                         <div className="relative h-48 w-52 " key={i} onClick={ () => { setOpenModal(true); setPosted(posted)}} >
-                          <img  src={posted.image} className='rounded-sm w-full h-full object-center object-cover' />
+                         <div className="relative h-auto w-auto" key={i} onClick={ () => { setCurrentIndex(i); setCurrentModal(posted)}} >
+                          <img  src={posted.image[0]} className='rounded-sm w-full h-full object-center object-cover' />
                          <Reactions />
                           </div>
                         ))
                      }
                  
          </div>
-         { openModal && <PhotoModal posted={posted} setOpenModal={setOpenModal} />}
+        {/* modal on click on posted contenet  */}
+             {
+               currentIndex  && screenSize.width < 760 ?
+                 <SmallerDeviceModal
+                   currentModal={ currentModal }
+                   setCurrentIndex={ setCurrentIndex } /> :
+                 currentIndex && screenSize.width > 760 ?
+                   <PostedContentModal
+                     currentModal={ currentModal }
+                     setCurrentIndex={ setCurrentIndex } /> :
+                   "null"
+                 
+             }
             </div>
   )
 }
