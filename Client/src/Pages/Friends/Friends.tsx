@@ -12,7 +12,7 @@ import Search from "../../components/Search";
    
      return (
 
-        <div className="container flex gap-2 mt-5 justify-around">
+        <div className="flex gap-2 mt-5 justify-around sm:max-md:justify-center  ">
            <FriendRequests />
            <section className="w-2/3 border p-2">
                <Search placeholder="Find Your Friends Here" />

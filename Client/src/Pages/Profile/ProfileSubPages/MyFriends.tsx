@@ -4,10 +4,10 @@ import { friends } from "../../../lib/data";
 const MyFriends = () => {
   
  return (
-           <div className="flex flex-wrap gap-8  mt-10">
+           <div className="flex flex-wrap justify-center gap-4  mt-10">
            {
               friends.map((friend, i) => (
-                 <Friend mutualFriendes={friend.mutualFriendes} name={friend.name} profile={friend.profile} />
+                 <Friend key={ i }  mutualFriendes={friend.mutualFriendes} name={friend.name} profile={friend.profile} />
               ))
        }
            </div>

@@ -6,11 +6,11 @@ const FriendRequests = () => {
     const filteredFriends = friends.filter((friends, i) => { return i % 2 !== 0 })
     console.log(filteredFriends);
     return (
-      <div className=" flex flex-col gap-4 border p-2 w-1/5">
+      <div className=" flex flex-col gap-4 border p-2">
           <h5 className="text-sm text-slate-600">Friend Requests <span>see all</span></h5>
           { filteredFriends.map((friendRequests, i) => (
               <div className=" flex gap-2 border p-1 justify-around" key={i}>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 self-end">
                  <img src={ friendRequests.profile } aria-placeholder="avatar" className="w-8 h-8 rounded-full object-cover" />
                   <h6 className="text-[10px] font-mono text-slate-700 items-center justify-center">   { friendRequests.name }</h6>
                  </div>
