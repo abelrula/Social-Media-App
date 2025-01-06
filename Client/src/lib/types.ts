@@ -20,19 +20,19 @@ declare type postedContentsDataType= {
     commentes?: undefined;
 }
 
-declare type imagesPostedByTheOwner = {
-  titleDescription: string,
-  image: string;
-    reactions: {
-        hate: number;
-        love: number;
-    };
-    comments: {
-        owner: string;
-        profileImg: string;
-        comment: string;
-    }[];
-}
+// declare type imagesPostedByTheOwner = {
+//   titleDescription: string,
+//   image: string[];
+//     reactions: {
+//         hate: number;
+//         love: number;
+//     };
+//     comments: {
+//         owner: string;
+//         profileImg: string;
+//         comment: string;
+//     }[];
+// }
 declare type groupData= {
     groupName: string;
     ProfileImg: string;
@@ -138,7 +138,7 @@ declare type postedContenetsByFriendsType = {
         share: number;
         postedTime: Date;
     }[];
-}
+ }
   declare type reactionsType={
     fire: number;
     dislike: number;

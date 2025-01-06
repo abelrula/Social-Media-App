@@ -15,7 +15,7 @@ const SideBarLinks = () => {
               style={({ isActive }) => (isActive ? selectedObj : null)}
               to={ link.to }
               // onClick={()=>link.to === "messages" ? setToggleSideBar(false) : true  }
-              className="flex items-center gap-1 w-full relative h-6 no-underline sm:max-md:flex-col sm:max-md:gap-0 sm:max-md:h-11"
+              className="flex items-center gap-1 w-full relative h-6 no-underline sm:max-md:flex-col sm:max-md:p-1 sm:max-md:gap-0 sm:max-md:h-11"
               key={i}
             >
               { link.icon }

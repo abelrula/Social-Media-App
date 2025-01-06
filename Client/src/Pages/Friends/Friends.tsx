@@ -12,11 +12,11 @@ import Search from "../../components/Search";
    
      return (
 
-        <div className="flex gap-2 mt-5 justify-around sm:max-md:justify-center  ">
+        <div className="flex gap-2 mt-5 justify-around sm:max-md:justify-center">
            <FriendRequests />
-           <section className="w-2/3 border p-2">
+           <section className="w-full border p-2">
                <Search placeholder="Find Your Friends Here" />
-           <div className="flex flex-wrap mt-10 gap-x-14 gap-y-3 ">
+           <div className="w-full grid grid-cols-2 mt-10 gap-x-4 gap-y-2 sm:grid-cols-1  md:max-lg:grid-cols-2 lg:grid-cols-3 ">
            {
               friends.map((friend, i) => (
                  <Friend key={i} mutualFriendes={friend.mutualFriendes} name={friend.name} profile={friend.profile} />

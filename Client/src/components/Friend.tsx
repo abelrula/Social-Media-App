@@ -13,8 +13,8 @@ const Friend = ({name,profile,mutualFriendes}:props) => {
   console.log(pathname);
   
   return (
-       <div className="w-72 h-16  flex gap-2.5 items-center  relative border border-neutral-100 p-2.5  rounded-xl sm:max-md:w-[150px] ">
-    <img src={profile} aria-placeholder="avatar" className="w-12 h-12 rounded-full object-cover sm:max-md:w-4 sm:max-md:h-4 "/>
+       <div className=" max-w-64  flex gap-2.5 items-center justify-between  relative border border-neutral-100 p-2.5 sm:max-md:p-0.5 sm:max-md:gap-0.5 rounded-xl   ">
+    <img src={profile} aria-placeholder="avatar" className="w-12 h-12 rounded-full object-cover sm:max-md:w-6 sm:max-md:h-6 "/>
     <span className="flex flex-col">
       <p className="text-start font-mono text-xs text-slate-700">{name}</p>
       <p className="text-start font-mono text-xs text-slate-500">{mutualFriendes} mutual friends</p>

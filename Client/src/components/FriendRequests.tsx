@@ -9,9 +9,9 @@ const FriendRequests = () => {
       <div className=" flex flex-col gap-4 border p-2">
           <h5 className="text-sm text-slate-600">Friend Requests <span>see all</span></h5>
           { filteredFriends.map((friendRequests, i) => (
-              <div className=" flex gap-2 border p-1 justify-around" key={i}>
+              <div className=" flex gap-2 border   justify-around sm:max-md:min-w-32" key={i}>
               <div className="flex items-center gap-3 self-end">
-                 <img src={ friendRequests.profile } aria-placeholder="avatar" className="w-8 h-8 rounded-full object-cover" />
+                 <img src={ friendRequests.profile } aria-placeholder="avatar" className="w-8 h-8 rounded-full object-cover sm:max-md:w-6 sm:max-md:h-6" />
                   <h6 className="text-[10px] font-mono text-slate-700 items-center justify-center">   { friendRequests.name }</h6>
                  </div>
                   <span className="flex gap-.5 items-center">
