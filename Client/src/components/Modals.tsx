@@ -28,7 +28,7 @@ export const PostedContentModal = ({currentModal,setCurrentIndex}:propsTypes) =>
 
   return (
     <div className=" bg-[#000000ad] fixed top-0 bottom-0 flex items-center justify-center left-0 right-0  z-50 ">
-            <div className="bg-white w-[750px] relative  md:h-[450px] sm-max-md:min-h-screen flex overflow-hidden gap-4 border rounded-[5px] p-1.5 border-[#d9d9d9] z-50 sm:max-md:flex-col" >
+            <div className="bg-white w-[750px] relative h-full  md:h-[450px] sm-max-md:min-h-screen flex overflow-hidden gap-4 border rounded-[5px] p-1.5 border-[#d9d9d9] z-50 sm:max-md:flex-col" >
         
         {/* modal closing */ }
            <IoIosClose fontSize={ 23 } className='text-lg absolute top-0 right-0 hover:text-3xl'
@@ -257,3 +257,24 @@ export const UploadCoverImage=({onclick}:UploadCoverImagePropsTypes)=>{
     </>
   )
 }
+
+// eslint-disable-next-line react-refresh/only-export-components
+export const ReplyOnComment = ({comment,setReplyComment}) => {
+    
+  return (
+    <div className='bg-[#1413132e] fixed top-0 bottom-0 flex items-center justify-center left-0 right-0  z-50'>
+           <IoIosClose fontSize={23} className='text-4xl absolute text-white cursor-pointer  top-1 right-2 hover:text-5xl' onClick={()=>setReplyComment(false)}  />
+      <div className="relative bg-white h-[200px] w-[350px] flex flex-col p-2">
+     <span className='flex gap-2 items-center'>
+                    <img className="w-6 h-6 object-cover object-center rounded-full" src={ comment.profileImg } />
+                    <p className='text-xs text-black'>{ comment.owner }</p>
+                       <p className='text-[9px] text-start font-thin text-slate-500 font-sans leading-tight  '>1 hour ago</p>
+
+                  </span>
+        <p className='font-sans mr-3 text-xs px-3 ml-2.5 text-yellow-900 font-thin'>{ comment.comment }</p>
+            <TextBox placeholder='reply' buttonName="reply"  />
+      </div>
+    </div>
+   )
+
+} 

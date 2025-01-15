@@ -1573,6 +1573,23 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[white\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ffffff00\] {
+  background-color: #ffffff00;
+}
+
+.bg-\[\#ffffff73\] {
+  background-color: #ffffff73;
+}
+
+.bg-\[\#1413132e\] {
+  background-color: #1413132e;
+}
+
 .bg-cover {
   background-size: cover;
 }
