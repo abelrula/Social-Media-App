@@ -55,7 +55,7 @@ const HomeSideInfo = () => {
             <ul className="flex flex-col">
                  {
                   onlineContacts.map((friends,i)=>(
-                    <Link to={`message${friends.name}`} className="flex items-center gap-2.5 no-underline h-8" key={i}>
+                    <Link to={`/message/${i}`} className="flex items-center gap-2.5 no-underline h-8" key={i}>
                         <img className='w-6 h-6 rounded-full object-cover object-center' src={friends.profile} />
                       <p className="w-full text-xs font-mono flex items-center justify-between text-zinc-600">{ friends.name } <GoDotFill  color='green'/> </p>
                        

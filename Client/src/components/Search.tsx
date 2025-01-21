@@ -8,7 +8,7 @@ const Search = ({placeholder}:propTypes) => {
   const [searchContent, setSearchContent] = useState(""); 
     return (
       <div>
-          <span className=" bg-slate-100 rounded-xl p-1.5 md:max-lg:w-[280px] sm:max-md:border-none sm:max-md:bg-transparent  flex items-center border-[#d9d9d9] border">
+          <span className=" bg-slate-100 rounded-xl p-1.5 sm:max-md:border-none sm:max-md:bg-transparent  flex items-center border-[#d9d9d9] border">
               <BiSearch
                   className='text-zinc-700' /> 
           <input

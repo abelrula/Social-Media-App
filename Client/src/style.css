@@ -671,6 +671,10 @@ video {
   left: 120px;
 }
 
+.left-\[20\%\] {
+  left: 20%;
+}
+
 .left-\[30px\] {
   left: 30px;
 }
@@ -868,10 +872,6 @@ video {
   height: 4rem;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
 .h-20 {
   height: 5rem;
 }
@@ -977,12 +977,20 @@ video {
   height: 100vh;
 }
 
+.h-2 {
+  height: 0.5rem;
+}
+
 .max-h-48 {
   max-height: 12rem;
 }
 
 .max-h-72 {
   max-height: 18rem;
+}
+
+.max-h-\[50px\] {
+  max-height: 50px;
 }
 
 .max-h-\[600px\] {
@@ -1027,10 +1035,6 @@ video {
 
 .w-16 {
   width: 4rem;
-}
-
-.w-2 {
-  width: 0.5rem;
 }
 
 .w-20 {
@@ -1154,8 +1158,16 @@ video {
   width: 100%;
 }
 
+.w-2 {
+  width: 0.5rem;
+}
+
 .min-w-44 {
   min-width: 11rem;
+}
+
+.min-w-\[70px\] {
+  min-width: 70px;
 }
 
 .min-w-full {
@@ -1447,6 +1459,12 @@ video {
   border-color: rgb(71 85 105 / var(--tw-border-opacity));
 }
 
+.border-x-cyan-50 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(236 254 255 / var(--tw-border-opacity));
+  border-right-color: rgb(236 254 255 / var(--tw-border-opacity));
+}
+
 .border-x-sky-800 {
   --tw-border-opacity: 1;
   border-left-color: rgb(7 89 133 / var(--tw-border-opacity));
@@ -1498,6 +1516,10 @@ video {
 .bg-\[\#032225\] {
   --tw-bg-opacity: 1;
   background-color: rgb(3 34 37 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#1413132e\] {
+  background-color: #1413132e;
 }
 
 .bg-\[\#1e3b29\] {
@@ -1573,21 +1595,17 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[white\] {
+.bg-slate-50 {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#ffffff00\] {
-  background-color: #ffffff00;
+.bg-\[\#ffffffb2\] {
+  background-color: #ffffffb2;
 }
 
-.bg-\[\#ffffff73\] {
-  background-color: #ffffff73;
-}
-
-.bg-\[\#1413132e\] {
-  background-color: #1413132e;
+.bg-\[\#ffffff38\] {
+  background-color: #ffffff38;
 }
 
 .bg-cover {
@@ -2363,10 +2381,6 @@ video {
   }
 
   @media not all and (min-width: 1024px) {
-    .md\:max-lg\:w-\[280px\] {
-      width: 280px;
-    }
-
     .md\:max-lg\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }

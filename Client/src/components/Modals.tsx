@@ -38,7 +38,7 @@ export const PostedContentModal = ({currentModal,setCurrentIndex}:propsTypes) =>
           <PostedFile width="w-11/12"  currentModal={ currentModal } />
         
         
-          <div className="flex flex-col w-[515px] overflow-hidden justify-start self-baseline ml-2.5 gap-2.5">
+          <div className="flex flex-col w-[515px] h-full overflow-hidden justify-start self-baseline ml-2.5 gap-2.5">
             
            {/* post owner profile and post titleDescription  */}
             <Posted_owner_profile_with_Title currentModal={ currentModal } />
