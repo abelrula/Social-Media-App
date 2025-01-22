@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { GrNext, GrPrevious } from 'react-icons/gr'
 
 const PostedFile  = ({currentModal,width,height="h-full"}) => {
@@ -8,18 +8,35 @@ const PostedFile  = ({currentModal,width,height="h-full"}) => {
   const [ imageNums, setImageNums ] = useState(0)
     const imageRef = useRef<HTMLImageElement>()
  
-  const handleNextImage = ( imgWidth: number,i:number=1 ) =>{ 
+  const handleNextImage = ( imgWidth: number) =>{ 
     
     setScrollPosition(scrollPosition +imgWidth)
     imageRef.current.scrollLeft = imgWidth + scrollPosition
-   console.log(imageRef.current.scrollLeft = imgWidth + scrollPosition);
-   
-      // imageNums < currentModal.image.length
-   
   }
-// console.log(currentModal.image);
-// console.log(scrollPosition);
 
+  // handling onClick on images for viewing random image 
+  const handleRandomImagePosition = (i:number) => {
+    
+     if (imageNums < i || imageNums === 0) {
+      setImageNums(i)
+      imageNums !== 0 ?
+        setScrollPosition(prev => prev * i) :
+         setScrollPosition(400 * i)
+      return imageNums === 0 ? imageRef.current.scrollLeft =i * 400:
+        imageRef.current.scrollLeft = scrollPosition * i 
+    }
+
+    else if (imageNums > 0) {
+      setImageNums(i)
+      imageNums > i && i === 0 ?
+        setScrollPosition(prev => prev * i) :
+        setScrollPosition(prev => prev - ((imageNums - i )* 400))
+ 
+       return imageNums > i && i === 0 ?
+        imageRef.current.scrollLeft = scrollPosition * i :  
+         imageRef.current.scrollLeft = scrollPosition - ((imageNums-i)*400)
+    }
+  }
     return (
       <div className={` sm-max-md:min-h-screen relative flex ${width}  ${height} flex-col  gap-6 overflow-hidden`}>
           { currentModal?.image.length > 1 && imageNums > 0 &&
@@ -38,14 +55,13 @@ const PostedFile  = ({currentModal,width,height="h-full"}) => {
             <GrNext onClick={ () => { handleNextImage(400); setImageNums(prev => prev + 1) } } fontSize={ 25 }
               className="bg-black  rounded-full p-2 absolute top-[50%] right-0 text-white" /> }
               
-        {/*viewing list of images at the bottom of the main content*/}
+        {/*viewing list of images at the bottom of the main content as a preview*/}
            <div className="flex absolute bottom-0 gap-1 bg-[#ffffff38] h-auto">
                        {
                         currentModal?.image.map((img,i)=>(
                           <img className={`max-h-[50px] min-w-[70px]  object-cover ${imageNums === i && "border border-x-cyan-50"} rounded-md object-center self-center`}
                             key={ i } src={ img }
-                            onClick={ () => { setImageNums(i); handleNextImage(400); console.log(handleNextImage(400));
-                            }}/>
+                            onClick={ () =>handleRandomImagePosition(i)}/>
                         ))
                       }
                  </div> 
