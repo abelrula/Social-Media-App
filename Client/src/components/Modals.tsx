@@ -127,12 +127,7 @@ export const SmallerDeviceModal = ({currentModal,setCurrentIndex}) => {
 
 }
 
-
-
-
-
  
-
 type PostModalPropsTypes = {
   onclick: () => void,
   postType:string
@@ -163,7 +158,9 @@ export const PostModal = ({ onclick,postType }: PostModalPropsTypes) => {
         <header className="flex gap-2 items-center"><img className='w-6 h-6 rounded-full object-cover object-center' src={ profileImg } /> Abel Zewdu</header>
         <IoMdClose onClick={ onclick } className="absolute top-0 right-0" fontSize={ 30 } />
         <div className="flex flex-col gap-2 w-11/12 ">
-            <ReactQuill  theme="snow" value={msg} onChange={setMsg} />
+         <div className="w-auto ">
+           <TextBox  placeholder="what`s on your mind ?" buttonName="post" onclick={onclick}  /> 
+          </div>
           { PreviewUrl &&
              <div className="flex gap-1 flex-wrap max-h-48 h-auto overflow-y-scroll ">
                {PreviewUrl?.map((previewImage)=>(
@@ -239,8 +236,10 @@ export const UploadCoverImage=({onclick}:UploadCoverImagePropsTypes)=>{
   return (
     <>
      <div className=" bg-[#000000ad] fixed top-0 bottom-0 flex items-center justify-center left-0 right-0  z-50">
-                <IoIosClose fontSize={23} className='text-4xl absolute text-white cursor-pointer  top-1 right-2 hover:text-5xl' onClick={()=>setOpenModal(false)} />
-          <div className="relative bg-white h-[400px] w-[350px] flex flex-col" key={openModalData.image}  >
+          <IoIosClose fontSize={ 15 }
+            className='text-4xl absolute text-white cursor-pointer  -top-4 -right-10 hover:text-5xl  rounded-full'
+            onClick={ () => setOpenModal(false) } />
+          <div className="relative bg-white h-[400px] w-[350px] flex flex-col rounded-lg" key={openModalData.image}  >
               <img src={ openModalData.image } className='rounded-lg w-full h-full object-center object-cover' />                      
               <div className="absolute w-full flex flex-col bottom-0 bg-white p-2 h-auto"> 
                  <p className="w-5/6 font-sans text-xs ml-2.5 text-black font-normal"  >{openModalData.titleDescription}</p>

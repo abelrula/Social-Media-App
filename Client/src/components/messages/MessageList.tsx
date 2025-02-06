@@ -2,6 +2,7 @@ import  { useEffect, useState } from "react";
  import { NavLink } from "react-router-dom";
 import Search from "../Search";
 import { AiOutlineBars } from "react-icons/ai";
+import { IoIosArrowRoundBack } from "react-icons/io";
 const selectedObj = {
   color: "black",
   background: "#194b006b",
@@ -19,9 +20,12 @@ const MessageList = ({chatListToggle,setChatListToggle}) => {
     fetchMessages();
   }, [] );
    return (
-    <div className={`bg-white w-72  min-h-screen md:min-w-52 flex flex-col gap-4  py-2.5 px-1 border-r-lime-950 border sm:max-md:w-64 ${!chatListToggle ? "sm:max-md:hidden" :"sm:max-md:visible" }`}>
+    <div className={`bg-white w-72   md:min-w-52 flex flex-col gap-4  py-2.5 px-1 border-r-lime-950 border sm:max-md:w-64 ${!chatListToggle ? "sm:max-md:hidden" :"sm:max-md:visible" }`}>
      <AiOutlineBars className="md:hidden" onClick={()=>setChatListToggle(false)} />
-       <NavLink to="." className=" bg-[#032225] p-1.5 rounded-lg  text-[30px] text-white font-mono sm:max-md:text-xs">
+       <NavLink to="..">
+         <IoIosArrowRoundBack fontSize={ 33 } className=" " /> 
+      </NavLink>  
+       <NavLink to="."className=" bg-[#032225] p-1.5 rounded-lg  text-[30px] text-white font-mono sm:max-md:text-xs">
         Chats
       </NavLink>
         <Search placeholder="Search contacts" />

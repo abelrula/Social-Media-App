@@ -24,12 +24,10 @@ export default Sidebar;
 
 export const ToggledBottombar = () => {
    
-   const {pathname} = useLocation()
-   
- console.log(pathname.includes("message"));
-
+  const { pathname } = useLocation()
+ 
   return (
-    <div className="w-full md:hidden fixed bottom-0 right-0 left-0 bg-white   flex justify-between items-center p-2 pr-0.5">
+    <div className={`w-full md:hidden fixed bottom-0 right-0 left-0 bg-white   flex justify-between items-center p-2 pr-0.5 ${pathname.includes("message") ? "hidden" : "block"}`}>
      <SideBarLinks />
       </div>
     );

@@ -1,21 +1,20 @@
- import { BiSearch } from 'react-icons/bi'
-import { IoIosNotificationsOutline } from 'react-icons/io'
-import { NavLink } from 'react-router-dom'
+ import { IoIosNotificationsOutline } from 'react-icons/io'
+import { NavLink, useLocation } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 import { BsEggFried } from 'react-icons/bs';
 import { profileImg } from '../lib/data';
 import Search from './Search';
-import { useState } from 'react';
-import { FaAlignJustify } from 'react-icons/fa';
-import { ToggledSidebar } from './Sidebar';
+
   
  
  
  const Header = ( ) => {
-    
+   const { pathname } = useLocation()
+   console.log(pathname);
+   
 
   return (
-       <div className={" bg-white fixed  top-0 left-0 right-0  z-50 flex items-center justify-between h-13 p-3 border-b-zinc-200 border"}>
+       <div className={`bg-white fixed  top-0 left-0 right-0  ${pathname.includes("/message") && "hidden"}  z-50 flex items-center justify-between h-13 p-3 border-b-zinc-200 border`}>
          <Link to="/" className="flex items-center mt--5 gap-2 cursor-pointer">
          <h1 className=" md:text-xl text-blue-900 font-thin font-mono ml-2 mb-1">SocialNation</h1>
         <BsEggFried className="text-4 text-blue-900 font-thin"/>

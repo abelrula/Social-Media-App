@@ -5,7 +5,7 @@ import { Stories } from "../lib/data";
 import { IoCloseOutline } from "react-icons/io5";
 
 const Story = () => {
-  const [stories,setStories]=useState(Stories)  
+  // const [stories,setStories]=useState(Stories)  
   const [ currentIndex, setCurrentIndex ] = useState(0);
   const navigate=useNavigate()
    const selectedObj: React.CSSProperties = {
@@ -21,8 +21,8 @@ const Story = () => {
       <div className="flex gap-2 border-x h-screen fixed bg-black top-0 left-0 right-0 sm:max-md:flex-col sm:flex items-center justify-between sm:max-md:h-auto p-3 border-b-zinc-200 border z-50" 
       >
         <IoCloseOutline className="absolute right-5 text-3xl top-3 text-white z-50 cursor-pointer hover:text-4xl sm:max-md:hidden" onClick={ () => navigate("..")}   />
-        <div className="sm:max-md:w-full md:min-w-40 md:w-auto bg-black md:h-screen sm:max-md:h-44 text-center md:mt-8 sm:max-md:overflow-x-scroll  sm:max-md:overflow-y-hidden  scroll-smooth  scrollbar-thin ">
-          <div className="w-[240px] sm:max-md:w-full flex flex-col  md:h-screen sm:max-md:h-44  text-center m-t-8 overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-thin md:flex md:flex-col gap-6"> 
+        <div className="sm:max-md:w-full md:min-w-40 md:w-auto bg-black md:h-screen sm:max-md:gap-2 text-center md:mt-8 sm:max-md:overflow-x-scroll  sm:max-md:overflow-y-hidden  scroll-smooth  scrollbar-thin ">
+          <div className="w-[240px] sm:max-md:w-full flex flex-col  md:h-screen    text-center m-t-8 overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-thin md:flex md:flex-col gap-6 sm:max-md:gap-2"> 
             <div className="flex flex-col  gap-2 ">
               <h4 className=" ml-2 text-lg text-white  font-thin font-mono  text-start sm:max-md:hidden ">Your Stories</h4>
                    <NavLink

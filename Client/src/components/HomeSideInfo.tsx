@@ -12,7 +12,7 @@ const HomeSideInfo = () => {
   
   return (
     <>
-      <div className='sm:max-md:hidden   flex sm:max-lg:flex-col'>
+      <div className='sm:max-md:hidden   flex sm:max-md:flex-col md:max-lg:hidden '>
       <div className="flex flex-col gap-2.5  overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-thin">
               <div className="relative p-2.5 w-60 h-auto rounded-lg overflow-hidden bg-white ">
                 <h4 className="text-center flex items-center justify-between text-zinc-400 font-mono text-sm">Birthdays <FaBirthdayCake /></h4>

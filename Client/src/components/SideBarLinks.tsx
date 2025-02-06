@@ -25,7 +25,7 @@ const SideBarLinks = () => {
             </NavLink>
           ))}
           
-          <label className="sm:max-md:hidden ">Groups</label>
+          <label className="sm:max-md:hidden">Groups</label>
         {groups.map((link, i) => (
             <NavLink
               style={({ isActive }) => (isActive ? selectedObj : null)}
