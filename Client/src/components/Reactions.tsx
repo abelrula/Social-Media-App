@@ -1,4 +1,7 @@
-import { AiOutlineDislike, AiOutlineLike, AiTwotoneFire } from 'react-icons/ai'
+// import { AiOutlineDislike, AiOutlineLike, AiTwotoneFire } from 'react-icons/ai'
+
+import { useState } from "react"
+import { AiOutlineDislike, AiOutlineLike, AiTwotoneFire } from "react-icons/ai"
 
 
 const Reactions = () => {
@@ -26,14 +29,24 @@ export const ReactionsButtons = () => {
     "😍": 675,
     "😰": 12,
     }
+   const [reactions,setReactions]=useState(Object.entries(reactbuttons))
+  
+    console.log(reactions);
     
-   
-    console.log(Object.entries(reactbuttons).map(([ key, value ]) => { return { key, value } }))
+    function reactionInteractions (key_as_id: string) {
+    //     setReactions(reactions.map(([ key, value ]: [ string, number ]) => (
+                
+        // )))
+        console.log(key_as_id);
+        
+    }
+    
+    // console.log(Object.entries(reactbuttons).map(([ key, value ]) => { return { key, value } }))
     
     return(
         <span className="bg-white h-12 flex items-center gap-3 rounded-xl px-1.5 py-0.5">
          {Object.entries(reactbuttons).map(([ key, value ]:[string,number]) => (
-        <button name=" fire" value={ key } className='flex items-center font-thin text-sm gap-0.5 text-yellow-800 hover:scale-125'>
+        <button name=" fire" value={ key } onClick={()=>reactionInteractions(key)} className='flex items-center font-thin text-sm gap-0.5 text-yellow-800 hover:scale-125'>
             {key} {value}
                 </button> 
        ))}

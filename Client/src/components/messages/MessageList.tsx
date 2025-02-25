@@ -9,7 +9,8 @@ const selectedObj = {
 };
 const MessageList = ({chatListToggle,setChatListToggle}) => {
   const [ messages, setMessages ] = useState( [] );
-   
+   const [ filterdContent, setFilterdContent ] = useState <string[]>([]); 
+    
   useEffect(() => {
     async function fetchMessages() {
       const res = await fetch("http://localhost:3500/conversations");
@@ -28,7 +29,7 @@ const MessageList = ({chatListToggle,setChatListToggle}) => {
        <NavLink to="."className=" bg-[#032225] p-1.5 rounded-lg  text-[30px] text-white font-mono sm:max-md:text-xs">
         Chats
       </NavLink>
-        <Search placeholder="Search contacts" />
+       <Search placeholder="Search contacts" setFilterdContent={setFilterdContent } />
             <hr></hr>
       <div className="flex flex-col gap-1   ">
         {messages.map((message, i) => (

@@ -24,11 +24,11 @@ import { HiUserGroup } from "react-icons/hi";
       owner:"abel zewdu",
       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
        comment:"  It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
-    },
+     },
     {
       owner:"abel zewdu",
       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-       comment:" massive  Thank you!"
+      comment:" massive  Thank you!"
      },
      {
        owner:"abel zewdu",
@@ -66,11 +66,11 @@ import { HiUserGroup } from "react-icons/hi";
       laugh:20
     } ,
     comments:[
-      {
+      [{
       owner:"abel zewdu",
       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
        comment:"  It wouldn't have been as slick if it wasn't for your assistance and input. Thank you!"
-    },
+    }],
     {
       owner:"abel zewdu",
       profileImg:"https://images.unsplash.com/photo-1503001358144-8d7f2c1db9f5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -930,7 +930,7 @@ import { HiUserGroup } from "react-icons/hi";
     owner:'Robert Hammond',
     titleDescription:"meditating in the morning breathing mountain airs 😇",
      image: [ "https://images.unsplash.com/photo-1607749111659-e1c8e05f5f24?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      , "https://images.unsplash.com/photo-1607748732922-4dabb64163d0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       "https://images.unsplash.com/photo-1607748732922-4dabb64163d0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "https://images.unsplash.com/photo-1607748851687-ba9a10438621?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ],
     reactions:{
@@ -2294,26 +2294,40 @@ export const onlineContacts:onlineContactsType[]=[
       profile: "https://images.unsplash.com/photo-1495603889488-42d1d66e5523?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fGJsYWNrJTIwbWFsZXN8ZW58MHx8MHx8fDA%3D"
     },
 ]
-export const SuggestedGroups:SuggestedGroupsType[]=[ 
+export const SuggestedGroups=[ 
   {
-     owner:"AI Intelegence",
-     image:"https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1530&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-   },
+    id:1, 
+    owner:"AI Intelegence",
+     image:"https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1530&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      joined:false 
+    },
   {
+    id:2,
     owner: "Oloympic Lovers",
-    image:"https://plus.unsplash.com/premium_photo-1718819666013-f84db393bb62?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-   },
+    image:"https://plus.unsplash.com/premium_photo-1718819666013-f84db393bb62?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  joined:false 
+  
+  },
   {
+   id:3,
     owner: "Only Couples",
-    image:"https://plus.unsplash.com/premium_photo-1680686840755-1d4672ab7fa7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-   },
+    image:"https://plus.unsplash.com/premium_photo-1680686840755-1d4672ab7fa7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  joined:false 
+  
+  },
   {
+   id:4,
     owner: "Tom's garden",
-    image:"https://images.unsplash.com/photo-1701590223282-f137316edea0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-   },{
+    image:"https://images.unsplash.com/photo-1701590223282-f137316edea0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  joined:false  
+   
+  },{
+   id:5,
     owner: "Guns",
-     image:"https://plus.unsplash.com/premium_photo-1661901234139-d833950e05e0?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-   },
+    image:"https://plus.unsplash.com/premium_photo-1661901234139-d833950e05e0?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+   joined:false 
+
+  },
   
  ]
 export const menuLinks:menuLinksType[]= [
@@ -3781,3 +3795,68 @@ export const imagesPostedByTheOwner=[
 //     ]  
 //    },
 //   ]
+export const realtedSearchValues = [
+  "The Connect Club",
+"Global Conversation",
+"Positive Vibes Only",
+"Share & Learn",
+"Digital Hangout",
+"Online Community",
+"The Buzz",
+"The Daily Dialogue",
+"Curious Minds",
+"Open Forum",
+"Hobbies & Interests:",
+"Photography Fanatics",
+"Foodie Friends",
+"Bookworm Book Club",
+"Travel Tribe",
+"Fitness Motivation",
+"DIY Enthusiasts",
+"Music Lovers Unite",
+"Art Appreciation",
+"Gaming Guild",
+  "Movie Night Crew",
+"  Michaela Best",
+"Harlem Watts",
+"Melissa Frost",
+"Dario Alvarez",
+"Leilani Liu",
+"Pedro Luna",
+"Journey Keith",
+"Jagger Barron",
+"Anya Whitehead",
+"Zayd Esquivel",
+"Jaylee Morgan",
+"Hunter Fuentes",
+"Madeleine Mullins",
+"Allen Noble",
+"Hunter Johnson",
+"Noah Cox",
+"Sadie Dawson",
+"Iker Li",
+"Paige Mendez",
+"Arthur Gordon",
+"Taylor Wang",
+"Cohen Davis",
+"Mia McKay",
+"Joey Garza",
+"River Vance",
+"Casen Boyer",
+"Chaya Delgado",
+"Colt Klein",
+"Elianna Higgins",
+"Sterling Fleming",
+"Fatima Hamilton",
+"Jason Castro",
+"Eloise Atkinson",
+"Duke Campos",
+"Sutton Davis",
+"Lucas Santiago",
+"Nyla Serrano",
+"Milan Rush",
+"Maleah Newman",
+"Anderson Farmer",
+"Madelynn Best",
+"Harlem Brooks",
+]

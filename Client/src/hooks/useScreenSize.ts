@@ -5,7 +5,7 @@ const useScreenSize=()=> {
   const isWidthAvailable = window.innerWidth !== 0
     console.log(isWidthAvailable);
     
-    const [ screenSize, setScreenSize ] = useState( {
+    const [ screenSize, setScreenSize ] = useState<{width:number,height:number}>( {
       width: window.innerWidth,
       height:window.innerHeight
     } )

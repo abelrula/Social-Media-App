@@ -4,12 +4,17 @@ import { Link } from 'react-router-dom';
 import { BsEggFried } from 'react-icons/bs';
 import { profileImg } from '../lib/data';
 import Search from './Search';
+import { BiSearch } from 'react-icons/bi';
+import { useState } from 'react';
+import { IoCloseCircle } from 'react-icons/io5';
 
   
  
  
  const Header = ( ) => {
    const { pathname } = useLocation()
+   const [ filterdContent, setFilterdContent ] = useState <string[]>([]); 
+   const [openSearch,setOpenSearch]=useState(false)
    console.log(pathname);
    
 
@@ -20,7 +25,26 @@ import Search from './Search';
         <BsEggFried className="text-4 text-blue-900 font-thin"/>
       </Link>
      <div className="flex items-center gap-1"> 
-      <Search placeholder="Search" />
+            
+        {/* open search container on onClick    */ }
+        { !openSearch && <BiSearch onClick={ () => setOpenSearch(true) } /> }
+        { openSearch &&
+          <div className="fixed bg-white  flex  flex-col gap-2 self-center top-4 left-1/2 -translate-x-1/2 rounded-lg h-1/2 w-1/3    shadow-[0_4px_9px_-4px_#3b71ca] p-3 z-50 border border-[#afababd3] sm:max-md:w-1/2">
+            <IoCloseCircle
+              className='absolute -right-2 -top-2 hover:scale-110 cursor-pointer'
+              fontSize={ 30 }
+              onClick={ () => setOpenSearch(false) } />
+          {/* searched content sugges */}
+            <Search placeholder="Search" setFilterdContent={ setFilterdContent } />
+            <ul className="border border-slate-400 p-2  overflow-x-scroll rounded-sm">
+            {filterdContent.length > 0  && filterdContent?.slice(0,30).map(values => (
+              <li className="hover:bg-slate-500  cursor-pointer text-sm rounded-sm p-1">{ values }</li>
+            ))
+          }
+          </ul>
+         </div>
+        }
+
           <IoIosNotificationsOutline className='sm:max-md:hidden text-base cursor-pointer  hover:scale-50' />
          <NavLink className="flex text-sm font-mono items-center ml-4 no-underline gap-1" to="profile">Abel Zewdu
           {/* <ProfileImage profileName="abel zewdu" /> */}
@@ -37,27 +61,4 @@ import Search from './Search';
 
 export default Header
  
-//  import { CiChat1 } from 'react-icons/ci'
-// import { IoIosNotificationsOutline } from 'react-icons/io'
-// import './header.css'
-// import ProfileImage from './ProfileImage';
-// import { NavLink } from 'react-router-dom'
-
-// const Header = () => {
-//   return (
-//     <div className="fixed top-0 flex items-center  justify-between w-full h-13 px-6">
-//     <span className='bg-white flex items-center rounded-xl p-1.5 w-1/3'> 
-//         <BiSearch className='text-gray-600 />
-//        <input type="text" />
-//     </span> 
-//     <s
-//      <div className="flex items-center gap-1" > 
-//         <CiChat1  className='text-base'/>
-//         <IoIosNotificationsOutline className='icon' />
-//         <NavLink className="flex text-3xl font-mono items-center ml-4 no-underline gap-1" to="profile">Abel Zewdu <ProfileImage name="abel zewdu"/> </NavLink> 
-//      </div>  
-//     </div>
-//   )
-// }
-
-// export default Header
+ 
