@@ -1,15 +1,19 @@
 import { IoIosClose } from "react-icons/io";
 import { friends } from "../lib/data"
+import { NavLink } from "react-router-dom";
 
  
 const FriendRequests = () => {
-    const filteredFriends = friends.filter((friends, i) => { return i % 2 !== 0 })
+ 
+//  returning  small fake data 
+  const filteredFriends = friends.filter((friends, i) => { return i % 2 !== 0 })
     console.log(filteredFriends);
     return (
       <div className=" flex flex-col gap-4 border p-2">
           <h5 className="text-sm text-slate-600">Friend Requests <span>see all</span></h5>
           { filteredFriends.map((friendRequests, i) => (
-              <div className=" flex gap-2 border   justify-around sm:max-md:min-w-32" key={i}>
+            <NavLink to={`/profile/${friendRequests.id}`} key={i}>
+                <div className=" flex gap-2 border   justify-around sm:max-md:min-w-32">
               <div className="flex items-center gap-3 self-end">
                  <img src={ friendRequests.profile } aria-placeholder="avatar" className="w-8 h-8 rounded-full object-cover sm:max-md:w-6 sm:max-md:h-6" />
                   <h6 className="text-[10px] font-mono text-slate-700 items-center justify-center">   { friendRequests.name }</h6>
@@ -20,6 +24,7 @@ const FriendRequests = () => {
                        <IoIosClose className="hover:bg-black text-[8px] hover:text-white" size={22} />
                  </span>
           </div>
+            </NavLink>
           ))}
       </div>
   )

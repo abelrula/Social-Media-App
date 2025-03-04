@@ -9,14 +9,20 @@ import { useState } from 'react';
 import { IoCloseCircle } from 'react-icons/io5';
 
   
- 
+const ownerProfile = {
+  name: "Abel Zewdu",
+  mutualFriendes: 15,
+  id: 1,
+profile: profileImg
+ }
  
  const Header = ( ) => {
    const { pathname } = useLocation()
    const [ filterdContent, setFilterdContent ] = useState <string[]>([]); 
    const [openSearch,setOpenSearch]=useState(false)
    console.log(pathname);
-   
+
+    
 
   return (
        <div className={`bg-white fixed  top-0 left-0 right-0  ${pathname.includes("/message") && "hidden"}  z-50 flex items-center justify-between h-13 p-3 border-b-zinc-200 border`}>
@@ -34,7 +40,7 @@ import { IoCloseCircle } from 'react-icons/io5';
               className='absolute -right-2 -top-2 hover:scale-110 cursor-pointer'
               fontSize={ 30 }
               onClick={ () => setOpenSearch(false) } />
-          {/* searched content sugges */}
+          {/* searched content suggesions */}
             <Search placeholder="Search" setFilterdContent={ setFilterdContent } />
             <ul className="border border-slate-400 p-2  overflow-x-scroll rounded-sm">
             {filterdContent.length > 0  && filterdContent?.slice(0,30).map(values => (
@@ -46,7 +52,7 @@ import { IoCloseCircle } from 'react-icons/io5';
         }
 
           <IoIosNotificationsOutline className='sm:max-md:hidden text-base cursor-pointer  hover:scale-50' />
-         <NavLink className="flex text-sm font-mono items-center ml-4 no-underline gap-1" to="profile">Abel Zewdu
+         <NavLink className="flex text-sm font-mono items-center ml-4 no-underline gap-1" to={`/profile/${ownerProfile.id}`}>Abel Zewdu
           {/* <ProfileImage profileName="abel zewdu" /> */}
                            <img className="w-8 h-8 rounded-full object-cover object-center " src={profileImg} /> 
         </NavLink> 

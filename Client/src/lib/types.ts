@@ -69,13 +69,11 @@ declare type groupType = {
   name: string;
   profile: string;
 }
-declare type freindsType= {
-  name: string;
-  profile: string;
-}
 declare type SuggestedGroupsType= {
-   owner: string;
-   image: string;
+  id: number,
+  owner: string;
+  image: string;
+   joined:boolean
  }
 declare type menuLinksType={
   title: string;
@@ -86,6 +84,7 @@ declare  type profileNameType={
   profileName :string
 }
   declare type friendsType ={
+    id: number,
        name: string
        profile:string;
      mutualFriendes: number;

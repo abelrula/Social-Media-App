@@ -1,12 +1,10 @@
  
-import {  AiOutlineDislike, AiOutlineLike, AiTwotoneFire } from 'react-icons/ai'
-import { FcLike, FcShare} from 'react-icons/fc'
-import { BsEmojiTear } from 'react-icons/bs'
+import { FcShare} from 'react-icons/fc'
 import { FaRegCommentDots } from 'react-icons/fa'
 import ProfileImage from './ProfileImage'
 import { useState } from 'react'
 import { BiLike } from 'react-icons/bi'
-import Reactions, { ReactionsButtons } from './Reactions'
+import   ReactionPreview,{ ReactionsButtons, } from './ReactionsButtons'
 
 
 type propsType = { postedItems: postedContentsDataType, index: number, setCurrentIndex:  React.Dispatch<React.SetStateAction<number>> }
@@ -14,8 +12,8 @@ type propsType = { postedItems: postedContentsDataType, index: number, setCurren
 const PostedCard = ({postedItems,index,setCurrentIndex}:propsType) => {
   
   const [ openLikeModal, setOpenLikeModal ] = useState<boolean>(false)
-  const [slideImageNums,setSlideImageNums] =useState<number>(0)
-  const [slideOnImage,setSlideOnImage] =useState<number>(0)
+  // const [slideImageNums,setSlideImageNums] =useState<number>(0)
+  // const [slideOnImage,setSlideOnImage] =useState<number>(0)
   
  
   return (
@@ -57,7 +55,7 @@ const PostedCard = ({postedItems,index,setCurrentIndex}:propsType) => {
           : null }
          <div className="relative flex justify-between" >
           <div className="bg-white flex items-center rounded-xl px-1.5 py-0.5">
-           <Reactions />
+           <ReactionPreview />
                 </div>
                 <span className=" flex justify-between gap-2">
                     <label className='flex items-center  text-xs gap-1 text-slate-400 font-mono' ><span className='font-mono text-xs '>{postedItems.comments.length} </span>comments </label>

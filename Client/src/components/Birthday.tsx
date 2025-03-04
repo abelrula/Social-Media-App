@@ -15,7 +15,8 @@ const Birthday = ({setOpenModal}:propsTypes) => {
     console.log(postedContentsData[0].comments);
     
     return (
-      <div className='relative bg-[#f8f8f8] w-[510px] p-2 h-[510px] overflow-hidden items-center justify-around rounded-lg  flex flex-col  '>
+         <div className='bg-[#00000085] fixed z-50 top-0 right-0 left-0 bottom-0 w-full opacity-95 h-full  flex justify-center items-center'>
+      <div className='relative bg-[#ffffff] w-[510px] p-2 h-[510px] overflow-hidden items-center justify-around rounded-lg  flex flex-col  '>
           <IoCloseCircle  className='absolute right-0 top-0 hover:scale-110 cursor-pointer'  fontSize={30} onClick={ () => setOpenModal(false) } />
             <h1 className=' text-lg flex items-center gap-3'><FaBirthdayCake fontSize={10} />Wish them happy Birthday for their <span className='text-indigo-700' >28 years  </span>            </h1>
            <span className='flex gap-2 items-center'>
@@ -26,7 +27,7 @@ const Birthday = ({setOpenModal}:propsTypes) => {
             <h5 className='text-start self-start text-xs'>Birthday Comments</h5>
             <Comments comments={birthdayComments} />
             <TextBox placeholder="wish birthday" buttonName='Send10'/>
-             
+      </div>
       </div>
   )
 }

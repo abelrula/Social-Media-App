@@ -1,5 +1,5 @@
 import { useState } from "react"
- import HomeSideInfo from "./HomeSideInfo"
+ import HomeSideInfo from "./FeedsSideBarSuggestion"
 import PostedContents from "./PostedContents"
 import { groupsDatas } from "../lib/data"
  

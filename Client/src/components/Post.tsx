@@ -12,7 +12,7 @@ const Post = () => {
   return (
      <>
      <div className="bg-white flex gap-2.5 flex-col rounded-[5px] border-[#d9d9d9] border p-2.5">
-     <div className="w-auto ">
+     <div className="w-auto " onClick={()=>setOpenModal(true)}>
            <TextBox  placeholder="what`s on your mind ?" buttonName="post" onclick={onclick}  /> 
      </div>
         </div>

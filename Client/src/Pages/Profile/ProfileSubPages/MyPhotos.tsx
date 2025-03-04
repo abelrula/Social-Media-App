@@ -1,7 +1,7 @@
 import { imagesPostedByTheOwner } from "../../../lib/data"
 import { useState } from "react"
 import { PostedContentModal, SmallerDeviceModal } from "../../../components/Modals"
-import Reactions from "../../../components/Reactions"
+import ReactionPreview from "../../../components/ReactionsButtons"
  import useScreenSize from "../../../hooks/useScreenSize"  
  
  
@@ -17,7 +17,7 @@ const MyPhotos = () => {
                         imagesPostedByTheOwner.map((posted,i)=>(
                          <div className="relative h-auto w-auto" key={i} onClick={ () => { setCurrentIndex(i); setCurrentModal(posted)}} >
                           <img  src={posted.image[0]} className='rounded-sm w-full h-full object-center object-cover' />
-                         <Reactions />
+                         <ReactionPreview />
                           </div>
                         ))
                      }

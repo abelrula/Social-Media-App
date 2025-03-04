@@ -1,7 +1,6 @@
-import React from 'react'
-import ProfileImage from './ProfileImage'
+ import ProfileImage from './ProfileImage'
 
-const Posted_owner_profile_with_Title = ({currentModal}) => {
+const Content_owner_with_post_title = ({currentModal}) => {
 
 console.log(currentModal);
 
@@ -24,4 +23,4 @@ console.log(currentModal);
   )
 }
 
-export default Posted_owner_profile_with_Title
+export default Content_owner_with_post_title

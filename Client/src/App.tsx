@@ -15,17 +15,19 @@ import MessageLayout from "./Layouts/MessageLayout";
 import GroupsLayout from './Layouts/GroupsLayout'
 import Group from './components/Group'
 import Events from './Pages/Events/Events'
+import LoginPage from './components/LoginPage'
 
 function App() {
  
    return (
             <BrowserRouter>
                 <Routes>  
+                  <Route  path="login" element={<LoginPage />}  />
                <Route  path="/" element={<Layout />} >
                   <Route index element={<Feed />}  />
                   <Route  path="friends" element={<Friends />}  />
                   <Route  path="memories" element={<Memories />}  />
-                  <Route  path="profile" element={<Profile />} >
+                  <Route  path="profile/:id" element={<Profile />} >
                       <Route    index element={<MyPosts />}  />
                       <Route  path="videos" element={<MyVideos />}  />
                       <Route  path="photos" element={<MyPhotos />}  />

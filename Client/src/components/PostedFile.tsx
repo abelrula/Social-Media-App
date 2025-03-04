@@ -17,11 +17,11 @@ const PostedFile  = ({currentModal,width,height="h-full"}) => {
   // handling onClick on images for viewing random image 
   const handleRandomImagePosition = (i:number) => {
     
-     if (imageNums < i || imageNums === 0) {
+     if (imageNums < i) {
       setImageNums(i)
       imageNums !== 0 ?
         setScrollPosition(prev => prev * i) :
-         setScrollPosition(400 * i)
+        setScrollPosition(400 * i)
       return imageNums === 0 ? imageRef.current.scrollLeft =i * 400:
         imageRef.current.scrollLeft = scrollPosition * i 
     }
@@ -31,6 +31,7 @@ const PostedFile  = ({currentModal,width,height="h-full"}) => {
       imageNums > i && i === 0 ?
         setScrollPosition(prev => prev * i) :
         setScrollPosition(prev => prev - ((imageNums - i )* 400))
+ console.log(imageNums,i);
  
        return imageNums > i && i === 0 ?
         imageRef.current.scrollLeft = scrollPosition * i :  

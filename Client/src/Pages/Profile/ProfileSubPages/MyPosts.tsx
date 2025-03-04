@@ -1,8 +1,8 @@
  import PostedContents from "../../../components/PostedContents"
 import { postedContentsData } from "../../../lib/data"
 import ProfileDescription from "../../../components/ProfileDescription"
- const MyPosts = () => {
-  
+  const MyPosts = () => {
+    
   return (
     <section className="flex flex-row-reverse gap-10 m-auto mt-12border-t-[1px] border-slate-200 w-11/12 sm:max-md:flex-col sm:max-md:gap-1 ">
           <ProfileDescription />

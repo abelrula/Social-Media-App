@@ -1,15 +1,12 @@
 import React, {useRef, useState } from 'react'
-import ProfileImage from './ProfileImage'
-import { IoIosArrowRoundBack, IoIosClose, IoMdClose } from 'react-icons/io'
+ import { IoIosArrowRoundBack, IoIosClose, IoMdClose } from 'react-icons/io'
 import Comments from './Comments'
 import TextBox from './TextBox'
 import { profileImg } from '../lib/data'
-import  { ReactionsButtons } from './Reactions'
-import ReactQuill from 'react-quill'
-import 'react-quill/dist/quill.snow.css';
+import  { ReactionsButtons } from './ReactionsButtons'
+ import 'react-quill/dist/quill.snow.css';
 import { SlPicture } from 'react-icons/sl'
-import Emojies from './Emojies'
- import Posted_owner_profile_with_Title from "./Posted_owner_profile_with_Title"
+  import Posted_owner_profile_with_Title from "./Content_owner_with_post_title"
  import { FaRegComment } from 'react-icons/fa'
 import { BiLike } from 'react-icons/bi'
  import PostedFile from './PostedFile'
@@ -133,33 +130,19 @@ type PostModalPropsTypes = {
   postType:string
 }
 
-export const PostModal = ({ onclick,postType }: PostModalPropsTypes) => {
+export const PostModal = ({ onclick }: PostModalPropsTypes) => {
   
-  const [ msg, setMsg ] = useState('');
-  const [ PreviewUrl, setPreviewUrl ] = useState(undefined)
-  const fileRef = useRef<HTMLInputElement>()
-  
-  const OpenFile = () => {
-    fileRef.current.click()
-  }
-  function readAndPreview (e) {
-    const files = e.target.files 
-    if (files) {
-           
-        const filese=Array.from(files).map((img:Blob)=>URL.createObjectURL(img))
-        console.log(filese);
-        setPreviewUrl(filese)
-    }
-      
-  }
+  // const [ msg, setMsg ] = useState('');
+  const [ PreviewUrl, setPreviewUrl ] = useState<string[]>([])
+ 
+   
   return (
       <div className=" bg-[#000000ad] fixed top-0 bottom-0 flex items-center justify-center left-0 right-0  z-50">
-        <form className=" relative bg-white h-min-[250px] h-auto w-[475px] flex gap-2.5 flex-col p-2.5">
-        <header className="flex gap-2 items-center"><img className='w-6 h-6 rounded-full object-cover object-center' src={ profileImg } /> Abel Zewdu</header>
-        <IoMdClose onClick={ onclick } className="absolute top-0 right-0" fontSize={ 30 } />
+        <form className=" relative bg-white h-min-[350px] h-auto w-[475px] flex gap-2.5 flex-col p-2.5">
+         <IoMdClose onClick={ onclick } className="absolute top-0 right-0" fontSize={ 30 } />
         <div className="flex flex-col gap-2 w-11/12 ">
          <div className="w-auto ">
-           <TextBox  placeholder="what`s on your mind ?" buttonName="post" onclick={onclick}  /> 
+           <TextBox  placeholder="what`s on your mind ?" buttonName="post" onclick={onclick} setPreviewUrl={setPreviewUrl}  /> 
           </div>
           { PreviewUrl &&
              <div className="flex gap-1 flex-wrap max-h-48 h-auto overflow-y-scroll ">
@@ -169,13 +152,8 @@ export const PostModal = ({ onclick,postType }: PostModalPropsTypes) => {
          </div>}
        
         </div>  
-            <span className="ml-2 flex items-center gap-1 z-50">
-            <SlPicture className='icon' color='red' onClick={OpenFile} />
-            <input type='file' onChange={readAndPreview} className='hidden' multiple={true} ref={fileRef}  />
-                  <Emojies setMsg={setMsg}  />       
-             </span> 
-         <button className="bg-black py-1 px-4 self-end text-white hover:bg-[#0000005e]"  type="submit">{postType}</button>
-        </form>
+             
+         </form>
           </div>
   )
 
@@ -237,11 +215,11 @@ export const UploadCoverImage=({onclick}:UploadCoverImagePropsTypes)=>{
     <>
      <div className=" bg-[#000000ad] fixed top-0 bottom-0 flex items-center justify-center left-0 right-0  z-50">
           <IoIosClose fontSize={ 15 }
-            className='text-4xl absolute text-white cursor-pointer  -top-4 -right-10 hover:text-5xl  rounded-full'
+            className='text-4xl absolute text-white cursor-pointer  top-0 right-0 hover:text-5xl  rounded-full'
             onClick={ () => setOpenModal(false) } />
-          <div className="relative bg-white h-[400px] w-[350px] flex flex-col rounded-lg" key={openModalData.image}  >
-              <img src={ openModalData.image } className='rounded-lg w-full h-full object-center object-cover' />                      
-              <div className="absolute w-full flex flex-col bottom-0 bg-white p-2 h-auto"> 
+          <div className="relative bg-white h-auto w-[350px] flex flex-col rounded-lg" key={openModalData.image}  >
+              <img src={ openModalData.image } className='rounded-lg w-full h-full object-center min-h-[580px] object-cover' />                      
+              <div className="absolute w-full flex flex-col bottom-0 bg-white p-2  h-auto "> 
                  <p className="w-5/6 font-sans text-xs ml-2.5 text-black font-normal"  >{openModalData.titleDescription}</p>
               <span className="self-end mr-2 mt-2 flex gap-2">
                  <p className='text-xs font-thin text-black font-sans leading-tight'>
