@@ -25,9 +25,9 @@ const Search = ({ placeholder,setFilterdContent }: propTypes) => {
  
  
   return (
-      <div className='w-full max-h-28 '>
+      <div className='w-full max-h-28'>
           <span className=" bg-slate-100 rounded-xl p-1.5 sm:max-md:border-none sm:max-md:bg-transparent  flex items-center border-[#d9d9d9] border">
-              <BiSearch className='text-zinc-700' /> 
+              <BiSearch fontSize={24} className='' /> 
           <input
           onChange={ (e) => { setSearchContent(e.target.value) }}
          className=" bg-slate-100 h-6 w-full  rounded-none outline-none text-xs font-mono text-zinc-700" 

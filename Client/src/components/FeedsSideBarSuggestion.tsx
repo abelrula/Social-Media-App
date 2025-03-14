@@ -3,8 +3,8 @@
   import { useState } from 'react'
  
 import Birthday from './Birthday'
-import Suggestiongroups from './suggestiongroups'
-import OnlineContacts from './OnlineContacts'
+ import OnlineContacts from './OnlineContacts'
+import Suggestiongroups from './Suggestiongroups'
 const FeedsSideBarSuggestion = () => {
   
   const [ OpenModal, setOpenModal ] = useState(false)
