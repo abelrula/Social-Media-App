@@ -11,6 +11,7 @@ import { SlPicture } from 'react-icons/sl'
 import { BiLike } from 'react-icons/bi'
  import PostedFile from './PostedFile'
 import { PiDotsThreeVertical } from 'react-icons/pi'
+import PhoneInput from 'react-phone-input-2'
  
 type propsTypes = {
   currentModal: postedContentsDataType,
@@ -255,3 +256,74 @@ export const ReplyOnComment = ({comment,setReplyComment}) => {
    )
 
 } 
+
+ import 'react-phone-input-2/lib/style.css'
+import useIpAdress from '../hooks/useIpAdress'
+ 
+export const SignupAuthVerification = ({ setNextForm }) => {
+  const [ phoneNumber, setPhoneNumber ] = useState({ phone: "" })
+  const {geoPlugin } = useIpAdress()
+  const  default_adress=geoPlugin?.geoplugin_countryName?.slice(0,2).toLowerCase()
+          
+  return (
+     <div className="  bg-[#7dc0c7f8]   fixed top-0 bottom-0 flex items-center justify-center left-0 right-0  z-50">
+           <form className="flex flex-col relative bg-[#ffffff] min-h-1/2 gap-2  rounded-lg self-center w-1/3 justify-center p-4 h-fit shadow-[7px_-1px_11px_9px_rgba(0,_0,_0,_0.8)] sm:max-lg:w-full sm:max-lg:h-full">
+        <IoIosArrowRoundBack onClick={()=>setNextForm(false)}  className='absolute top-1 left-2 text-4xl'/>
+        <h3 className="text-lg  font-bold self-center">Complete Verification</h3>
+
+              {/* <!-- Email input --> */}
+            
+           <label htmlFor="Full Name">user-name</label>
+        <span className="  border outline-1 p-2 w-3/4 rounded-lg">
+              <input
+                type="password"
+                placeholder="@rula123"
+                className="   outline-none    rounded-lg"
+          />
+         {/* if the user name is taken */}
+          { <em className='text-red-500 text-sm'>taken</em> }
+          </span>
+
+           <label htmlFor="phone">phone</label>
+            <PhoneInput
+                country={default_adress}
+                value={phoneNumber.phone}
+                onChange={(phone:string) =>setPhoneNumber({ phone })}
+                                  />
+            <label htmlFor="Full Name">Birth-Date</label>
+              <input
+                type="date"
+                placeholder="10/20/2000"
+                className="mb-3 border outline-1 p-2 w-3/4 rounded-lg"
+            />
+            {/* <!--Password input--> */ }
+            
+              {/* <!-- Register button --> */}
+              <div className="text-center  flex flex-col  gap-3  justify-between lg:text-left">
+            
+              <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
+                  <input
+                     type="checkbox"
+                    value=""
+                    id="exampleCheck2"
+                  />
+                  <label
+                    className="inline-block pl-[0.15rem] hover:cursor-pointer"
+                    htmlFor="exampleCheck2"
+                  >
+                    Remember me
+                  </label>
+                  <p className="text-gray-600 text-sm">By clicking Agree & Join or Continue, you agree to the LinkedIn <a href="" className="text-blue-700">User Agreement, Privacy Policy</a>, and <a href="" className="text-blue-700"> Cookie Policy</a>.</p>      
+                </div>
+              <button
+                     type="button"
+                    className="inline-block  w-1/2 rounded-xl bg-primary px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] self-center bg-sky-700 "
+                  >
+                   Agree and Join
+                  </button>
+             </div>
+            </form>
+       </div>
+  )
+
+}

@@ -5,7 +5,9 @@ const Emojii = () => {
 
   const [chosenEmoji, setChosenEmoji] = useState(null);
   const [openEmoji, setOpenEmoji] = useState(false);
-  const [postContenet, setPostContenet] = useState("");const onEmojiClick = (event, emojiObject) => {
+  const [ postContenet, setPostContenet ] = useState("");
+  
+  const onEmojiClick = (event, emojiObject) => {
       setChosenEmoji(emojiObject?.emoji);
     };
   

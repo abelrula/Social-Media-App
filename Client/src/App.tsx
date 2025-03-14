@@ -15,7 +15,8 @@ import MessageLayout from "./Layouts/MessageLayout";
 import GroupsLayout from './Layouts/GroupsLayout'
 import Group from './components/Group'
 import Events from './Pages/Events/Events'
-import LoginPage from './components/LoginPage'
+import LoginPage from './components/auth/LoginPage'
+import Register from './components/auth/Register'
 
 function App() {
  
@@ -23,6 +24,7 @@ function App() {
             <BrowserRouter>
                 <Routes>  
                   <Route  path="login" element={<LoginPage />}  />
+                  <Route  path="register" element={<Register />}  />
                <Route  path="/" element={<Layout />} >
                   <Route index element={<Feed />}  />
                   <Route  path="friends" element={<Friends />}  />
