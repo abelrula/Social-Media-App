@@ -27,9 +27,9 @@ export const ToggledBottombar = () => {
   const { pathname } = useLocation()
  
   return (
-    <div className={`w-full md:hidden fixed bottom-0 right-0 left-0 bg-white   flex justify-between items-center p-2 pr-0.5 ${pathname.includes("message") ? "hidden" : "block"}`}>
+    <aside className={`w-full md:hidden fixed bottom-0 right-0 left-0 bg-white    flex justify-between items-center p-2 pr-0.5 ${pathname.includes("message") ? "hidden" : "block"}`}>
      <SideBarLinks />
-      </div>
+      </aside>
     );
 };
 

@@ -22,10 +22,13 @@ const MessageList = ({chatListToggle,setChatListToggle}) => {
   }, [] );
    return (
     <div className={`bg-white w-72   md:min-w-52 flex flex-col gap-4  py-2.5 px-1 border-r-lime-950 border sm:max-md:w-64 ${!chatListToggle ? "sm:max-md:hidden" :"sm:max-md:visible" }`}>
-     <AiOutlineBars className="md:hidden" onClick={()=>setChatListToggle(false)} />
-       <NavLink to="..">
-         <IoIosArrowRoundBack fontSize={ 33 } className=" " /> 
-      </NavLink>  
+       <div className="flex items-center justify-between" >
+          <NavLink to="..">
+          <IoIosArrowRoundBack fontSize={ 33 } className=" " /> 
+         </NavLink>
+         <AiOutlineBars className="md:hidden" onClick={()=>setChatListToggle(false)} />
+     </div>
+
        <NavLink to="."className=" bg-[#032225] p-1.5 rounded-lg  text-[30px] text-white font-mono sm:max-md:text-xs">
         Chats
       </NavLink>

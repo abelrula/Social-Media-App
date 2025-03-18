@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import {  useRef, useState } from 'react'
 import { profileImg } from '../lib/data'
 import { SlPicture } from 'react-icons/sl'
 import Emojies from './Emojies'
@@ -25,15 +25,14 @@ const TextBox = ({ placeholder,buttonName,setPreviewUrl,onclick,style}: propsTyp
     if (files) {
              
       const Arrfiles = Array.from(files).map((img: Blob) => URL.createObjectURL(img))
-      console.log(Arrfiles);
-      setPreviewUrl(Arrfiles)
+       setPreviewUrl(Arrfiles)
     }
   }
-  useEffect(() => {
   
-  //  textFocusRef.current.focus()
- }, [])
+  
    console.log(msg)
+
+
   return (
     <div className={`flex gap-2 self-center bg-white w-full ${style} shadow-[0_4px_9px_-4px_#3b71ca] w-3/4 ` } >
         <img className="w-8 h-8 rounded-full object-cover object-center" src={ profileImg } />
